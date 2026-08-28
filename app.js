@@ -172,13 +172,13 @@ const INITIAL_COLUMNS_DATA = [
 // Estado de la aplicación
 const STORAGE_KEY = "plan_accion_estrategico_data_v1";
 const API_KEY_STORAGE = "gemini_api_key_v1";
-const CLOUD_SYNC_ENDPOINT = "https://api.jsonbin.io/v3/b"; // Fallback or KV realtime sync
+const DEFAULT_GEMINI_API_KEY = "AIzaSyDlQUU5f18THy44vfgiW6l7IE6FAXqYSGs";
 const DEFAULT_ROOM_ID = "plan-accion-estrategico-main";
 
 let appData = loadData();
 let currentFilter = "all";
 let currentSearch = "";
-let geminiApiKey = localStorage.getItem(API_KEY_STORAGE) || "";
+let geminiApiKey = localStorage.getItem(API_KEY_STORAGE) || DEFAULT_GEMINI_API_KEY;
 let cloudSyncActive = true;
 let isSyncing = false;
 
@@ -1104,12 +1104,16 @@ function detectAreaFromKeywords(text) {
   return "admin";
 }
 
-// Envío a Gemini de Audio directo
+// Envío a Gemini de Audio directo con modelo fallback
 async function sendAudioToGemini(audioBlob, apiKey) {
   const base64Audio = await blobToBase64(audioBlob);
   const mimeType = audioBlob.type || 'audio/webm';
 
-  const endpoint = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-preview-09-2025:generateContent?key=${apiKey}`;
+  const modelsToTry = [
+    "gemini-1.5-flash",
+    "gemini-2.0-flash",
+    "gemini-2.5-flash-preview-09-2025"
+  ];
 
   const systemInstruction = `Eres un asistente ejecutivo experto en reuniones y asignación de responsabilidades.
 Escucha la reunión o audio grabado. Separa minuciosamente CADA actividad para CADA persona o área mencionada.
@@ -1118,11 +1122,11 @@ Clasifica cada tarea EXACTAMENTE en una de las siguientes 3 áreas:
 - 'logistica': Para Logística / Operaciones (limpieza de almacén, camillas, muebles, cafetería, granito, control de stock y vencimientos, gafetes).
 - 'sistemas': Para Sistemas / TI (creación de aplicativos web, formularios, códigos QR, bases de datos, reportes, alarmas).
 
-Devuelve JSON estructurado:
+Devuelve JSON estructurado con la clave 'tasks':
 {
   "tasks": [
     {
-      "title": "Acción concisa y profesional",
+      "title": "Acción concisa, limpia y profesional",
       "area": "admin" | "logistica" | "sistemas",
       "priority": "alta" | "media" | "normal",
       "deadline": null
@@ -1152,33 +1156,60 @@ Devuelve JSON estructurado:
     }
   };
 
-  const response = await fetch(endpoint, {
-    method: "POST",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify(payload)
-  });
+  let lastError = null;
+  for (const model of modelsToTry) {
+    try {
+      const endpoint = `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent?key=${apiKey}`;
+      const response = await fetch(endpoint, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(payload)
+      });
 
-  if (!response.ok) {
-    throw new Error(`Gemini API error: ${response.status}`);
+      if (response.ok) {
+        const result = await response.json();
+        const rawJson = result.candidates?.[0]?.content?.parts?.[0]?.text;
+        if (rawJson) {
+          const parsed = JSON.parse(rawJson);
+          return parsed.tasks || [];
+        }
+      } else {
+        const errText = await response.text();
+        console.warn(`Error probando modelo ${model}:`, errText);
+      }
+    } catch (err) {
+      lastError = err;
+    }
   }
 
-  const result = await response.json();
-  const rawJson = result.candidates?.[0]?.content?.parts?.[0]?.text;
-  const parsed = JSON.parse(rawJson);
-  return parsed.tasks || [];
+  throw lastError || new Error("No se pudo conectar con la API de Gemini");
 }
 
-// Envío a Gemini de Texto Transcript
+// Envío a Gemini de Texto Transcript con modelo fallback
 async function sendTextToGemini(textPrompt, apiKey) {
-  const endpoint = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-preview-09-2025:generateContent?key=${apiKey}`;
+  const modelsToTry = [
+    "gemini-1.5-flash",
+    "gemini-2.0-flash",
+    "gemini-2.5-flash-preview-09-2025"
+  ];
 
-  const systemInstruction = `Eres un asistente ejecutivo. Analiza el siguiente texto de reunión.
+  const systemInstruction = `Eres un asistente ejecutivo. Analiza el siguiente texto de reunión hablada.
 Identifica y separa TODAS las actividades individuales para cada área:
-- 'admin': Administradora General (legal, personal, tarifas, directivas).
+- 'admin': Administradora General (legal, personal, tarifas, directivas, coaching).
 - 'logistica': Logística / Operaciones (almacén, limpieza, camillas, compras, stock).
-- 'sistemas': Sistemas / TI (desarrollo web, formularios, reportes, QR).
+- 'sistemas': Sistemas / TI (desarrollo web, formularios, reportes, QR, alertas).
 
-Devuelve JSON con la lista de tareas en 'tasks'.`;
+Devuelve JSON estructurado con la propiedad 'tasks':
+{
+  "tasks": [
+    {
+      "title": "Descripción limpia de la actividad",
+      "area": "admin" | "logistica" | "sistemas",
+      "priority": "alta" | "media" | "normal",
+      "deadline": null
+    }
+  ]
+}`;
 
   const payload = {
     contents: [{ parts: [{ text: textPrompt }] }],
@@ -1186,17 +1217,30 @@ Devuelve JSON con la lista de tareas en 'tasks'.`;
     generationConfig: { responseMimeType: "application/json" }
   };
 
-  const response = await fetch(endpoint, {
-    method: "POST",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify(payload)
-  });
+  let lastError = null;
+  for (const model of modelsToTry) {
+    try {
+      const endpoint = `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent?key=${apiKey}`;
+      const response = await fetch(endpoint, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(payload)
+      });
 
-  if (!response.ok) throw new Error("Error en Gemini");
-  const result = await response.json();
-  const rawJson = result.candidates?.[0]?.content?.parts?.[0]?.text;
-  const parsed = JSON.parse(rawJson);
-  return parsed.tasks || [];
+      if (response.ok) {
+        const result = await response.json();
+        const rawJson = result.candidates?.[0]?.content?.parts?.[0]?.text;
+        if (rawJson) {
+          const parsed = JSON.parse(rawJson);
+          return parsed.tasks || [];
+        }
+      }
+    } catch (err) {
+      lastError = err;
+    }
+  }
+
+  throw lastError || new Error("Error en Gemini Text API");
 }
 
 function blobToBase64(blob) {
