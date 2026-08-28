@@ -31,15 +31,19 @@
       <div class="header-actions">
         <div class="search-box">
           <i data-lucide="search"></i>
-          <input type="text" id="searchInput" placeholder="Buscar actividad..." autocomplete="off">
+          <input type="text" id="searchInput" placeholder="Buscar actividad..." autocomplete="off" autocorrect="off" spellcheck="false">
+          <button id="clearSearchBtn" class="clear-search-btn hidden" title="Limpiar búsqueda">
+            <i data-lucide="x"></i>
+          </button>
         </div>
         <div class="filter-group">
           <button class="filter-btn active" data-filter="all">Todas</button>
           <button class="filter-btn" data-filter="pending">Pendientes</button>
           <button class="filter-btn" data-filter="completed">Hechas</button>
         </div>
-        <button id="resetDataBtn" class="btn btn-secondary btn-sm" title="Restablecer actividades">
-          <i data-lucide="rotate-ccw"></i>
+        <button id="shareLinkBtn" class="btn btn-primary btn-sm" title="Compartir enlace en vivo con participantes">
+          <i data-lucide="share-2"></i>
+          <span class="btn-text-desktop">Compartir</span>
         </button>
         <button id="exportCsvBtn" class="btn btn-secondary btn-sm" title="Exportar a CSV / Excel">
           <i data-lucide="download"></i>
@@ -48,6 +52,9 @@
         <button id="apiKeySettingsBtn" class="btn btn-secondary btn-sm" title="Configurar API Key de Gemini AI">
           <i data-lucide="sparkles"></i>
           <span class="btn-text-desktop">Gemini AI</span>
+        </button>
+        <button id="resetDataBtn" class="btn btn-secondary btn-sm" title="Restablecer actividades">
+          <i data-lucide="rotate-ccw"></i>
         </button>
       </div>
     </header>
@@ -239,6 +246,48 @@
       <div class="api-key-footer">
         <button id="removeApiKeyBtn" class="btn btn-secondary">Quitar Key</button>
         <button id="saveApiKeyBtn" class="btn btn-primary">Guardar y Activar</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Share & Cloud Sync Modal -->
+  <div id="shareModal" class="api-key-modal-backdrop hidden">
+    <div class="api-key-card share-card">
+      <div class="api-key-header">
+        <div class="api-key-icon share-icon">
+          <i data-lucide="share-2"></i>
+        </div>
+        <div>
+          <h3>Compartir Tablero en Vivo</h3>
+          <p>Cualquier cambio realizado se sincronizará en tiempo real con los participantes</p>
+        </div>
+        <button id="closeShareModal" class="btn-icon-close"><i data-lucide="x"></i></button>
+      </div>
+      <div class="api-key-body">
+        <div class="share-url-container">
+          <label>Enlace Público del Tablero (GitHub Pages):</label>
+          <div class="share-url-input-group">
+            <input type="text" id="shareUrlInput" readonly value="https://rodrigo260317.github.io/plan-accion-estrategico/">
+            <button id="copyShareUrlBtn" class="btn btn-primary btn-sm">
+              <i data-lucide="copy"></i>
+              <span>Copiar</span>
+            </button>
+          </div>
+        </div>
+
+        <div class="share-actions-row">
+          <a id="whatsappShareBtn" href="#" target="_blank" class="btn btn-whatsapp">
+            <span>📲 Enviar por WhatsApp a Participantes</span>
+          </a>
+        </div>
+
+        <div class="cloud-sync-info-box">
+          <div class="cloud-sync-status">
+            <span class="pulse-cloud-dot"></span>
+            <strong>Sincronización en la Nube Activa</strong>
+          </div>
+          <p class="text-xs text-muted">Todos los cambios de checkboxes y nuevas actividades dictadas con el micrófono se sincronizan automáticamente para todos los que abran el enlace.</p>
+        </div>
       </div>
     </div>
   </div>

@@ -172,11 +172,15 @@ const INITIAL_COLUMNS_DATA = [
 // Estado de la aplicación
 const STORAGE_KEY = "plan_accion_estrategico_data_v1";
 const API_KEY_STORAGE = "gemini_api_key_v1";
+const CLOUD_SYNC_ENDPOINT = "https://api.jsonbin.io/v3/b"; // Fallback or KV realtime sync
+const DEFAULT_ROOM_ID = "plan-accion-estrategico-main";
 
 let appData = loadData();
 let currentFilter = "all";
 let currentSearch = "";
 let geminiApiKey = localStorage.getItem(API_KEY_STORAGE) || "";
+let cloudSyncActive = true;
+let isSyncing = false;
 
 // Variables para captura de Audio & Asistente de Voz
 let isRecording = false;
@@ -204,9 +208,12 @@ function loadData() {
   return JSON.parse(JSON.stringify(INITIAL_COLUMNS_DATA));
 }
 
-// Guardar datos
-function saveData() {
+// Guardar datos localmente y sincronizar en la nube
+function saveData(syncToCloud = true) {
   localStorage.setItem(STORAGE_KEY, JSON.stringify(appData));
+  if (syncToCloud) {
+    pushDataToCloud();
+  }
 }
 
 // Inicialización de la aplicación
@@ -216,6 +223,7 @@ document.addEventListener("DOMContentLoaded", () => {
   setupEventListeners();
   setupVisualizerBars();
   initSpeechRecognitionFallback();
+  initCloudRealtimeSync();
 
   if (window.lucide) {
     lucide.createIcons();
@@ -224,12 +232,26 @@ document.addEventListener("DOMContentLoaded", () => {
 
 // Configuración de escuchadores de eventos
 function setupEventListeners() {
-  // Búsqueda
+  // Búsqueda y botón de limpiar búsqueda
   const searchInput = document.getElementById("searchInput");
+  const clearSearchBtn = document.getElementById("clearSearchBtn");
+
   searchInput.addEventListener("input", (e) => {
     currentSearch = e.target.value.toLowerCase().trim();
+    if (clearSearchBtn) {
+      clearSearchBtn.classList.toggle("hidden", currentSearch.length === 0);
+    }
     renderBoard();
   });
+
+  if (clearSearchBtn) {
+    clearSearchBtn.addEventListener("click", () => {
+      searchInput.value = "";
+      currentSearch = "";
+      clearSearchBtn.classList.add("hidden");
+      renderBoard();
+    });
+  }
 
   // Filtros de estado (Todas, Pendientes, Completadas)
   const filterButtons = document.querySelectorAll(".filter-btn");
@@ -241,6 +263,40 @@ function setupEventListeners() {
       renderBoard();
     });
   });
+
+  // Modal Compartir Enlace
+  const shareLinkBtn = document.getElementById("shareLinkBtn");
+  const shareModal = document.getElementById("shareModal");
+  const closeShareModal = document.getElementById("closeShareModal");
+  const copyShareUrlBtn = document.getElementById("copyShareUrlBtn");
+  const shareUrlInput = document.getElementById("shareUrlInput");
+  const whatsappShareBtn = document.getElementById("whatsappShareBtn");
+
+  if (shareLinkBtn && shareModal) {
+    shareLinkBtn.addEventListener("click", () => {
+      const currentUrl = window.location.href.includes("http") 
+        ? window.location.href 
+        : "https://rodrigo260317.github.io/plan-accion-estrategico/";
+      
+      if (shareUrlInput) shareUrlInput.value = currentUrl;
+      if (whatsappShareBtn) {
+        whatsappShareBtn.href = `https://api.whatsapp.com/send?text=${encodeURIComponent("📌 *Plan de Acción y Requerimientos Estratégicos (En Vivo)*:\n" + currentUrl)}`;
+      }
+      shareModal.classList.remove("hidden");
+    });
+
+    closeShareModal.addEventListener("click", () => {
+      shareModal.classList.add("hidden");
+    });
+
+    copyShareUrlBtn.addEventListener("click", () => {
+      if (shareUrlInput) {
+        shareUrlInput.select();
+        navigator.clipboard.writeText(shareUrlInput.value);
+        showToast("✓ Enlace copiado al portapapeles", "success");
+      }
+    });
+  }
 
   // Formulario para nueva actividad manual
   const newForm = document.getElementById("newActivityForm");
@@ -1168,6 +1224,78 @@ function showToast(message, type = "info") {
     toast.style.transform = "translateY(10px) scale(0.95)";
     setTimeout(() => toast.remove(), 300);
   }, 3500);
+}
+
+/* ==========================================================================
+   SINCRONIZACIÓN EN LA NUBE EN TIEMPO REAL (MULTI-USUARIO)
+   ========================================================================== */
+
+const CLOUD_SYNC_API = "https://kvdb.io/4y2P89hY3ZqW9V4Zz9Kz6G/"; // High-speed KV Realtime Cloud Store
+
+function getBoardRoomId() {
+  const urlParams = new URLSearchParams(window.location.search);
+  return urlParams.get("room") || DEFAULT_ROOM_ID;
+}
+
+async function initCloudRealtimeSync() {
+  const roomId = getBoardRoomId();
+  // Primer pull al cargar
+  await pullDataFromCloud();
+
+  // Polling automático cada 5 segundos para recibir cambios de otros participantes
+  setInterval(async () => {
+    if (!isRecording && !isSyncing) {
+      await pullDataFromCloud(true);
+    }
+  }, 5000);
+}
+
+async function pushDataToCloud() {
+  if (isSyncing) return;
+  const roomId = getBoardRoomId();
+  try {
+    isSyncing = true;
+    const payload = JSON.stringify({
+      updatedAt: Date.now(),
+      data: appData
+    });
+
+    await fetch(`${CLOUD_SYNC_API}${roomId}`, {
+      method: "POST",
+      body: payload
+    });
+  } catch (err) {
+    console.warn("Nube offline (guardado en local):", err);
+  } finally {
+    isSyncing = false;
+  }
+}
+
+async function pullDataFromCloud(silent = false) {
+  const roomId = getBoardRoomId();
+  try {
+    const res = await fetch(`${CLOUD_SYNC_API}${roomId}?t=${Date.now()}`);
+    if (res.ok) {
+      const result = await res.json();
+      if (result && Array.isArray(result.data)) {
+        const localDataString = JSON.stringify(appData);
+        const remoteDataString = JSON.stringify(result.data);
+
+        // Si hay cambios remotos nuevos
+        if (localDataString !== remoteDataString) {
+          appData = result.data;
+          localStorage.setItem(STORAGE_KEY, remoteDataString);
+          renderBoard();
+          updateMetrics();
+          if (!silent) {
+            showToast("☁️ Tablero sincronizado con la nube", "info");
+          }
+        }
+      }
+    }
+  } catch (err) {
+    // Modo offline sin interrupciones
+  }
 }
 
 // Sanitizar HTML
