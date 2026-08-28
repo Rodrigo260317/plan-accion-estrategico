@@ -45,6 +45,10 @@
           <i data-lucide="share-2"></i>
           <span class="btn-text-desktop">Compartir</span>
         </button>
+        <button id="historyBtn" class="btn btn-secondary btn-sm" title="Ver Historial y Respaldo de Transcripciones de Audio">
+          <i data-lucide="file-text"></i>
+          <span class="btn-text-desktop">Historial Audios</span>
+        </button>
         <button id="exportCsvBtn" class="btn btn-secondary btn-sm" title="Exportar a CSV / Excel">
           <i data-lucide="download"></i>
           <span class="btn-text-desktop">Exportar</span>
@@ -288,6 +292,33 @@
           </div>
           <p class="text-xs text-muted">Todos los cambios de checkboxes y nuevas actividades dictadas con el micrófono se sincronizan automáticamente para todos los que abran el enlace.</p>
         </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- History & Transcripts Backup Modal -->
+  <div id="historyModal" class="api-key-modal-backdrop hidden">
+    <div class="api-key-card history-modal-card">
+      <div class="api-key-header">
+        <div class="api-key-icon history-icon">
+          <i data-lucide="file-text"></i>
+        </div>
+        <div>
+          <h3>Historial y Respaldo de Transcripciones de Audio</h3>
+          <p>Audita todo lo hablado en las reuniones, verifica la transcripción completa y su segmentación por IA</p>
+        </div>
+        <button id="closeHistoryModal" class="btn-icon-close"><i data-lucide="x"></i></button>
+      </div>
+
+      <div class="api-key-body">
+        <div id="transcriptsHistoryList" class="transcripts-history-list">
+          <!-- Dynamic transcript items loaded by JS -->
+        </div>
+      </div>
+
+      <div class="api-key-footer">
+        <button id="clearHistoryBtn" class="btn btn-secondary btn-sm">Limpiar Historial</button>
+        <button id="closeHistoryModalBottom" class="btn btn-primary btn-sm">Cerrar</button>
       </div>
     </div>
   </div>

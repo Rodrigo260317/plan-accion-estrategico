@@ -171,11 +171,13 @@ const INITIAL_COLUMNS_DATA = [
 
 // Estado de la aplicación
 const STORAGE_KEY = "plan_accion_estrategico_data_v1";
+const TRANSCRIPTS_STORAGE_KEY = "meeting_transcripts_backup_v1";
 const API_KEY_STORAGE = "gemini_api_key_v1";
 const DEFAULT_GEMINI_API_KEY = "AIzaSyDlQUU5f18THy44vfgiW6l7IE6FAXqYSGs";
 const DEFAULT_ROOM_ID = "plan-accion-estrategico-main";
 
 let appData = loadData();
+let transcriptsHistory = loadTranscriptsHistory();
 let currentFilter = "all";
 let currentSearch = "";
 let geminiApiKey = localStorage.getItem(API_KEY_STORAGE) || DEFAULT_GEMINI_API_KEY;
@@ -194,6 +196,22 @@ let recordingTimerInterval = null;
 let recordingSeconds = 0;
 let speechRecognizer = null;
 let liveTranscribedSentences = [];
+let currentRecordingStartTime = null;
+
+// Cargar historial de transcripciones
+function loadTranscriptsHistory() {
+  const saved = localStorage.getItem(TRANSCRIPTS_STORAGE_KEY);
+  if (saved) {
+    try {
+      return JSON.parse(saved);
+    } catch(e) {}
+  }
+  return [];
+}
+
+function saveTranscriptsHistory() {
+  localStorage.setItem(TRANSCRIPTS_STORAGE_KEY, JSON.stringify(transcriptsHistory));
+}
 
 // Cargar o inicializar datos
 function loadData() {
@@ -296,6 +314,35 @@ function setupEventListeners() {
         showToast("✓ Enlace copiado al portapapeles", "success");
       }
     });
+  }
+
+  // Modal Historial de Transcripciones
+  const historyBtn = document.getElementById("historyBtn");
+  const historyModal = document.getElementById("historyModal");
+  const closeHistoryModal = document.getElementById("closeHistoryModal");
+  const closeHistoryModalBottom = document.getElementById("closeHistoryModalBottom");
+  const clearHistoryBtn = document.getElementById("clearHistoryBtn");
+
+  if (historyBtn && historyModal) {
+    historyBtn.addEventListener("click", () => {
+      renderTranscriptsHistory();
+      historyModal.classList.remove("hidden");
+    });
+
+    const closeHandler = () => historyModal.classList.add("hidden");
+    if (closeHistoryModal) closeHistoryModal.addEventListener("click", closeHandler);
+    if (closeHistoryModalBottom) closeHistoryModalBottom.addEventListener("click", closeHandler);
+
+    if (clearHistoryBtn) {
+      clearHistoryBtn.addEventListener("click", () => {
+        if (confirm("¿Deseas limpiar el historial de transcripciones guardadas?")) {
+          transcriptsHistory = [];
+          saveTranscriptsHistory();
+          renderTranscriptsHistory();
+          showToast("Historial de transcripciones vaciado", "info");
+        }
+      });
+    }
   }
 
   // Formulario para nueva actividad manual
@@ -716,6 +763,7 @@ async function startVoiceRecording() {
     audioStream = stream;
     audioChunks = [];
     liveTranscribedSentences = [];
+    currentRecordingStartTime = new Date();
 
     startAudioVisualizer(stream);
 
@@ -763,7 +811,7 @@ async function startVoiceRecording() {
       document.getElementById("recordingTimer").innerText = `${m}:${s}`;
     }, 1000);
 
-    showToast("🎙️ Grabando reunión... Conversen con naturalidad", "info");
+    showToast("🎙️ Grabando reunión... Conversen con libertad", "info");
 
   } catch (err) {
     console.error("Error al iniciar micrófono:", err);
@@ -841,6 +889,7 @@ async function stopAndProcessVoiceRecording() {
   if (!isRecording) return;
 
   isRecording = false;
+  const durationSec = recordingSeconds;
   if (recordingTimerInterval) clearInterval(recordingTimerInterval);
   document.getElementById("floatingMicBtn").classList.remove("recording");
   document.getElementById("voiceRecordingModal").classList.add("hidden");
@@ -854,70 +903,71 @@ async function stopAndProcessVoiceRecording() {
     audioStream.getTracks().forEach(t => t.stop());
   }
 
-  // Esperar a que el reconocedor termine de procesar los últimos fragmentos
-  await new Promise(r => setTimeout(r, 400));
+  // Esperar brevemente para obtener la transcripción final
+  await new Promise(r => setTimeout(r, 450));
   const fullTranscript = liveTranscribedSentences.join(" ").trim();
 
   if (mediaRecorder && mediaRecorder.state !== "inactive") {
     mediaRecorder.onstop = async () => {
       const audioBlob = new Blob(audioChunks, { type: mediaRecorder.mimeType || "audio/webm" });
-      await processMeetingAudioWithAI(audioBlob, fullTranscript);
+      await processMeetingAudioWithAI(audioBlob, fullTranscript, durationSec);
     };
     mediaRecorder.stop();
   } else {
     const audioBlob = new Blob(audioChunks, { type: "audio/webm" });
-    await processMeetingAudioWithAI(audioBlob, fullTranscript);
+    await processMeetingAudioWithAI(audioBlob, fullTranscript, durationSec);
   }
 }
 
-// Procesar el audio o transcripción con IA
-async function processMeetingAudioWithAI(audioBlob, transcriptText) {
+// Procesar el audio o transcripción con IA y guardar respaldo
+async function processMeetingAudioWithAI(audioBlob, transcriptText, durationSec = 0) {
   const overlay = document.getElementById("aiProcessingOverlay");
   const stepText = document.getElementById("aiProcessingStep");
   overlay.classList.remove("hidden");
 
   try {
-    stepText.innerText = "Analizando conversación y segmentando requerimientos por responsable...";
+    stepText.innerText = "Transcribiendo reunión con Google Gemini AI y segmentando actividades...";
 
     let extractedTasks = [];
+    let finalTranscriptText = transcriptText;
+    let modelUsed = "Gemini AI";
 
-    // 1. Si el usuario configuró su Gemini API Key, usamos Gemini para transcripción y segmentación de alta precisión
+    // Llamar a Gemini con Audio o Texto
     if (geminiApiKey) {
-      stepText.innerText = "Segmentando tareas con Gemini AI...";
       try {
-        if (audioBlob && audioBlob.size > 2000) {
-          extractedTasks = await sendAudioToGemini(audioBlob, geminiApiKey);
+        if (audioBlob && audioBlob.size > 1500) {
+          const aiResult = await sendAudioToGemini(audioBlob, geminiApiKey);
+          extractedTasks = aiResult.tasks || [];
+          if (aiResult.transcript) {
+            finalTranscriptText = aiResult.transcript;
+          }
         } else if (transcriptText) {
-          extractedTasks = await sendTextToGemini(transcriptText, geminiApiKey);
+          const aiResult = await sendTextToGemini(transcriptText, geminiApiKey);
+          extractedTasks = aiResult.tasks || [];
+          if (aiResult.transcript) {
+            finalTranscriptText = aiResult.transcript;
+          }
         }
       } catch (geminiError) {
-        console.warn("Fallo en Gemini API, usando motor de segmentación inteligente:", geminiError);
+        console.warn("Fallo en llamada Gemini, usando segmentación semántica local:", geminiError);
         extractedTasks = smartSegmentAndClassifyMeetingSpeech(transcriptText);
+        modelUsed = "Motor Semántico Local";
       }
     } else {
-      // 2. Si no hay Gemini API Key, usamos el potente motor semántico de segmentación conversacional
-      if (transcriptText.length > 5) {
-        extractedTasks = smartSegmentAndClassifyMeetingSpeech(transcriptText);
-      } else {
-        const userPrompt = prompt(
-          "Pega o dicta la conversación de la reunión para segmentar y distribuir a cada área:"
-        );
-        if (userPrompt && userPrompt.trim()) {
-          extractedTasks = smartSegmentAndClassifyMeetingSpeech(userPrompt);
-        } else {
-          throw new Error("No se detectó audio suficiente ni transcripción.");
-        }
-      }
+      extractedTasks = smartSegmentAndClassifyMeetingSpeech(transcriptText);
+      modelUsed = "Motor Semántico Local";
+    }
+
+    if (!finalTranscriptText && extractedTasks.length > 0) {
+      finalTranscriptText = extractedTasks.map(t => t.title).join(" ");
     }
 
     if (!extractedTasks || extractedTasks.length === 0) {
-      throw new Error("No se lograron extraer acuerdos estructurados. Intenta nuevamente.");
+      throw new Error("No se detectaron requerimientos claros en el audio. Revisa el micrófono o habla más cerca.");
     }
 
     // Insertar las tareas segmentadas en sus columnas correspondientes
     let addedCount = 0;
-    const areasSummary = {};
-
     extractedTasks.forEach((item) => {
       const targetCol = appData.find((col) => col.id === item.area) || appData[0];
       const newTask = {
@@ -931,14 +981,26 @@ async function processMeetingAudioWithAI(audioBlob, transcriptText) {
       };
       targetCol.tasks.unshift(newTask);
       addedCount++;
-      areasSummary[targetCol.title] = (areasSummary[targetCol.title] || 0) + 1;
     });
+
+    // Guardar respaldo de la transcripción en el historial
+    const historyEntry = {
+      id: "rec-" + Date.now(),
+      date: new Date().toLocaleString(),
+      duration: `${Math.floor(durationSec / 60)}:${String(durationSec % 60).padStart(2, '0')} min`,
+      transcript: finalTranscriptText || "Audio procesado por Gemini.",
+      model: modelUsed,
+      tasks: extractedTasks
+    };
+
+    transcriptsHistory.unshift(historyEntry);
+    saveTranscriptsHistory();
 
     saveData();
     renderBoard();
     updateMetrics();
 
-    showToast(`🎉 ¡${addedCount} actividades segmentadas y distribuidas exitosamente!`, "success");
+    showToast(`🎉 ¡${addedCount} actividades segmentadas! Transcripción guardada en Historial`, "success");
 
   } catch (error) {
     console.error("Error en procesamiento IA:", error);
@@ -946,6 +1008,66 @@ async function processMeetingAudioWithAI(audioBlob, transcriptText) {
   } finally {
     overlay.classList.add("hidden");
   }
+}
+
+// Renderizar lista de transcripciones guardadas
+function renderTranscriptsHistory() {
+  const container = document.getElementById("transcriptsHistoryList");
+  if (!container) return;
+  container.innerHTML = "";
+
+  if (transcriptsHistory.length === 0) {
+    container.innerHTML = `
+      <div style="text-align:center; padding: 2.5rem 1rem; color: #64748b;">
+        <i data-lucide="mic-off" style="width: 32px; height: 32px; stroke-width: 1.5; margin-bottom: 0.5rem;"></i>
+        <p style="font-size: 0.88rem; font-weight: 600;">No hay transcripciones grabadas aún.</p>
+        <p style="font-size: 0.78rem; margin-top: 0.2rem;">Usa el botón flotante del micrófono para grabar reuniones y quedará respaldado aquí.</p>
+      </div>
+    `;
+    if (window.lucide) lucide.createIcons();
+    return;
+  }
+
+  transcriptsHistory.forEach((item) => {
+    const card = document.createElement("div");
+    card.className = "transcript-card-item";
+
+    const tasksHtml = item.tasks && item.tasks.length > 0 
+      ? item.tasks.map(t => {
+          const areaName = t.area === "admin" ? "👩‍💼 Admin" : t.area === "logistica" ? "📦 Logística" : "💻 Sistemas";
+          return `
+            <div class="extracted-task-mini">
+              <span class="task-mini-area">${areaName}:</span>
+              <span>${escapeHtml(t.title)}</span>
+            </div>
+          `;
+        }).join("")
+      : "<span style='font-size:0.75rem; color:#94a3b8;'>Sin tareas desglosadas</span>";
+
+    card.innerHTML = `
+      <div class="transcript-card-header">
+        <div class="transcript-date">
+          <i data-lucide="clock" style="width:14px;height:14px;"></i>
+          <span>${item.date} (${item.duration || ""})</span>
+        </div>
+        <span class="transcript-model-tag">${item.model || "Gemini"}</span>
+      </div>
+
+      <div class="transcript-raw-section">
+        <label>Transcripción Completa del Audio:</label>
+        <div class="transcript-raw-text">"${escapeHtml(item.transcript)}"</div>
+      </div>
+
+      <div class="transcript-extracted-tasks">
+        <label>Tareas Segmentadas (${item.tasks ? item.tasks.length : 0}):</label>
+        ${tasksHtml}
+      </div>
+    `;
+
+    container.appendChild(card);
+  });
+
+  if (window.lucide) lucide.createIcons();
 }
 
 /**
