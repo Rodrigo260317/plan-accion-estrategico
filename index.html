@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Plan de Acción y Requerimientos Estratégicos | Tablero de Control</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <!-- Canvas Confetti for celebrations -->
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+</head>
+<body>
+  <div class="app-container">
+    
+    <!-- Top Header (Ultra-Compact) -->
+    <header class="main-header">
+      <div class="header-left">
+        <h1 class="main-title">
+          <span class="pin-icon">📌</span>
+          <span class="title-bold">PLAN DE ACCIÓN Y REQUERIMIENTOS ESTRATÉGICOS</span>
+          <span class="subtitle-divider">|</span>
+          <span class="main-subtitle">Asignación por Área</span>
+        </h1>
+      </div>
+
+      <!-- Quick Actions Header Toolbar -->
+      <div class="header-actions">
+        <div class="search-box">
+          <i data-lucide="search"></i>
+          <input type="text" id="searchInput" placeholder="Buscar actividad..." autocomplete="off">
+        </div>
+        <div class="filter-group">
+          <button class="filter-btn active" data-filter="all">Todas</button>
+          <button class="filter-btn" data-filter="pending">Pendientes</button>
+          <button class="filter-btn" data-filter="completed">Hechas</button>
+        </div>
+        <button id="resetDataBtn" class="btn btn-secondary btn-sm" title="Restablecer actividades">
+          <i data-lucide="rotate-ccw"></i>
+        </button>
+        <button id="exportCsvBtn" class="btn btn-secondary btn-sm" title="Exportar a CSV / Excel">
+          <i data-lucide="download"></i>
+          <span class="btn-text-desktop">Exportar</span>
+        </button>
+        <button id="apiKeySettingsBtn" class="btn btn-secondary btn-sm" title="Configurar API Key de Gemini AI">
+          <i data-lucide="sparkles"></i>
+          <span class="btn-text-desktop">Gemini AI</span>
+        </button>
+      </div>
+    </header>
+
+    <!-- Main Board Columns -->
+    <main class="board-grid" id="boardColumnsContainer">
+      <!-- Generated dynamically by app.js -->
+    </main>
+
+    <!-- Statistics & Progress Bars Section (ABAJO DE LAS TARJETAS) -->
+    <section class="metrics-section">
+      <div class="section-title-wrap">
+        <div class="section-title-icon">
+          <i data-lucide="pie-chart"></i>
+        </div>
+        <div>
+          <h2>Panel de Rendimiento y Progreso</h2>
+          <p>Métricas acumuladas en tiempo real de avance por departamento y global</p>
+        </div>
+      </div>
+
+      <div class="metrics-grid">
+        <!-- Global Card -->
+        <div class="global-progress-card">
+          <div class="global-info">
+            <div class="global-tag">Cumplimiento Global</div>
+            <div class="global-percent-display" id="globalPercentText">0%</div>
+            <div class="global-count-display" id="globalCountText">0 de 0 actividades realizadas</div>
+          </div>
+          <div class="progress-bar-container large">
+            <div class="progress-bar global-fill" id="globalProgressBar" style="width: 0%;">
+              <div class="bar-glow"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Breakdown by Areas -->
+        <div class="areas-progress-card" id="areasProgressList">
+          <!-- Dynamic progress bars for each area -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Add New Activity Section (AL FONDO) -->
+    <section class="new-activity-section">
+      <div class="section-title-wrap">
+        <div class="section-title-icon add-icon">
+          <i data-lucide="plus-circle"></i>
+        </div>
+        <div>
+          <h2>Incorporar Nueva Actividad Manualmente</h2>
+          <p>Asigna nuevos requerimientos estratégicos a las áreas existentes o utiliza el micrófono inteligente</p>
+        </div>
+      </div>
+
+      <form id="newActivityForm" class="new-activity-form">
+        <div class="form-grid">
+          
+          <div class="form-group area-select-group">
+            <label for="activityArea">Área / Responsable <span class="req">*</span></label>
+            <div class="select-wrapper">
+              <select id="activityArea" required>
+                <option value="admin">👩‍💼 ADMINISTRADORA GENERAL (Persona 2)</option>
+                <option value="logistica">📦 LOGÍSTICA / OPERACIONES (Persona 4 / Soporte)</option>
+                <option value="sistemas">💻 SISTEMAS / TI (Persona 3 / Sistemas)</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-group priority-group">
+            <label for="activityPriority">Nivel de Prioridad</label>
+            <div class="select-wrapper">
+              <select id="activityPriority">
+                <option value="alta">🔴 Alta / Inmediata</option>
+                <option value="media" selected>🟡 Media / En proceso</option>
+                <option value="normal">🟢 Normal / Rutina</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-group deadline-group">
+            <label for="activityDeadline">Fecha Límite (Opcional)</label>
+            <input type="date" id="activityDeadline">
+          </div>
+
+          <div class="form-group full-width">
+            <label for="activityText">Descripción de la Actividad o Requerimiento <span class="req">*</span></label>
+            <div class="input-with-action">
+              <textarea id="activityText" rows="2" placeholder="Ej: Coordinar sesión de seguimiento con el equipo médico para validar protocolos..." required></textarea>
+              <button type="submit" class="btn btn-primary btn-add">
+                <i data-lucide="plus"></i>
+                <span>Agregar Actividad</span>
+              </button>
+            </div>
+          </div>
+
+        </div>
+      </form>
+    </section>
+
+    <!-- Footer -->
+    <footer class="app-footer">
+      <div class="footer-left">
+        <p><strong>Control de Gestión Estratégica con IA</strong> &bull; Micrófono inteligente con interpretación y asignación automática por áreas.</p>
+      </div>
+      <div class="footer-right">
+        <span class="status-indicator">
+          <span class="status-dot"></span> Micrófono IA Listo
+        </span>
+      </div>
+    </footer>
+
+  </div>
+
+  <!-- Floating Voice Assistant (Microphone Button & Visualizer) -->
+  <div class="voice-assistant-fab-container">
+    <!-- Voice Banner Modal when Recording or Processing -->
+    <div id="voiceRecordingModal" class="voice-recording-modal hidden">
+      <div class="voice-modal-header">
+        <div class="recording-indicator">
+          <span class="pulse-recording-dot"></span>
+          <span id="recordingStatusText" class="recording-status-text">Escuchando reunión...</span>
+        </div>
+        <button id="cancelRecordingBtn" class="btn-icon-close" title="Cancelar grabación">
+          <i data-lucide="x"></i>
+        </button>
+      </div>
+
+      <!-- Live Audio Visualizer Bars -->
+      <div id="visualizerContainer" class="visualizer-bars-container">
+        <!-- 24 audio wave bars generated dynamically -->
+      </div>
+
+      <div class="recording-meta">
+        <span id="recordingTimer" class="recording-timer">00:00</span>
+        <span class="recording-tip">Habla o deja que grabe la conversación... la IA separará y asignará las tareas por área.</span>
+      </div>
+
+      <!-- Action Button inside modal -->
+      <button id="finishRecordingBtn" class="btn btn-primary btn-finish-recording">
+        <i data-lucide="sparkles"></i>
+        <span>Terminar Reunión y Procesar con IA</span>
+      </button>
+    </div>
+
+    <!-- Main Floating Mic Button -->
+    <div class="fab-wrapper">
+      <button id="floatingMicBtn" class="floating-mic-btn" title="Grabar reunión o dictar actividades">
+        <div class="mic-wave-ring"></div>
+        <i id="micIcon" data-lucide="mic"></i>
+      </button>
+      <span class="fab-tooltip">Grabar Reunión (IA)</span>
+    </div>
+  </div>
+
+  <!-- Processing Overlay -->
+  <div id="aiProcessingOverlay" class="ai-processing-overlay hidden">
+    <div class="ai-processing-card">
+      <div class="ai-spinner">
+        <i data-lucide="sparkles" class="ai-spin-icon"></i>
+      </div>
+      <h3>Interpretando conversación con IA...</h3>
+      <p id="aiProcessingStep">Analizando acuerdos, requerimientos y asignando responsables por área automáticamente...</p>
+    </div>
+  </div>
+
+  <!-- API Key Config Modal -->
+  <div id="apiKeyModal" class="api-key-modal-backdrop hidden">
+    <div class="api-key-card">
+      <div class="api-key-header">
+        <div class="api-key-icon">
+          <i data-lucide="key"></i>
+        </div>
+        <div>
+          <h3>Configurar Google Gemini AI</h3>
+          <p>Potencia la transcripción directa de audio con Gemini 2.5 Flash</p>
+        </div>
+        <button id="closeApiKeyModal" class="btn-icon-close"><i data-lucide="x"></i></button>
+      </div>
+      <div class="api-key-body">
+        <p class="api-key-note">
+          Ingresa tu <strong>Gemini API Key</strong> (gratuita en Google AI Studio) para enviar audios largos de reuniones directamente al modelo multimodal. Si no tienes una, el sistema usará el reconocedor de voz nativo de alta precisión de tu navegador.
+        </p>
+        <div class="form-group">
+          <label for="geminiApiKeyInput">API Key de Gemini</label>
+          <input type="password" id="geminiApiKeyInput" placeholder="AIzaSy..." autocomplete="off">
+        </div>
+      </div>
+      <div class="api-key-footer">
+        <button id="removeApiKeyBtn" class="btn btn-secondary">Quitar Key</button>
+        <button id="saveApiKeyBtn" class="btn btn-primary">Guardar y Activar</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification Container -->
+  <div id="toastContainer" class="toast-container"></div>
+
+  <script src="app.js"></script>
+</body>
+</html>
