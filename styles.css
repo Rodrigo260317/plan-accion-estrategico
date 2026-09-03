@@ -496,6 +496,32 @@ body {
   word-break: break-word;
 }
 
+.task-solution {
+  font-size: 0.72rem;
+  line-height: 1.4;
+  color: var(--text-secondary);
+  margin-top: 0.35rem;
+  padding: 0.4rem 0.5rem;
+  background: rgba(255, 255, 255, 0.55);
+  border-left: 2px solid var(--primary-color);
+  border-radius: var(--radius-sm);
+  word-break: break-word;
+}
+
+.solution-label {
+  display: inline-block;
+  font-size: 0.6rem;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--primary-color);
+  margin-right: 0.25rem;
+}
+
+.task-item.completed .task-solution {
+  opacity: 0.55;
+}
+
 .task-meta {
   display: flex;
   align-items: center;
