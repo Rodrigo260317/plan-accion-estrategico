@@ -20,27 +20,69 @@ const INITIAL_COLUMNS_DATA = [
       },
       {
         id: "adm-2",
-        text: "Reuniones de alineamiento con asistentes y cosmiatras",
-        solution: "Sesión de 45 min para explicar las nuevas pautas, con acta de acuerdos y lista de asistencia. Repetir quincenalmente el primer mes.",
+        text: "Reunión general para implementar el nuevo flujo",
+        solution: "Reunión obligatoria con todo el personal para comunicar pago previo, prohibición de insumos fiados y uso de 3 riñoneras, sin margen de negociación. Cerrar con acta firmada.",
         completed: false,
         priority: "alta"
       },
       {
         id: "adm-3",
+        text: "Cronometraje de los tiempos de atención",
+        solution: "Medir con paciente modelo el tiempo de caja, consentimiento, anestesia y procedimiento; identificar dónde se origina la espera de hasta 3 horas y corregir ese punto.",
+        completed: false,
+        priority: "alta"
+      },
+      {
+        id: "adm-4",
         text: "Supervisión de recepción, vigilancia y valet parking",
         solution: "Checklist de bienvenida (recibir el vehículo, saludo, cero celular en turno) verificado dos veces por turno; registrar incumplimientos por escrito.",
         completed: false,
         priority: "alta"
       },
       {
-        id: "adm-4",
+        id: "adm-5",
+        text: "Reuniones de alineamiento con asistentes y cosmiatras",
+        solution: "Sesión de 45 min para explicar las nuevas pautas, con acta de acuerdos y lista de asistencia. Repetir quincenalmente el primer mes.",
+        completed: false,
+        priority: "alta"
+      },
+      {
+        id: "adm-6",
+        text: "Punto de cobro adicional en 2.º o 3.er piso",
+        solution: "Habilitar un counter con POS y personal dedicado (Call Center / Caja) para cobrar servicios y productos adicionales antes de aplicarlos.",
+        completed: false,
+        priority: "media"
+      },
+      {
+        id: "adm-7",
+        text: "Incentivos para pacientes y personal",
+        solution: "Sorteo mensual de un premio (ej. una aplicación de botox) entre las pacientes que completen la encuesta, más bono de desempeño para el personal mejor calificado.",
+        completed: false,
+        priority: "media"
+      },
+      {
+        id: "adm-8",
         text: "Programa de incentivos y KPIs por área",
         solution: "Definir 3 indicadores por área y premiar mensualmente el mejor puntaje de la encuesta (ej. \"valet parking del mes\"), más un bono anual por área.",
         completed: false,
         priority: "media"
       },
       {
-        id: "adm-5",
+        id: "adm-9",
+        text: "Comunicación del nuevo flujo al paciente",
+        solution: "Infografía en las pantallas explicando que la autorización firmada y el pago previo son por seguridad del paciente y agilidad en la entrega.",
+        completed: false,
+        priority: "normal"
+      },
+      {
+        id: "adm-10",
+        text: "Análisis de rentabilidad del inventario (FEFO)",
+        solution: "Revisar los reportes valorizados por marca (SkinCeuticals, cremas), detectar productos estancados y armar promociones que les den rotación rápida.",
+        completed: false,
+        priority: "normal"
+      },
+      {
+        id: "adm-11",
         text: "Política de inversión en equipos y personal",
         solution: "Exigir cálculo de retorno a 12 meses antes de comprar aparatología o contratar. Priorizar inyectables, Morpheus, CO2, HIFU y exosomas.",
         completed: false,
@@ -56,20 +98,48 @@ const INITIAL_COLUMNS_DATA = [
     tasks: [
       {
         id: "log-1",
+        text: "Uso obligatorio de 3 riñoneras por procedimiento",
+        solution: "Una riñonera para insumos por usar, otra para insumos usados y una tercera para gasas y desechos. Elimina el uso de guantes estériles como campo.",
+        completed: false,
+        priority: "alta"
+      },
+      {
+        id: "log-2",
+        text: "Inventario valorizado y control FEFO",
+        solution: "Valorizar todo el capital de trabajo guardado en almacén para calcular el ciclo de renovación y el tiempo de retorno del dinero.",
+        completed: false,
+        priority: "alta"
+      },
+      {
+        id: "log-3",
         text: "Inventario completo de cajas y almacenes",
         solution: "Barrer cuarto por cuarto con planilla por caja (contenido, cantidad, vencimiento), empezando por el cuartito final, y etiquetar cada caja con código.",
         completed: false,
         priority: "alta"
       },
       {
-        id: "log-2",
+        id: "log-4",
+        text: "Etiquetado con código de barras y QR",
+        solution: "Etiquetar estantes e insumos para retomar el uso de la pistola lectora y agilizar la salida de productos en farmacia.",
+        completed: false,
+        priority: "media"
+      },
+      {
+        id: "log-5",
         text: "Compra de tablets para registro y encuestas",
         solution: "Cotizar 3 proveedores por 2 o 3 tablets con soporte de mostrador y traba antirrobo; presentar comparativo de precio, garantía y tiempo de entrega.",
         completed: false,
         priority: "media"
       },
       {
-        id: "log-3",
+        id: "log-6",
+        text: "Almacén 3D limpio e inventariado",
+        solution: "Mantener el almacén sin cajas acumuladas y verificar que el mapa 3D refleje la ubicación real de cada insumo.",
+        completed: false,
+        priority: "normal"
+      },
+      {
+        id: "log-7",
         text: "Mapa de almacenamiento por áreas",
         solution: "Catálogo en hoja compartida con foto y ubicación de cada producto, más cartel de zona visible en cada estante.",
         completed: false,
@@ -85,34 +155,76 @@ const INITIAL_COLUMNS_DATA = [
     tasks: [
       {
         id: "sis-1",
+        text: "Despliegue del inventario en Odoo",
+        solution: "Cargar precios, códigos y descripciones de todos los productos ya contados físicamente, y validar contra el conteo antes de dar el módulo por cerrado.",
+        completed: false,
+        priority: "alta"
+      },
+      {
+        id: "sis-2",
+        text: "Pago previo obligatorio en Odoo",
+        solution: "Condicionar la orden de despacho de enzimas, toxinas y rellenos a la validación del pago; el sistema bloquea la salida si no hay pago registrado.",
+        completed: false,
+        priority: "alta"
+      },
+      {
+        id: "sis-3",
         text: "Validaciones del bot para evitar bloqueos",
         solution: "Hacer obligatorios género, número de ficha y datos clave con validación de formato, y mostrar un mensaje de error claro en lugar de trabar el sistema.",
         completed: false,
         priority: "alta"
       },
       {
-        id: "sis-2",
+        id: "sis-4",
+        text: "Pantalla de comandas en farmacia y almacén",
+        solution: "Monitor en el área de despacho que liste en tiempo real las órdenes ya pagadas, estilo comanda, para alistar el producto de inmediato.",
+        completed: false,
+        priority: "media"
+      },
+      {
+        id: "sis-5",
+        text: "Consentimientos informados en tablet",
+        solution: "Digitalizar los ~60 formatos en Odoo para que al ingresar el DNI se autocompleten los datos del paciente y solo falte la firma digital.",
+        completed: false,
+        priority: "media"
+      },
+      {
+        id: "sis-6",
+        text: "Portal de encuestas asociado al DNI",
+        solution: "Terminar la interfaz por área (amabilidad, rapidez, higiene, trato) con ingreso filtrado por el DNI registrado en Odoo y reporte de KPIs semanal y mensual.",
+        completed: false,
+        priority: "media"
+      },
+      {
+        id: "sis-7",
         text: "Registro digital del paciente en tablet",
         solution: "Formulario web corto (DNI, correo, teléfono) que el paciente llena en sala de espera y que descarga los datos directo a facturación.",
         completed: false,
         priority: "media"
       },
       {
-        id: "sis-3",
+        id: "sis-8",
         text: "Encuesta de satisfacción por QR en recepción",
         solution: "Pantalla con foto del personal que atendió, botones de pulgar arriba/abajo y campo de comentario opcional, accesible por código QR.",
         completed: false,
         priority: "media"
       },
       {
-        id: "sis-4",
+        id: "sis-9",
+        text: "Alertas por cámara en cabinas de equipos",
+        solution: "Activar detección de movimiento en las cámaras de cabinas de aparatología (ej. Uniform) para registrar ingresos y auditar el uso de los equipos.",
+        completed: false,
+        priority: "normal"
+      },
+      {
+        id: "sis-10",
         text: "Aviso de confidencialidad en la encuesta",
         solution: "Texto fijo en la cabecera indicando que la respuesta es anónima y se usa solo para mejorar el servicio.",
         completed: false,
         priority: "normal"
       },
       {
-        id: "sis-5",
+        id: "sis-11",
         text: "Mensaje motivacional institucional",
         solution: "Redactar con apoyo de IA un párrafo de 3 o 4 líneas sobre la medición de procesos y usarlo como slide de apertura en las presentaciones del equipo.",
         completed: false,
@@ -123,8 +235,8 @@ const INITIAL_COLUMNS_DATA = [
 ];
 
 // Estado de la aplicación
-const STORAGE_KEY = "plan_accion_estrategico_data_v3";
-const TRANSCRIPTS_STORAGE_KEY = "meeting_transcripts_backup_v3";
+const STORAGE_KEY = "plan_accion_estrategico_data_v4";
+const TRANSCRIPTS_STORAGE_KEY = "meeting_transcripts_backup_v4";
 const API_KEY_STORAGE = "gemini_api_key_v1";
 const DEFAULT_GEMINI_API_KEY = "AIzaSyDlQUU5f18THy44vfgiW6l7IE6FAXqYSGs";
 const DEFAULT_ROOM_ID = "plan-accion-estrategico-main";
