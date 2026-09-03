@@ -13,61 +13,31 @@ const INITIAL_COLUMNS_DATA = [
     tasks: [
       {
         id: "adm-1",
-        text: "Reunirse con la abogada (Dra. Solange) para fijar límites legales de cosmiatría (cero agujas/HIFU).",
+        text: "Establecimiento de protocolos de atención — Formalizar y pegar visiblemente los protocolos de llenado de datos y procedimientos estandarizados para que los sigan las asistentes, cosmiatras y el personal de apoyo.",
         completed: false,
         priority: "alta"
       },
       {
         id: "adm-2",
-        text: "Instruir a Counter para que el 100% de complicaciones pasen directo a la Dra. Principal.",
+        text: "Capacitación y reuniones de alineamiento — Convocar a reuniones de coordinación con las asistentes y cosmiatras para explicar las nuevas pautas de trabajo y garantizar su cumplimiento obligatorio.",
         completed: false,
         priority: "alta"
       },
       {
         id: "adm-3",
-        text: "Dar feedback a Romina (uso de celular, permanencia en cabina y apoyo post-Mounjaro).",
+        text: "Supervisión del personal de atención inicial — Garantizar el cumplimiento del protocolo de atención al cliente en el área externa/recepción (vigilancia y valet parking), asegurando la bienvenida adecuada, la recepción proactiva del vehículo y la prohibición del uso de celulares durante el turno.",
         completed: false,
-        priority: "media"
+        priority: "alta"
       },
       {
         id: "adm-4",
-        text: "Coordinar coaching de ventas para Gustavo (empalme de tratamientos y no limitar dosis).",
+        text: "Programa de incentivos y métricas — Establecer indicadores (KPIs) y programas de incentivos para el personal (ej. reconocimiento al \"valet parking del mes\" o bonos anuales por área según las calificaciones obtenidas).",
         completed: false,
         priority: "media"
       },
       {
         id: "adm-5",
-        text: "Entregar formato de productividad a la Dra. Stefany.",
-        completed: false,
-        priority: "media"
-      },
-      {
-        id: "adm-6",
-        text: "Notificar nuevas reglas de cabina (prohibido poner llave y no retener el iPad).",
-        completed: false,
-        priority: "alta"
-      },
-      {
-        id: "adm-7",
-        text: "Reunirse hoy para reestructurar la tarifa/programa de Mounjaro (bajar de $660).",
-        completed: false,
-        priority: "alta"
-      },
-      {
-        id: "adm-8",
-        text: "Coordinar con SkinCeuticals las fechas de capacitación para las doctoras.",
-        completed: false,
-        priority: "normal"
-      },
-      {
-        id: "adm-9",
-        text: "Negociar con Amelia (proveedora de Láser Pico) el reclamo/soporte por la falla del equipo.",
-        completed: false,
-        priority: "alta"
-      },
-      {
-        id: "adm-10",
-        text: "Diseñar la estrategia de paciente incógnito para analizar a la competencia (Smart Esthetic).",
+        text: "Definición de políticas de inversión en equipos y personal — Priorizar inversiones en servicios o personal médico con alta tasa de retorno/facturación (ej. médicos para procedimientos inyectables, Morpheus, CO2, HIFU, exosomas). Evaluar costos vs. rentabilidad antes de adquirir aparatología de baja facturación o contratar personal no rentable (ej. cosmiatría).",
         completed: false,
         priority: "normal"
       }
@@ -81,43 +51,19 @@ const INITIAL_COLUMNS_DATA = [
     tasks: [
       {
         id: "log-1",
-        text: "Supervisar finalización de la cafetería y mueblería (sillón/muebles de espera) en 3er Piso.",
+        text: "Mapeo e inventario completo de almacenes — Mapear y registrar el contenido total de las cajas depositadas en los distintos cuartos y almacenes de la clínica (especialmente el cuartito final y áreas pendientes).",
         completed: false,
         priority: "alta"
       },
       {
         id: "log-2",
-        text: "Coordinar con Juan Carlos la instalación del granito en el área de exosomas.",
+        text: "Adquisición de equipamiento digital — Cotizar y gestionar la compra de tablets/dispositivos electrónicos para el registro de pacientes y la evaluación de servicios en recepción.",
         completed: false,
-        priority: "alta"
+        priority: "media"
       },
       {
         id: "log-3",
-        text: "Mantener sellado el cuarto de paso (\"X\") para evitar polvo en zonas limpias.",
-        completed: false,
-        priority: "media"
-      },
-      {
-        id: "log-4",
-        text: "Comprar 2 camillas color tierra/marrón para los consultorios de abajo.",
-        completed: false,
-        priority: "media"
-      },
-      {
-        id: "log-5",
-        text: "Trasladar las 3 camillas blancas hacia las cabinas del 3er piso.",
-        completed: false,
-        priority: "media"
-      },
-      {
-        id: "log-6",
-        text: "Reportar stock crítico mensual: identificar productos por vencer y asegurar reposición de alta rotación (ej. Phyto Corrective).",
-        completed: false,
-        priority: "alta"
-      },
-      {
-        id: "log-7",
-        text: "Mandar a producir los gafetes/colgantes físicos para el personal con el código QR.",
+        text: "Organización y mapa de almacenamiento por áreas — Crear un mapa visual o catálogo detallado de los productos y materiales almacenados organizados por área para mantener trazabilidad de lo que se tiene guardado.",
         completed: false,
         priority: "normal"
       }
@@ -131,37 +77,31 @@ const INITIAL_COLUMNS_DATA = [
     tasks: [
       {
         id: "sis-1",
-        text: "Desarrollar el formulario rápido de satisfacción (máx. 4 preguntas) con validación por DNI del paciente.",
+        text: "Estandarización de formatos y validación en el bot — Configurar y ajustar el bot de automatización para evitar bloqueos/errores en el sistema cuando no se ingresan datos requeridos (por ejemplo, validación de género, formato correcto del número de ficha o datos incompletos).",
         completed: false,
         priority: "alta"
       },
       {
         id: "sis-2",
-        text: "Generar los códigos QR individuales por colaborador/área vinculados a la base de datos para medir el bono de S/ 500.",
+        text: "Formulario digital para registro de pacientes — Implementar el uso de tablets para que los mismos pacientes ingresen sus datos (correo, DNI, etc.) al ingresar o mientras están en lista de espera, evitando el llenado manual por parte del personal y agilizando la facturación.",
         completed: false,
-        priority: "alta"
+        priority: "media"
       },
       {
         id: "sis-3",
-        text: "Armar reporte operativo para Cosmiatría en base a horas trabajadas (meta 192 h), desglose por día/semana y pacientes atendidos (sin montos de facturación).",
+        text: "Módulo/Encuesta de satisfacción con QR — Diseñar una interfaz en la recepción (o mediante código QR) donde las pacientes puedan calificar el servicio del personal (valet parking, recepción, etc.) mediante botones sencillos (\"dedo arriba / dedo abajo\"), selección de fotografía del personal que las atendió y un campo opcional para comentarios u observaciones.",
         completed: false,
         priority: "media"
       },
       {
         id: "sis-4",
-        text: "Consolidar ventas, costos y márgenes desglosados por laboratorio (ej. SkinCeuticals / Blue CR Trading vs. otros).",
+        text: "Mensaje de confidencialidad e incentivo — Agregar en la interfaz digital un mensaje aclaratorio que indique que la información de la encuesta es anónima/confidencial y orientada a la mejora continua del servicio.",
         completed: false,
-        priority: "media"
+        priority: "normal"
       },
       {
         id: "sis-5",
-        text: "Crear el sistema/hoja de consolidación de atención diaria para la Dra. Stefany.",
-        completed: false,
-        priority: "media"
-      },
-      {
-        id: "sis-6",
-        text: "Evaluar factibilidad técnica de una alarma/alerta de ocupabilidad para saber en tiempo real qué máquinas están encendidas y cruzarlas con la agenda.",
+        text: "Mensaje motivacional de presentación — Crear e integrar, apoyándose en herramientas de IA, un mensaje motivacional e institucional para las presentaciones del equipo, recalcando que la clínica mide y evalúa todos sus procesos para mejorar.",
         completed: false,
         priority: "normal"
       }
@@ -170,8 +110,8 @@ const INITIAL_COLUMNS_DATA = [
 ];
 
 // Estado de la aplicación
-const STORAGE_KEY = "plan_accion_estrategico_data_v1";
-const TRANSCRIPTS_STORAGE_KEY = "meeting_transcripts_backup_v1";
+const STORAGE_KEY = "plan_accion_estrategico_data_v2";
+const TRANSCRIPTS_STORAGE_KEY = "meeting_transcripts_backup_v2";
 const API_KEY_STORAGE = "gemini_api_key_v1";
 const DEFAULT_GEMINI_API_KEY = "AIzaSyDlQUU5f18THy44vfgiW6l7IE6FAXqYSGs";
 const DEFAULT_ROOM_ID = "plan-accion-estrategico-main";
