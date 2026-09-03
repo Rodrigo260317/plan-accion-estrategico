@@ -13,31 +13,36 @@ const INITIAL_COLUMNS_DATA = [
     tasks: [
       {
         id: "adm-1",
-        text: "Establecimiento de protocolos de atención — Formalizar y pegar visiblemente los protocolos de llenado de datos y procedimientos estandarizados para que los sigan las asistentes, cosmiatras y el personal de apoyo.",
+        text: "Protocolos de atención visibles en cada puesto",
+        solution: "Redactar una hoja por puesto (asistente, cosmiatra, apoyo), plastificarla en cada estación y hacer firmar cargo de recepción a cada colaborador.",
         completed: false,
         priority: "alta"
       },
       {
         id: "adm-2",
-        text: "Capacitación y reuniones de alineamiento — Convocar a reuniones de coordinación con las asistentes y cosmiatras para explicar las nuevas pautas de trabajo y garantizar su cumplimiento obligatorio.",
+        text: "Reuniones de alineamiento con asistentes y cosmiatras",
+        solution: "Sesión de 45 min para explicar las nuevas pautas, con acta de acuerdos y lista de asistencia. Repetir quincenalmente el primer mes.",
         completed: false,
         priority: "alta"
       },
       {
         id: "adm-3",
-        text: "Supervisión del personal de atención inicial — Garantizar el cumplimiento del protocolo de atención al cliente en el área externa/recepción (vigilancia y valet parking), asegurando la bienvenida adecuada, la recepción proactiva del vehículo y la prohibición del uso de celulares durante el turno.",
+        text: "Supervisión de recepción, vigilancia y valet parking",
+        solution: "Checklist de bienvenida (recibir el vehículo, saludo, cero celular en turno) verificado dos veces por turno; registrar incumplimientos por escrito.",
         completed: false,
         priority: "alta"
       },
       {
         id: "adm-4",
-        text: "Programa de incentivos y métricas — Establecer indicadores (KPIs) y programas de incentivos para el personal (ej. reconocimiento al \"valet parking del mes\" o bonos anuales por área según las calificaciones obtenidas).",
+        text: "Programa de incentivos y KPIs por área",
+        solution: "Definir 3 indicadores por área y premiar mensualmente el mejor puntaje de la encuesta (ej. \"valet parking del mes\"), más un bono anual por área.",
         completed: false,
         priority: "media"
       },
       {
         id: "adm-5",
-        text: "Definición de políticas de inversión en equipos y personal — Priorizar inversiones en servicios o personal médico con alta tasa de retorno/facturación (ej. médicos para procedimientos inyectables, Morpheus, CO2, HIFU, exosomas). Evaluar costos vs. rentabilidad antes de adquirir aparatología de baja facturación o contratar personal no rentable (ej. cosmiatría).",
+        text: "Política de inversión en equipos y personal",
+        solution: "Exigir cálculo de retorno a 12 meses antes de comprar aparatología o contratar. Priorizar inyectables, Morpheus, CO2, HIFU y exosomas.",
         completed: false,
         priority: "normal"
       }
@@ -51,19 +56,22 @@ const INITIAL_COLUMNS_DATA = [
     tasks: [
       {
         id: "log-1",
-        text: "Mapeo e inventario completo de almacenes — Mapear y registrar el contenido total de las cajas depositadas en los distintos cuartos y almacenes de la clínica (especialmente el cuartito final y áreas pendientes).",
+        text: "Inventario completo de cajas y almacenes",
+        solution: "Barrer cuarto por cuarto con planilla por caja (contenido, cantidad, vencimiento), empezando por el cuartito final, y etiquetar cada caja con código.",
         completed: false,
         priority: "alta"
       },
       {
         id: "log-2",
-        text: "Adquisición de equipamiento digital — Cotizar y gestionar la compra de tablets/dispositivos electrónicos para el registro de pacientes y la evaluación de servicios en recepción.",
+        text: "Compra de tablets para registro y encuestas",
+        solution: "Cotizar 3 proveedores por 2 o 3 tablets con soporte de mostrador y traba antirrobo; presentar comparativo de precio, garantía y tiempo de entrega.",
         completed: false,
         priority: "media"
       },
       {
         id: "log-3",
-        text: "Organización y mapa de almacenamiento por áreas — Crear un mapa visual o catálogo detallado de los productos y materiales almacenados organizados por área para mantener trazabilidad de lo que se tiene guardado.",
+        text: "Mapa de almacenamiento por áreas",
+        solution: "Catálogo en hoja compartida con foto y ubicación de cada producto, más cartel de zona visible en cada estante.",
         completed: false,
         priority: "normal"
       }
@@ -77,31 +85,36 @@ const INITIAL_COLUMNS_DATA = [
     tasks: [
       {
         id: "sis-1",
-        text: "Estandarización de formatos y validación en el bot — Configurar y ajustar el bot de automatización para evitar bloqueos/errores en el sistema cuando no se ingresan datos requeridos (por ejemplo, validación de género, formato correcto del número de ficha o datos incompletos).",
+        text: "Validaciones del bot para evitar bloqueos",
+        solution: "Hacer obligatorios género, número de ficha y datos clave con validación de formato, y mostrar un mensaje de error claro en lugar de trabar el sistema.",
         completed: false,
         priority: "alta"
       },
       {
         id: "sis-2",
-        text: "Formulario digital para registro de pacientes — Implementar el uso de tablets para que los mismos pacientes ingresen sus datos (correo, DNI, etc.) al ingresar o mientras están en lista de espera, evitando el llenado manual por parte del personal y agilizando la facturación.",
+        text: "Registro digital del paciente en tablet",
+        solution: "Formulario web corto (DNI, correo, teléfono) que el paciente llena en sala de espera y que descarga los datos directo a facturación.",
         completed: false,
         priority: "media"
       },
       {
         id: "sis-3",
-        text: "Módulo/Encuesta de satisfacción con QR — Diseñar una interfaz en la recepción (o mediante código QR) donde las pacientes puedan calificar el servicio del personal (valet parking, recepción, etc.) mediante botones sencillos (\"dedo arriba / dedo abajo\"), selección de fotografía del personal que las atendió y un campo opcional para comentarios u observaciones.",
+        text: "Encuesta de satisfacción por QR en recepción",
+        solution: "Pantalla con foto del personal que atendió, botones de pulgar arriba/abajo y campo de comentario opcional, accesible por código QR.",
         completed: false,
         priority: "media"
       },
       {
         id: "sis-4",
-        text: "Mensaje de confidencialidad e incentivo — Agregar en la interfaz digital un mensaje aclaratorio que indique que la información de la encuesta es anónima/confidencial y orientada a la mejora continua del servicio.",
+        text: "Aviso de confidencialidad en la encuesta",
+        solution: "Texto fijo en la cabecera indicando que la respuesta es anónima y se usa solo para mejorar el servicio.",
         completed: false,
         priority: "normal"
       },
       {
         id: "sis-5",
-        text: "Mensaje motivacional de presentación — Crear e integrar, apoyándose en herramientas de IA, un mensaje motivacional e institucional para las presentaciones del equipo, recalcando que la clínica mide y evalúa todos sus procesos para mejorar.",
+        text: "Mensaje motivacional institucional",
+        solution: "Redactar con apoyo de IA un párrafo de 3 o 4 líneas sobre la medición de procesos y usarlo como slide de apertura en las presentaciones del equipo.",
         completed: false,
         priority: "normal"
       }
@@ -110,8 +123,8 @@ const INITIAL_COLUMNS_DATA = [
 ];
 
 // Estado de la aplicación
-const STORAGE_KEY = "plan_accion_estrategico_data_v2";
-const TRANSCRIPTS_STORAGE_KEY = "meeting_transcripts_backup_v2";
+const STORAGE_KEY = "plan_accion_estrategico_data_v3";
+const TRANSCRIPTS_STORAGE_KEY = "meeting_transcripts_backup_v3";
 const API_KEY_STORAGE = "gemini_api_key_v1";
 const DEFAULT_GEMINI_API_KEY = "AIzaSyDlQUU5f18THy44vfgiW6l7IE6FAXqYSGs";
 const DEFAULT_ROOM_ID = "plan-accion-estrategico-main";
@@ -439,6 +452,7 @@ function renderBoard() {
           </div>
           <div class="task-content">
             <div class="task-text">${escapeHtml(task.text)}</div>
+            ${task.solution ? `<div class="task-solution"><span class="solution-label">Solución</span> ${escapeHtml(task.solution)}</div>` : ""}
             <div class="task-meta">
               <span class="task-badge ${priorityClass}">
                 ${priorityLabel}
