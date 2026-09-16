@@ -718,20 +718,23 @@ function setupEventListeners() {
     });
   }
 
-  // 4. Toggle Panel de Estrategia e Innovaciones
-  const toggleStrategyBtn = document.getElementById('toggleStrategyHubBtn');
-  const strategyGrid = document.getElementById('strategyGrid');
-  const strategyHubToggleText = document.getElementById('strategyHubToggleText');
-  const strategyHubToggleIcon = document.getElementById('strategyHubToggleIcon');
-  if (toggleStrategyBtn && strategyGrid) {
-    toggleStrategyBtn.addEventListener('click', () => {
-      const isCollapsed = strategyGrid.classList.toggle('collapsed');
-      if (strategyHubToggleText) {
-        strategyHubToggleText.textContent = isCollapsed ? 'Mostrar Panel' : 'Ocultar Panel';
+  // 4. Toggle Detalles y Acuerdos de la reunión (abajo)
+  const btnToggleBottom = document.getElementById('btnToggleBottomDetails');
+  const bottomWrapper = document.getElementById('bottomDetailsWrapper');
+  const toggleDetailsText = document.getElementById('toggleDetailsText');
+  const toggleDetailsIcon = document.getElementById('toggleDetailsIcon');
+  if (btnToggleBottom && bottomWrapper) {
+    btnToggleBottom.addEventListener('click', () => {
+      const isCollapsed = bottomWrapper.classList.toggle('collapsed');
+      if (toggleDetailsText) {
+        toggleDetailsText.textContent = isCollapsed ? 'Ver Síntesis y Acuerdos' : 'Ocultar Síntesis y Acuerdos';
       }
-      if (strategyHubToggleIcon) {
-        strategyHubToggleIcon.setAttribute('data-lucide', isCollapsed ? 'chevron-down' : 'chevron-up');
+      if (toggleDetailsIcon) {
+        toggleDetailsIcon.setAttribute('data-lucide', isCollapsed ? 'chevron-down' : 'chevron-up');
         initLucideIcons();
+      }
+      if (!isCollapsed) {
+        bottomWrapper.scrollIntoView({ behavior: 'smooth' });
       }
     });
   }

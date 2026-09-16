@@ -197,7 +197,7 @@
           "id": "ADM-01",
           "titulo": "Memorándum disciplinario por teléfonos desatendidos en Counter",
           "descripcion": "Notificar formalmente a recepción la prohibición de bajar el volumen o silenciar teléfonos fijos/celulares bajo sanción laboral.",
-          "completada": false,
+          "completada": true,
           "prioridad": "Alta",
           "proyeccion_tiempo": {
             "estimacion_dias": 1,

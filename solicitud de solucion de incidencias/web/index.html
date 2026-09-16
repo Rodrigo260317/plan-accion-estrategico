@@ -18,26 +18,22 @@
 
   <link rel="stylesheet" href="styles.css">
 </head>
-<body class="dark-theme">
-  <!-- Ambient background glow effects -->
-  <div class="ambient-glow glow-1"></div>
-  <div class="ambient-glow glow-2"></div>
-  <div class="ambient-glow glow-3"></div>
+<body class="light-theme">
 
   <div class="app-layout">
     
-    <!-- Top Header Bar -->
+    <!-- Top Header Bar (Compact Light Mode) -->
     <header class="navbar">
       <div class="navbar-brand">
         <div class="brand-logo">
-          <i data-lucide="zap"></i>
+          <i data-lucide="check-square"></i>
         </div>
         <div class="brand-text">
           <div class="brand-badge-row">
-            <span class="badge badge-primary">SISTEMA INTELIGENTE DE INCIDENCIAS</span>
-            <span class="badge badge-outline" id="sprintBadge">Sprint Quincenal</span>
+            <span class="badge badge-primary">INCIDENCIAS & MEJORAS</span>
+            <span class="badge badge-outline" id="sprintBadge">Sprint 16-Sep</span>
           </div>
-          <h1 class="brand-title">Tablero de Solución de Incidencias y Plan Quincenal</h1>
+          <h1 class="brand-title">Plan de Acción Quincenal</h1>
         </div>
       </div>
 
@@ -55,19 +51,19 @@
         </div>
 
         <!-- Action Buttons -->
-        <button class="btn btn-secondary" id="btnOpenNewMeetingModal" title="Cargar nueva reunión o audio">
+        <button class="btn btn-secondary btn-compact" id="btnOpenNewMeetingModal" title="Cargar nueva reunión o audio">
           <i data-lucide="mic"></i>
-          <span>Nuevo Audio / Datos</span>
+          <span>Nuevo Audio</span>
         </button>
 
-        <button class="btn btn-primary" id="btnShareModal" title="Compartir enlace con el equipo">
+        <button class="btn btn-primary btn-compact" id="btnShareModal" title="Compartir enlace con el equipo">
           <i data-lucide="share-2"></i>
           <span>Compartir</span>
         </button>
 
-        <a href="PROTOCOLO_FLUJO_IA.md" target="_blank" class="btn btn-ghost" id="btnOpenProtocol" title="Ver Protocolo para otras IAs">
-          <i data-lucide="file-code-2"></i>
-          <span>Protocolo IA</span>
+        <a href="PROTOCOLO_FLUJO_IA.md" target="_blank" class="btn btn-ghost btn-compact" id="btnOpenProtocol" title="Ver Protocolo para otras IAs">
+          <i data-lucide="file-text"></i>
+          <span>Protocolo</span>
         </a>
       </div>
     </header>
@@ -75,143 +71,34 @@
     <!-- Main Content Container -->
     <main class="main-container">
       
-      <!-- Overview & Executive Summary Banner -->
-      <section class="executive-banner">
-        <div class="banner-content">
-          <div class="banner-header">
-            <span class="section-tag"><i data-lucide="sparkles"></i> SÍNTESIS DE LA REUNIÓN QUINCENAL</span>
-            <span class="meeting-date" id="meetingDate"><i data-lucide="calendar"></i> 16 de Septiembre de 2026</span>
-          </div>
-          <h2 class="meeting-headline" id="meetingTitle">Reunión Quincenal de Operaciones e Incidencias: Soluciones y Nuevas Implementaciones</h2>
-          <p class="meeting-summary" id="meetingSummary">
-            Cargando síntesis ejecutiva de la reunión...
-          </p>
-
-          <!-- Executive Requirements Badges -->
-          <div class="quick-requirements-box">
-            <span class="requirements-label"><i data-lucide="check-check"></i> Requerimientos Clave Acordados:</span>
-            <div class="requirements-pills" id="requirementsContainer">
-              <!-- Dynamically rendered -->
+      <!-- ==================================================================== -->
+      <!-- 1. TABLERO PRINCIPAL DE INCIDENCIAS (ARRIBA DEL TODO - LO PRIMERO)    -->
+      <!-- ==================================================================== -->
+      <section class="tasks-board-section">
+        
+        <!-- Mini Summary & KPI Strip (Compact Horizontal Bar) -->
+        <div class="board-top-summary-strip">
+          <div class="sprint-compact-progress">
+            <span class="strip-label"><i data-lucide="trending-up"></i> Avance Sprint:</span>
+            <div class="mini-strip-track">
+              <div class="mini-strip-fill" id="globalProgressBar" style="width: 0%"></div>
             </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Escala de Avance & Métricas Globales -->
-      <section class="progress-section">
-        <div class="section-title-row">
-          <div>
-            <h2 class="section-title"><i data-lucide="trending-up"></i> Escala de Avance del Sprint (2 Semanas)</h2>
-            <p class="section-subtitle">Monitoreo colaborativo en tiempo real del progreso hacia la meta quincenal</p>
-          </div>
-          <div class="global-percent-display">
-            <span class="percent-number" id="globalPercentNumber">0%</span>
-            <span class="percent-label">Completado</span>
-          </div>
-        </div>
-
-        <!-- Big Progress Bar -->
-        <div class="global-progress-track">
-          <div class="global-progress-fill" id="globalProgressBar" style="width: 0%">
-            <div class="progress-glow-tip"></div>
-          </div>
-        </div>
-
-        <!-- 3 Area Progress Mini-Cards -->
-        <div class="areas-progress-grid">
-          
-          <!-- Logistica -->
-          <div class="area-kpi-card card-logistica" data-area-id="logistica">
-            <div class="kpi-header">
-              <div class="kpi-title-box">
-                <span class="area-icon">🚚</span>
-                <div>
-                  <h3 class="kpi-name">Logística</h3>
-                  <span class="kpi-count" id="logisticaCounts">0/0 tareas</span>
-                </div>
-              </div>
-              <span class="kpi-percent" id="logisticaPercent">0%</span>
-            </div>
-            <div class="mini-progress-track">
-              <div class="mini-progress-fill fill-logistica" id="logisticaProgressBar" style="width: 0%"></div>
-            </div>
+            <strong class="strip-percent" id="globalPercentNumber">0%</strong>
           </div>
 
-          <!-- Administracion -->
-          <div class="area-kpi-card card-administracion" data-area-id="administracion">
-            <div class="kpi-header">
-              <div class="kpi-title-box">
-                <span class="area-icon">🏢</span>
-                <div>
-                  <h3 class="kpi-name">Administración</h3>
-                  <span class="kpi-count" id="administracionCounts">0/0 tareas</span>
-                </div>
-              </div>
-              <span class="kpi-percent" id="administracionPercent">0%</span>
-            </div>
-            <div class="mini-progress-track">
-              <div class="mini-progress-fill fill-administracion" id="administracionProgressBar" style="width: 0%"></div>
-            </div>
+          <div class="area-badges-strip">
+            <span class="chip chip-logistica"><span class="chip-dot"></span> 🚚 Logística: <strong id="logisticaCounts">0/0</strong> (<span id="logisticaPercent">0%</span>)</span>
+            <span class="chip chip-admin"><span class="chip-dot"></span> 🏢 Admin: <strong id="administracionCounts">0/0</strong> (<span id="administracionPercent">0%</span>)</span>
+            <span class="chip chip-ti"><span class="chip-dot"></span> 💻 TI: <strong id="tiCounts">0/0</strong> (<span id="tiPercent">0%</span>)</span>
           </div>
 
-          <!-- TI -->
-          <div class="area-kpi-card card-ti" data-area-id="ti">
-            <div class="kpi-header">
-              <div class="kpi-title-box">
-                <span class="area-icon">💻</span>
-                <div>
-                  <h3 class="kpi-name">Área de TI</h3>
-                  <span class="kpi-count" id="tiCounts">0/0 tareas</span>
-                </div>
-              </div>
-              <span class="kpi-percent" id="tiPercent">0%</span>
-            </div>
-            <div class="mini-progress-track">
-              <div class="mini-progress-fill fill-ti" id="tiProgressBar" style="width: 0%"></div>
-            </div>
-          </div>
-
-        </div>
-      </section>
-
-      <!-- Innovation & Process Improvements Hub (Toggleable / Highlights) -->
-      <section class="strategy-hub-section">
-        <div class="hub-header">
-          <div class="hub-title-group">
-            <h2 class="section-title"><i data-lucide="lightbulb"></i> Mapeo de Innovaciones y Mejoras Continuas</h2>
-            <p class="section-subtitle">Iniciativas estratégicas detectadas en la reunión para el ciclo actual</p>
-          </div>
-          <button class="btn btn-sm btn-ghost" id="toggleStrategyHubBtn">
-            <span id="strategyHubToggleText">Ocultar Panel</span>
-            <i data-lucide="chevron-up" id="strategyHubToggleIcon"></i>
+          <button class="btn btn-xs btn-outline" id="btnToggleBottomDetails" title="Ver o contraer síntesis y acuerdos de la reunión">
+            <i data-lucide="file-text"></i>
+            <span id="toggleDetailsText">Ver Síntesis y Acuerdos</span>
+            <i data-lucide="chevron-down" id="toggleDetailsIcon"></i>
           </button>
         </div>
 
-        <div class="strategy-grid" id="strategyGrid">
-          <!-- Innovaciones Column -->
-          <div class="strategy-column">
-            <div class="column-header">
-              <span class="badge badge-purple"><i data-lucide="rocket"></i> Nuevas Innovaciones Mapeadas</span>
-            </div>
-            <div class="strategy-cards-list" id="innovationsList">
-              <!-- Dynamically populated -->
-            </div>
-          </div>
-
-          <!-- Mejoras Column -->
-          <div class="strategy-column">
-            <div class="column-header">
-              <span class="badge badge-cyan"><i data-lucide="wrench"></i> Mejoras de Procesos a Implementar</span>
-            </div>
-            <div class="strategy-cards-list" id="improvementsList">
-              <!-- Dynamically populated -->
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Tasks & Solutions Action Board -->
-      <section class="tasks-board-section">
         <!-- Control Bar: Search & Role Filters -->
         <div class="board-controls-bar">
           <div class="role-filter-pills">
@@ -238,24 +125,24 @@
             <!-- Search Input -->
             <div class="search-field">
               <i data-lucide="search"></i>
-              <input type="text" id="taskSearchInput" placeholder="Buscar incidencia, tarea o solución...">
+              <input type="text" id="taskSearchInput" placeholder="Buscar actividad o solución...">
               <button id="clearSearchBtn" class="clear-input-btn hidden"><i data-lucide="x"></i></button>
             </div>
 
             <!-- Priority Dropdown Filter -->
             <div class="filter-dropdown-wrapper">
               <select id="priorityFilterSelect" class="filter-select">
-                <option value="all">Todas las prioridades</option>
-                <option value="Alta">🔴 Prioridad Alta</option>
-                <option value="Media">🟡 Prioridad Media</option>
-                <option value="Normal">🟢 Prioridad Normal</option>
+                <option value="all">Prioridad: Todas</option>
+                <option value="Alta">🔴 Alta</option>
+                <option value="Media">🟡 Media</option>
+                <option value="Normal">🟢 Normal</option>
               </select>
             </div>
 
             <!-- Status Dropdown Filter -->
             <div class="filter-dropdown-wrapper">
               <select id="statusFilterSelect" class="filter-select">
-                <option value="all">Todos los estados</option>
+                <option value="all">Estado: Todos</option>
                 <option value="pending">⏳ Pendientes</option>
                 <option value="completed">✅ Realizadas</option>
               </select>
@@ -263,11 +150,66 @@
           </div>
         </div>
 
-        <!-- Dynamic Columns Grid for Tasks -->
+        <!-- Dynamic Columns Grid for Tasks (3 Columns Side-by-Side) -->
         <div class="board-columns-grid" id="boardColumnsGrid">
           <!-- Columns will be injected by app.js: Logistica, Administracion, TI -->
         </div>
       </section>
+
+      <!-- ==================================================================== -->
+      <!-- 2. SECCIONES DE DETALLES Y ACUERDOS (ABAJO DEL TODO)                  -->
+      <!-- ==================================================================== -->
+      <div class="bottom-collapsible-wrapper collapsed" id="bottomDetailsWrapper">
+        
+        <!-- Síntesis de la Reunión -->
+        <section class="executive-banner">
+          <div class="banner-content">
+            <div class="banner-header">
+              <span class="section-tag"><i data-lucide="sparkles"></i> SÍNTESIS DE LA REUNIÓN</span>
+              <span class="meeting-date" id="meetingDate"><i data-lucide="calendar"></i> 16 de Septiembre de 2026</span>
+            </div>
+            <h2 class="meeting-headline" id="meetingTitle">Reunión Quincenal de Operaciones e Incidencias: Soluciones y Nuevas Implementaciones</h2>
+            <p class="meeting-summary" id="meetingSummary">
+              Cargando síntesis ejecutiva de la reunión...
+            </p>
+
+            <div class="quick-requirements-box">
+              <span class="requirements-label"><i data-lucide="check-check"></i> Acuerdos Principales:</span>
+              <div class="requirements-pills" id="requirementsContainer">
+                <!-- Dynamically rendered -->
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Innovation & Process Improvements Hub -->
+        <section class="strategy-hub-section">
+          <div class="hub-header">
+            <div class="hub-title-group">
+              <h2 class="section-title"><i data-lucide="lightbulb"></i> Innovaciones y Mejoras de Procesos</h2>
+              <p class="section-subtitle">Iniciativas detectadas en la reunión para implementar en el ciclo</p>
+            </div>
+          </div>
+
+          <div class="strategy-grid" id="strategyGrid">
+            <!-- Innovaciones Column -->
+            <div class="strategy-column">
+              <div class="column-header">
+                <span class="badge badge-purple"><i data-lucide="rocket"></i> Nuevas Innovaciones Mapeadas</span>
+              </div>
+              <div class="strategy-cards-list" id="innovationsList"></div>
+            </div>
+
+            <!-- Mejoras Column -->
+            <div class="strategy-column">
+              <div class="column-header">
+                <span class="badge badge-cyan"><i data-lucide="wrench"></i> Mejoras de Procesos a Implementar</span>
+              </div>
+              <div class="strategy-cards-list" id="improvementsList"></div>
+            </div>
+          </div>
+        </section>
+      </div>
 
     </main>
 
