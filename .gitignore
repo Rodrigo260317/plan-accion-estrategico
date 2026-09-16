@@ -1,0 +1,14 @@
+# Python
+__pycache__/
+*.pyc
+
+# Audio & Video heavy recordings (keep code & transcripts)
+*.m4a
+*.mp3
+*.wav
+*.mp4
+*.aac
+
+# OS
+.DS_Store
+Thumbs.db

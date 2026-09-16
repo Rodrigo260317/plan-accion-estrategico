@@ -1,0 +1,2302 @@
+TRANSCRIPCIÓN DE LA REUNIÓN: Secion semana 16-9.m4a
+Duración: 01:39:42
+=================================================================
+
+[00:00:01 -> 00:00:08] o supuestamente atrás. Bueno, sólo el oguito potabe, han postado y el nombre.
+[00:00:08 -> 00:00:13] Van a esa la de rocesión.
+[00:00:13 -> 00:00:19] Van a esa la de roces, se han postado un bañesa y no las se lo han postado.
+[00:00:19 -> 00:00:22] Es el lado de mi estro.
+[00:00:22 -> 00:00:23] Es el lado de mi estro.
+[00:00:23 -> 00:00:24] Al caso, funciona bueno.
+[00:00:24 -> 00:00:28] En la reunión pasada habíamos hablado de implementar una...
+[00:00:28 -> 00:00:30] Rodrita, te van a te gustar.
+[00:00:30 -> 00:00:31] Es pasada.
+[00:00:33 -> 00:00:36] En la reunión pasada se ha decorado implementar este...
+[00:00:36 -> 00:00:41] un sistema apurado a la admisión de los pacientes para que no hubiera errores
+[00:00:41 -> 00:00:45] en el registro de esos pacientes, en los no hombres, en los datos de N.I.
+[00:00:45 -> 00:00:46] Dirección entre otros.
+[00:00:46 -> 00:00:51] Hemos conectado una API de la RENIC para poder jalar los datos.
+[00:00:51 -> 00:00:58] Ahora cuando el paciente venga va a venir con su N.I., lo escanea y automáticamente
+[00:01:02 -> 00:01:08] el sistema a jalar todos sus datos, no tanto nombre, tanto su fech anacimiento, sexo, entre otros.
+[00:01:08 -> 00:01:18] El sistema está un poco limitado porque no jalar datos como direcciones o fech anacimiento.
+[00:01:18 -> 00:01:24] Es para tener todo el servicio completo con todos los datos.
+[00:01:24 -> 00:01:26] ¿Cuál es el pago?
+[00:01:27 -> 00:01:28] ¿Cuál es el pago?
+[00:01:28 -> 00:01:30] De 100 o 95 soles.
+[00:01:30 -> 00:01:32] El mensual no sea mensual.
+[00:01:32 -> 00:01:35] Yo creo que sí vale la pena.
+[00:01:35 -> 00:01:39] Hay que pagar ese servicio para que le jale de N.I.
+[00:01:39 -> 00:01:43] Para ver que los pacientes no sean falsos en primer lugar
+[00:01:43 -> 00:01:46] porque no voy a ser... nos pasa mucho con los pacientes falsos.
+[00:01:46 -> 00:01:49] ¿Ya que está el ejemplo que usted me ha mandado de idea?
+[00:01:49 -> 00:01:52] De esa paciente queda un número de N.I. falsos.
+[00:01:52 -> 00:01:53] Nosotros no sabemos si es.
+[00:01:54 -> 00:01:59] Queda el nombre de falsos, pero nosotros lo tenemos con su N.I. Registrado y tiene un nombre...
+[00:01:59 -> 00:02:00] Otro nombre.
+[00:02:00 -> 00:02:04] ¿Por qué hay locas que no queremos atender? ¿Por qué son locas?
+[00:02:04 -> 00:02:11] Y dan nombres falsos, vienen a la cita y acá no se les puede evitar, pero son estaccadores y hacen de volver las cosas.
+[00:02:11 -> 00:02:12] No les queremos atender.
+[00:02:12 -> 00:02:15] Yo creo que ese servicio sigue un servicio que hay que detener.
+[00:02:15 -> 00:02:16] ¿Ya?
+[00:02:16 -> 00:02:17] Viste tal.
+[00:02:17 -> 00:02:21] Muy aparte para todos los datos.
+[00:02:21 -> 00:02:23] ¿A qué se hace?
+[00:02:23 -> 00:02:26] Si le puede pasar la tola.
+[00:02:26 -> 00:02:28] ¿En el tránel de linda tola?
+[00:02:28 -> 00:02:31] ¿Cuál es el linda de lo que pasa?
+[00:02:31 -> 00:02:32] ¿Qué pasa?
+[00:02:32 -> 00:02:34] No voy a salir de la cita.
+[00:02:34 -> 00:02:35] Ya.
+[00:02:35 -> 00:02:38] Hay algunos datos que igual la clínica van a necesitar.
+[00:02:38 -> 00:02:48] Para esos datos que no se jalan por el lápido de la reña de manera manual,
+[00:02:48 -> 00:02:54] el paciente va a registrar todos los otros datos que no se tengan tanto su ocupación,
+[00:02:54 -> 00:02:56] tal vez datos que no...
+[00:02:56 -> 00:02:57] El uno de los correos.
+[00:02:57 -> 00:02:58] Claro.
+[00:02:58 -> 00:03:02] Ocuupación donde encontró todos los productos.
+[00:03:02 -> 00:03:07] Y se registra y ya con eso quedaría todo el registro de su historia.
+[00:03:07 -> 00:03:09] ¿Otros...
+[00:03:09 -> 00:03:13] Hayo.
+[00:03:13 -> 00:03:15] ¿Cuál es el blanco?
+[00:03:16 -> 00:03:20] Yo creo que saca ascufrilla y con...
+[00:03:20 -> 00:03:22] Rodrigo es silbérla para...
+[00:03:23 -> 00:03:27] Ojalá lo ha desotado para un costado...
+[00:03:27 -> 00:03:28] ¿Más adelante por...
+[00:03:28 -> 00:03:31] No lo que le estamos listando es...
+[00:03:31 -> 00:03:33] Eso por más adelante.
+[00:03:33 -> 00:03:37] Está hecho también un poco.
+[00:03:37 -> 00:03:48] Estás a les para eso.
+[00:03:48 -> 00:03:50] Claro, pero mira con todo lo que me tengo.
+[00:03:50 -> 00:03:52] Sí, pues ya se tiene que ir esto.
+[00:03:52 -> 00:03:54] Vamos a ver que yo lo vendo.
+[00:03:55 -> 00:04:00] No se ha dejado ahí, pero no es un paso nada.
+[00:04:00 -> 00:04:02] No es un resultado de lo que ha sido.
+[00:04:02 -> 00:04:06] Otro punto que se tocó las semanas que ya vamos viendo también
+[00:04:06 -> 00:04:08] de tiempo es el tema de la almacén, ¿no?
+[00:04:08 -> 00:04:11] Para poder tener un apeado todo correctamente...
+[00:04:11 -> 00:04:14] Sí, eso que mira.
+[00:04:14 -> 00:04:17] Hama apeado con esto de no conocer de dónde están las cosas.
+[00:04:17 -> 00:04:21] No, de vez eso sigue hacia un puntual y justo reforzamos tanto con lo de uno.
+[00:04:21 -> 00:04:24] No, pero no es que sea puntual porque calle tiene su mapa.
+[00:04:25 -> 00:04:27] Exacto, y no uso el mapa.
+[00:04:27 -> 00:04:28] Y todo ese ahí no.
+[00:04:28 -> 00:04:29] Y no uso el mapa.
+[00:04:29 -> 00:04:33] O sea, tanto yo te paso el control como él ha hecho en imperario y no lo uso el mapa.
+[00:04:33 -> 00:04:36] Por eso ustedes tienen que...
+[00:04:36 -> 00:04:41] O el problema del mapa o el problema de ustedes o alguien no quiere usar el mapa.
+[00:04:41 -> 00:04:46] Pero no puede ser que vayas hoy de tal cosa y empieza a buscar por todo lado.
+[00:04:46 -> 00:04:48] Sí, por que no conoce.
+[00:04:48 -> 00:04:51] La idea es que si ustedes no están igualito funciones.
+[00:04:52 -> 00:04:56] Si mañana tú dejas de trabajar o tú dejas de trabajar.
+[00:04:56 -> 00:05:01] Y que venga, ¿tienes sepa donde estar cartucho, donde esté lente?
+[00:05:01 -> 00:05:04] No necesito que tú seas un experto y que venga.
+[00:05:04 -> 00:05:08] El experto es el sistema.
+[00:05:08 -> 00:05:13] El sistema es el que tiene que decir y lo otro es que ustedes lo tienen que tener bien ordenado.
+[00:05:13 -> 00:05:18] Porque si tienes todo el cartucho por ejemplo tú mismo dijiste, no hay cartucho.
+[00:05:18 -> 00:05:20] Y yo como un contra el cartucho.
+[00:05:20 -> 00:05:26] ¿Quién es no hay cartuchos?
+[00:05:26 -> 00:05:29] Y no había...
+[00:05:29 -> 00:05:30] Y no había...
+[00:05:30 -> 00:05:32] ¿Y qué tal? ¿Qué tal? ¿Qué tal? ¿Qué tal? ¿Qué tal?
+[00:05:32 -> 00:05:35] ¿Tucho de lente? ¿Cómo que estamos hablando del cartucho en lente?
+[00:05:35 -> 00:05:36] No hay cartuchos.
+[00:05:36 -> 00:05:38] Y yo he ido y yo lo encontrado.
+[00:05:38 -> 00:05:44] Entonces significa que no está mapado o no está ordenado.
+[00:05:44 -> 00:05:51] Entonces si está acá en el sistema y el sistema te va a intentar lugar de estar, ahí le debe estar.
+[00:05:51 -> 00:05:56] Porque si ahorita yo hago una auditoría que eso es el siguiente paso que voy a hacer.
+[00:05:56 -> 00:05:59] Yo voy a entrar con la auditoría y voy a apretar botón por botón.
+[00:05:59 -> 00:06:01] Y ahí tiene que estar todo.
+[00:06:01 -> 00:06:06] Pero si tú tienes tres cosas metidas, tú no hiciste nada más.
+[00:06:06 -> 00:06:08] No sirve nada a todo este trabajo.
+[00:06:08 -> 00:06:11] Justo también habíamos visto esos dos puntos.
+[00:06:11 -> 00:06:18] Uno que era de tener que capacitar bien, bien, completamente para que puedan manejar el flujo.
+[00:06:18 -> 00:06:23] En el caso de esa situación que pasó con André que no abrió el sistema,
+[00:06:23 -> 00:06:27] fue por tema de nerviosismo y quiso hacer las cosas rápido y no agarrarse.
+[00:06:27 -> 00:06:29] No, eso son excusas.
+[00:06:29 -> 00:06:31] O sea acá no estamos descans descusas.
+[00:06:31 -> 00:06:32] No estamos usando.
+[00:06:32 -> 00:06:37] No, no empecemos así porque el mundo está lleno de buenas intenciones.
+[00:06:37 -> 00:06:40] En infierno está lleno de buenas intenciones.
+[00:06:40 -> 00:06:42] La acá no se trata de excusar.
+[00:06:42 -> 00:06:46] La acá se trata de ver lo que está sucediendo en la vida de Andréal.
+[00:06:46 -> 00:06:47] Y corre.
+[00:06:47 -> 00:06:48] Sí, y corregible.
+[00:06:48 -> 00:06:49] O sea no se trata de hoy.
+[00:06:49 -> 00:06:51] ¿Lo estás haciendo mal o no sirve?
+[00:06:51 -> 00:06:53] No, yo no estoy diciendo eso.
+[00:06:53 -> 00:06:57] Estoy diciendo que algo ha sucedido y estoy disponiendo una realidad.
+[00:06:57 -> 00:07:05] Si está pasando eso es un tema de análisis y debate y usted dirán ¿Por qué ha sucedido esto?
+[00:07:05 -> 00:07:08] ¿Cómo lo vamos a corregir para que no vuelve a suceder?
+[00:07:08 -> 00:07:10] Eso se trata de esto.
+[00:07:10 -> 00:07:12] No se trata de decir, ¿Ah, no sirve? ¿Es un inútil?
+[00:07:12 -> 00:07:14] No, yo no he dicho en ningún momento eso.
+[00:07:14 -> 00:07:15] No, no.
+[00:07:15 -> 00:07:19] Lo que estoy diciendo es, he llegado, ha sucedido esto y esto está pasando.
+[00:07:19 -> 00:07:21] O sea, ¿Has puesto a prueba tu sistema?
+[00:07:22 -> 00:07:23] Exacto.
+[00:07:23 -> 00:07:25] Y en la visarea real no se ha funcionado.
+[00:07:25 -> 00:07:26] No se ha funcionado.
+[00:07:26 -> 00:07:27] Bueno, esto es muy bien.
+[00:07:27 -> 00:07:35] Lo que usted es que, en parte es que no supieron encontrar el aplicativo y segundo, no por el apurro no lo hicieron.
+[00:07:35 -> 00:07:43] Entonces, las soluciones que hemos planteado están tocapacitar para que puedan saber dónde se encuentra el aplicativo y darle segundo un acceso muy rápido.
+[00:07:43 -> 00:07:49] Entonces, la solución sería simplemente ponerles en todos sus escritorios, en todas las máquinas que tengan, e incluso no es hablar,
+[00:07:49 -> 00:07:52] para que puedan, de verdad, poder conectar con el carcerropeño.
+[00:07:52 -> 00:07:58] Sí, sí, sí, porque en cuéchenme a veces como paso ese día, a ustedes quedaron tomando desayuno acá, el día de la reunión.
+[00:07:58 -> 00:08:05] Yo no sabía ubicar dónde estaba y sí, yo no, o sea, obviamente yo no entro en el aquel que son máquinas de esta bloqueada.
+[00:08:05 -> 00:08:13] Yo no voy a entrar a esta máquina, puedo sí, pero por qué mejor no me pueden a mí o en el caso también del doctor en el celular, un domingo.
+[00:08:13 -> 00:08:23] Ello van a los domingos a veces sofrerado, buscan a ese celular donde está el lente del cartucho y ya te votan ya en un necesario que haces en la computadora.
+[00:08:23 -> 00:08:30] No, porque el doctor no va a saber la cabeza de la computadora de ellos para entrar y buscar el yopo a que hacierten el sistema.
+[00:08:30 -> 00:08:39] Entonces, sí sería bueno que en el caso de incluso de ellos mismos, porque de repente a veces están no sé.
+[00:08:39 -> 00:08:43] O sea, hacer un entrenamiento de cómo buscarlo. ¿Ya? ¿Posta bien?
+[00:08:43 -> 00:08:50] También, bueno ahorita se me ha quedado por el tiempo implementar también un QR para que directamente como el celular escaneen y ingresen rápidamente la página.
+[00:08:50 -> 00:08:51] Ah, sí.
+[00:08:51 -> 00:08:52] Tardas más excelente, sí, sí.
+[00:08:52 -> 00:08:59] Y para el otro punto, también hemos visto que hay chicas que vienen y piden aguja de mentón, ¿no?
+[00:08:59 -> 00:09:04] A aguja de mentón entre otros nombres que no se contemplan directamente porque no existe en el mundo.
+[00:09:04 -> 00:09:07] Tienes que enseñarle cómo, por qué se hace una cosa?
+[00:09:07 -> 00:09:09] Ya le compro piedad, se habla con piedad.
+[00:09:09 -> 00:09:14] ¿Tú quieres que quieres picarla? Le vas a decir doctora. Aquí en denviden ustedes.
+[00:09:14 -> 00:09:16] Sí, sí, sí. Le vas a decir doctora.
+[00:09:16 -> 00:09:18] Doctora. Doctora.
+[00:09:18 -> 00:09:21] Sí, por eso le vas a decir doctora.
+[00:09:21 -> 00:09:25] Me puede dar el nombre técnico de la aguja que me está pidiendo.
+[00:09:25 -> 00:09:30] La vas a hacer sentirse mal y va a regresar a mirar cuál es la aguja que tiene que pedir.
+[00:09:30 -> 00:09:37] Por todos motivos, uno, porque no se contradice con tu sistema y que es el aguja de mentón.
+[00:09:37 -> 00:09:39] Y dos, por ella misma.
+[00:09:39 -> 00:09:42] Porque cuando ella salga afuera y habla con otros médicos.
+[00:09:42 -> 00:09:45] De otro país no le va a decir qué aguja, le aguja de mentón.
+[00:09:45 -> 00:09:46] La aguja mora.
+[00:09:46 -> 00:09:50] Eso le va a salir porque ese es su lenguaje coloquial.
+[00:09:50 -> 00:09:52] Entonces, ahí queda recontra mal.
+[00:09:52 -> 00:09:56] Exacto. Y ella podrá conocerla así pero nosotros que estamos arriba.
+[00:09:56 -> 00:10:00] Y ella no es una técnica y es una profesional.
+[00:10:00 -> 00:10:02] Intenté hablar cómo profesional.
+[00:10:02 -> 00:10:10] Entonces, a aguja 21 de media que nada, de una pulgada de lo que tengo.
+[00:10:10 -> 00:10:11] Exactamente.
+[00:10:11 -> 00:10:14] 23 o 25.
+[00:10:14 -> 00:10:17] Entonces, saben que mañana escúchame.
+[00:10:17 -> 00:10:20] Mañana te hagas una presentación de que agujas existen en la clinic.
+[00:10:20 -> 00:10:23] Ellas no, ellos. Ellas.
+[00:10:23 -> 00:10:25] Ya, hoy día les vas a decir mañana.
+[00:10:25 -> 00:10:27] La hoy día de escúse se va en la tarde.
+[00:10:27 -> 00:10:28] No yo también quiero estar.
+[00:10:28 -> 00:10:29] Ay ella, me encanta.
+[00:10:29 -> 00:10:30] Esa aguja, si sí.
+[00:10:30 -> 00:10:31] Claro.
+[00:10:31 -> 00:10:32] Si lo tenien a pedir.
+[00:10:32 -> 00:10:33] Claro, tienes que estar tan bien.
+[00:10:33 -> 00:10:34] Esa es la vez.
+[00:10:34 -> 00:10:35] Dale la una.
+[00:10:35 -> 00:10:36] No, no, no, no.
+[00:10:36 -> 00:10:37] No somos todos los que hay.
+[00:10:37 -> 00:10:40] La otra es que las de los siglos de sustendación.
+[00:10:40 -> 00:10:41] Sí.
+[00:10:41 -> 00:10:42] No, no, no.
+[00:10:42 -> 00:10:43] ¿Y los que te dijeron?
+[00:10:43 -> 00:10:45] Me di un hombre que no.
+[00:10:45 -> 00:10:46] Sí, no, ábrame claro.
+[00:10:46 -> 00:10:47] Yo no entiende a decir.
+[00:10:47 -> 00:10:48] Sí, ya me dijeron.
+[00:10:48 -> 00:10:49] A ver, no te lo digo.
+[00:10:49 -> 00:10:50] Siempre le digo.
+[00:10:50 -> 00:10:51] No, no, no.
+[00:10:51 -> 00:10:54] Y el dedito de la bolsa porque no sabió que no necesitas.
+[00:10:54 -> 00:10:55] No, no necesitas.
+[00:10:55 -> 00:10:56] No, no necesitas.
+[00:10:56 -> 00:10:57] porque no le puede dar todas las bolsas y que es eso.
+[00:10:57 -> 00:10:58] Gaseo, no fibrik.
+[00:10:58 -> 00:11:00] Entraron que la bolsa buscaron a ver en teléfono.
+[00:11:00 -> 00:11:01] Que no sabías.
+[00:11:01 -> 00:11:02] Que todavía te le estaban pidiendo.
+[00:11:02 -> 00:11:03] Ya, ¿por qué?
+[00:11:03 -> 00:11:05] Retire que sal, me preguntan si meuses.
+[00:11:05 -> 00:11:06] Por eso.
+[00:11:06 -> 00:11:08] Ah, que mañana tengan una presentación.
+[00:11:08 -> 00:11:10] No iría a dejar el héctoría.
+[00:11:10 -> 00:11:11] Estienas TV porque las ganan en lo...
+[00:11:11 -> 00:11:12] polls.
+[00:11:12 -> 00:11:13] Y que la dan en la presentación práctica.
+[00:11:13 -> 00:11:16] A lo de 30-30, y uno no sé qué, ya.
+[00:11:16 -> 00:11:20] O sea, ¿tú le crees que yo estoy operando
+[00:11:20 -> 00:11:23] Yo estoy operando y digo a la enfermera.
+[00:11:23 -> 00:11:24] Hoy pasa a mi la...
+[00:11:24 -> 00:11:27] La tijetita con un taco de nada.
+[00:11:27 -> 00:11:28] La con un taco de nada.
+[00:11:28 -> 00:11:29] O pájamenlo.
+[00:11:29 -> 00:11:30] Y lo cortito.
+[00:11:30 -> 00:11:31] Y lo cortito.
+[00:11:31 -> 00:11:33] En la que él, el héroe.
+[00:11:33 -> 00:11:34] O el héroe.
+[00:11:34 -> 00:11:35] La está en el héroe.
+[00:11:35 -> 00:11:37] Pásame, hasta yo quedo mal.
+[00:11:37 -> 00:11:42] Quise, te quedé un mecán y un gafitero que se tú eres un médico.
+[00:11:42 -> 00:11:43] Entonces, se deducemos.
+[00:11:43 -> 00:11:45] Ok, les ponen ese cero.
+[00:11:45 -> 00:11:48] A que se diga, ya, si quie.
+[00:11:48 -> 00:11:50] Siendo con el tema de...
+[00:11:50 -> 00:11:52] Ya pero, mape, de nuevo, bien, si está en sus lugares,
+[00:11:52 -> 00:11:55] si está todo bien ordenado, no mezclen varias cosas,
+[00:11:55 -> 00:11:57] porque tú me es clave, ahí...
+[00:11:57 -> 00:12:01] En el reto que he entrado estaba el cartucho con varias cosas
+[00:12:01 -> 00:12:03] ahí metidas.
+[00:12:03 -> 00:12:03] Entonces...
+[00:12:03 -> 00:12:06] Es que alguien que no sabe no va a saber cuál es el cartucho.
+[00:12:06 -> 00:12:09] Entonces podrías poner algo que divida,
+[00:12:09 -> 00:12:09] cuartucho...
+[00:12:09 -> 00:12:11] Y eso es de qué y de poner el trerito.
+[00:12:11 -> 00:12:15] Claro, y tienes que poner potes, en todo caso,
+[00:12:15 -> 00:12:17] y los potes ahí guardan cosas,
+[00:12:17 -> 00:12:18] son cosas chicas,
+[00:12:18 -> 00:12:20] para que no lo metes y todo.
+[00:12:20 -> 00:12:23] Así como nosotros, no es visto que tenemos todas las agujitas
+[00:12:23 -> 00:12:23] de un lado...
+[00:12:23 -> 00:12:25] Mira, así está como esto.
+[00:12:25 -> 00:12:26] ¿Veñó?
+[00:12:26 -> 00:12:28] ¿De dónde voy a saber qué cosa es cada cosa?
+[00:12:28 -> 00:12:30] Y todo con su nombre, nombre, talla.
+[00:12:30 -> 00:12:33] No, pero siquiera, porque entonces está acumulado, y...
+[00:12:33 -> 00:12:35] No, está doble, en sí, en más su nombre.
+[00:12:35 -> 00:12:36] Sí, pero...
+[00:12:36 -> 00:12:38] O sea, si tú lo pones en un recipiente,
+[00:12:38 -> 00:12:39] si eso lo pones en la inquieta...
+[00:12:39 -> 00:12:41] Claro, obviamente va a estar más...
+[00:12:41 -> 00:12:44] Claro, ahorita está así, pero si fue en una tienda real...
+[00:12:44 -> 00:12:46] O me imagínate, corre esa cambie en la talla,
+[00:12:46 -> 00:12:48] ese de los séclanos va a ser con la nada.
+[00:12:48 -> 00:12:50] Pero ahorita porque no tenemos hormonalizado.
+[00:12:50 -> 00:12:52] Ya, sí, sí, me voy a, mira.
+[00:12:54 -> 00:12:56] Ya, este...
+[00:12:56 -> 00:12:58] Hemos incluso un cremido...
+[00:12:58 -> 00:12:58] ¿Qué tal lo de dónde esto es?
+[00:12:58 -> 00:12:59] Cédula...
+[00:12:59 -> 00:13:00] Sí, en sí, en la institución.
+[00:13:00 -> 00:13:01] Pero le escribiste.
+[00:13:03 -> 00:13:05] Hemos implementado incluso unos procedimientos
+[00:13:05 -> 00:13:07] que sería el armado de Kids.
+[00:13:07 -> 00:13:08] Este...
+[00:13:08 -> 00:13:10] Y también hemos visto los demás apartados de los duques,
+[00:13:10 -> 00:13:13] que también permite hacer tanto promociones
+[00:13:13 -> 00:13:15] como paquetes para descuentos.
+[00:13:15 -> 00:13:20] Todo ya está con sus...
+[00:13:20 -> 00:13:22] con sus pasos del procedimiento en el odo
+[00:13:22 -> 00:13:26] para cómo poder crearlos y cómo poder tener todo...
+[00:13:26 -> 00:13:29] ¿A eso, paquetes, estándar armada de una promoción...
+[00:13:29 -> 00:13:30] Ah, ya.
+[00:13:30 -> 00:13:31] A través de ese roto,
+[00:13:31 -> 00:13:33] no vas a poder armar tu promoción.
+[00:13:33 -> 00:13:36] Claro, vamos a poder entender cómo se realice el armado
+[00:13:36 -> 00:13:38] y ya en el odo lo van a poder realizar correctamente.
+[00:13:38 -> 00:13:40] Porque antes tenían todo...
+[00:13:40 -> 00:13:42] El mismo problema, tenían todo mezclado,
+[00:13:42 -> 00:13:44] tenían promoción en ese producto,
+[00:13:44 -> 00:13:46] tenían sesiones en productos, tenían todo en productos...
+[00:13:46 -> 00:13:47] Y no se puede...
+[00:13:47 -> 00:13:50] No se puede filtrar nada por lo que está todo desarrollando.
+[00:13:50 -> 00:13:52] Malabra tanto los KPIs,
+[00:13:52 -> 00:13:55] como también poder encontrar los productos rápido,
+[00:13:55 -> 00:13:56] porque aparecen nombres diferentes.
+[00:13:56 -> 00:13:59] Entonces, ese es tu tema...
+[00:13:59 -> 00:14:00] Ya es bien.
+[00:14:00 -> 00:14:03] Que la gente empieza a...
+[00:14:03 -> 00:14:07] Si va a dar a crear algo o van a manipular el sistema,
+[00:14:07 -> 00:14:09] tienen que ir a través de la tensión,
+[00:14:09 -> 00:14:11] si no malobran todo.
+[00:14:11 -> 00:14:13] El día es como pueden crear.
+[00:14:13 -> 00:14:15] Si no, no pueden crear productos.
+[00:14:15 -> 00:14:17] Ya, ya, ya, ya...
+[00:14:17 -> 00:14:19] Ya había puesto candado, ¿no?
+[00:14:19 -> 00:14:22] Claro, él había puesto candado eso lo que se ha creado antes,
+[00:14:22 -> 00:14:24] que se ha creado desde toda la vida.
+[00:14:24 -> 00:14:26] Pero como esas cosas...
+[00:14:26 -> 00:14:28] Pero porque es lo y para tomar promociones,
+[00:14:28 -> 00:14:29] para captar...
+[00:14:29 -> 00:14:32] Claro, solamente lo podemos armarnos
+[00:14:32 -> 00:14:34] a otra administración o logística.
+[00:14:34 -> 00:14:36] Pero de la forma que es...
+[00:14:36 -> 00:14:37] Para que no...
+[00:14:37 -> 00:14:38] Claro, ahora...
+[00:14:38 -> 00:14:41] Ahora me tienes que decir cómo es que no se necesita,
+[00:14:41 -> 00:14:42] o no se siente lo que pasa.
+[00:14:42 -> 00:14:45] Entonces, cada parte que va implementando
+[00:14:45 -> 00:14:48] tiene que ir acompañado de las teorias de capacitación.
+[00:14:48 -> 00:14:50] ¿Qué ya ticas tú?
+[00:14:50 -> 00:14:54] Del personal que va a estar involucrados del tema.
+[00:14:54 -> 00:14:55] ¿No?
+[00:14:55 -> 00:15:00] Entonces, le tienes que dedicar un tiempo del día a capacitar.
+[00:15:00 -> 00:15:05] Entonces, tienes que ir y tienes que ir con el día sentado
+[00:15:05 -> 00:15:08] un rato, ya rato que ya tengo un poco el tiempo.
+[00:15:08 -> 00:15:10] Emprenito antes de empezar.
+[00:15:10 -> 00:15:13] Repito una media hora y ese capacitamiento.
+[00:15:13 -> 00:15:14] Es muy grande.
+[00:15:14 -> 00:15:16] Para que te entiendas.
+[00:15:16 -> 00:15:17] Ah, ya vamos a hacerlo, ya.
+[00:15:17 -> 00:15:19] Para ellos también.
+[00:15:19 -> 00:15:21] O sea, a la de cada área.
+[00:15:21 -> 00:15:24] Bueno, otra implementación...
+[00:15:24 -> 00:15:27] ¿Qué hemos hecho ha sido un CardEx?
+[00:15:27 -> 00:15:31] CardEx solo de logística, donde se manejan las centrales de salidas.
+[00:15:31 -> 00:15:32] ¿Verdad?
+[00:15:32 -> 00:15:33] Sí, sí.
+[00:15:33 -> 00:15:34] Más que todo se definió...
+[00:15:34 -> 00:15:36] Nosotros siempre manejamos un papel.
+[00:15:36 -> 00:15:38] El papel es clícate, clícate, clícate.
+[00:15:38 -> 00:15:39] Eso le hemos digitalizado.
+[00:15:39 -> 00:15:41] Le hemos puesto en la nube.
+[00:15:41 -> 00:15:44] Y lo puedes acceder de cualquier lugar como el bingo.
+[00:15:44 -> 00:15:50] Ese CardEx está vinculado tanto al lodo como el sistema alterno que tiene Rodrigo.
+[00:15:50 -> 00:15:52] Que utilizo el esante.
+[00:15:52 -> 00:15:58] Esas 13 herramientas en conjunto van a ser que ya se podría decir todos quemapeados.
+[00:15:58 -> 00:16:00] Por el hecho de que... ¿Por qué no solo lodo?
+[00:16:00 -> 00:16:03] Porque lodo tiene algunas deficiencias en cuanto al etiqueta.
+[00:16:03 -> 00:16:05] Que la está viendo, Shandee.
+[00:16:05 -> 00:16:07] Pero ese que ya lo está viendo, ya lo está viendo, ya lo está viendo.
+[00:16:07 -> 00:16:09] Nunca voy a etiqueta hermada.
+[00:16:09 -> 00:16:11] Pero lodo no sirve por la facturación.
+[00:16:12 -> 00:16:14] Entonces, el lodo se queda.
+[00:16:14 -> 00:16:15] El CardEx, porque...
+[00:16:15 -> 00:16:18] Recuerda que ellos tienen horas que nos deben.
+[00:16:18 -> 00:16:19] Por me...
+[00:16:19 -> 00:16:20] Y después, el mení...
+[00:16:20 -> 00:16:21] Tenen que tardir sobre las horas.
+[00:16:21 -> 00:16:23] Entonces, los ajo vení, ajo lo...
+[00:16:23 -> 00:16:24] Sacrales el favor.
+[00:16:24 -> 00:16:25] Joder los.
+[00:16:25 -> 00:16:26] ¿Ya?
+[00:16:26 -> 00:16:28] Porque no te están regalando su tiempo.
+[00:16:28 -> 00:16:29] Yo les pago por eso.
+[00:16:29 -> 00:16:31] Y no están usando esas horas.
+[00:16:31 -> 00:16:35] Tú joder los joder los y para que usamos.
+[00:16:35 -> 00:16:37] Hasta que llegas al tu objetivo.
+[00:16:37 -> 00:16:42] No, mira, hacer cambios en la clínica como el personal de Cosme Trito.
+[00:16:42 -> 00:16:43] ¿Cuánto nos cuesta?
+[00:16:43 -> 00:16:45] Una, otra, otra.
+[00:16:45 -> 00:16:49] Puede tomar medio año a hacer un cambio con la persona.
+[00:16:49 -> 00:16:51] Entonces, los de Shandee igual son de jadasos.
+[00:16:51 -> 00:16:54] Nadie va a trabajar al ritmo que tú quieres.
+[00:16:54 -> 00:16:56] O sea, tus cerebros andan otra velocidad.
+[00:16:56 -> 00:16:58] Y entonces...
+[00:16:58 -> 00:17:02] Y si finalmente vemos que no funcionan, que no tienen ir.
+[00:17:02 -> 00:17:04] Y también vamos a...
+[00:17:04 -> 00:17:05] Campándome del proveedor.
+[00:17:05 -> 00:17:07] Sí, porque tampoco tú puedes detener.
+[00:17:07 -> 00:17:10] No vamos a detener, no.
+[00:17:10 -> 00:17:12] Hasta que esto no funcione bien.
+[00:17:12 -> 00:17:13] Por ahí.
+[00:17:13 -> 00:17:15] Ni por el proveedor, sino cambiamos de poder.
+[00:17:15 -> 00:17:18] Ni por el personal, como les dije el primer día.
+[00:17:18 -> 00:17:20] Esto va a salir porque tienes que salir.
+[00:17:20 -> 00:17:23] Sí, y en ese sentido también ya sablo con él.
+[00:17:23 -> 00:17:24] Solo en él.
+[00:17:24 -> 00:17:27] Me dice que hay un tiempo y pasen tiempo y no lo desarrollamos.
+[00:17:27 -> 00:17:28] No, pero...
+[00:17:28 -> 00:17:30] Entonces, la siguiente facturación, ¿sabes que?
+[00:17:30 -> 00:17:34] No me he desarrollado pasen tiempo y no te pudo pagar.
+[00:17:34 -> 00:17:36] Porque no me estás cumpliendo el trabajo.
+[00:17:36 -> 00:17:37] De qué te estoy pagando.
+[00:17:37 -> 00:17:38] Esa...
+[00:17:38 -> 00:17:43] Porque incluso a la par ya que ellos no nos cumplían con lo que nosotros solicitábamos,
+[00:17:43 -> 00:17:45] con Rodríguez se hizo también la...
+[00:17:45 -> 00:17:46] Ya la implementan...
+[00:17:46 -> 00:17:48] Bueno, las pruebas de creación de kits,
+[00:17:48 -> 00:17:50] lo cual ya está la...
+[00:17:50 -> 00:17:52] y tectura hecha, falta el ingreso.
+[00:17:52 -> 00:17:54] Ahora, para el ingreso yo había propuesto en el reunión anterior.
+[00:17:54 -> 00:17:58] Igual porque se acaso, aver igualte, que otros proveedor y se van.
+[00:17:58 -> 00:18:01] Correciendo un mapeo, ten un plan becio.
+[00:18:01 -> 00:18:02] Ten un plan bello.
+[00:18:03 -> 00:18:05] Tu plan A es ellos, tu plan B y tu plan C.
+[00:18:05 -> 00:18:08] Siempre debes tener tres planes, porque si no te funcionó,
+[00:18:08 -> 00:18:10] no te funcioné, lo otro y te funcioné, lo otro.
+[00:18:10 -> 00:18:12] Yo siempre trabajo a cientos de mis vida.
+[00:18:12 -> 00:18:14] Tengo mi plan A, mi plan B y mi plan C.
+[00:18:14 -> 00:18:17] Tres planes, es desde chiquita trabaja así siempre.
+[00:18:17 -> 00:18:19] ¿Te tomando con él?
+[00:18:19 -> 00:18:21] Eso también te da poder de negociación,
+[00:18:21 -> 00:18:23] porque no depende del plan A.
+[00:18:23 -> 00:18:25] Cuando tú único plan es el plan A,
+[00:18:25 -> 00:18:27] muchas de estas desesperado ahí, pero si tú,
+[00:18:27 -> 00:18:30] sabes que si el plan A no funciona, tienes el plan B.
+[00:18:30 -> 00:18:32] Y sabes que también si el plan B no funciona,
+[00:18:32 -> 00:18:33] tienes un plan B.
+[00:18:33 -> 00:18:34] Tienes forma de negociación.
+[00:18:34 -> 00:18:35] Esa es la idea de las terapias.
+[00:18:35 -> 00:18:38] Cuando tú un tema es perder, algo no tienes capas.
+[00:18:38 -> 00:18:40] Mira, ya estamos cuantos años con ellos.
+[00:18:40 -> 00:18:42] O sea, por lo menos de bien, te diré de frente.
+[00:18:42 -> 00:18:47] Mira, estoy tantos años contigo y no termines de afinar tu sistema.
+[00:18:47 -> 00:18:48] Claro.
+[00:18:48 -> 00:18:51] Y tú sabes de eso.
+[00:18:51 -> 00:18:53] O sea, mi me pueden engañar.
+[00:18:53 -> 00:18:55] A mi me pueden engañar, pero es bien o no?
+[00:18:55 -> 00:18:56] Es de tu función.
+[00:18:56 -> 00:19:00] Yo voy a haber resultado nada más, pero todo lo que implica,
+[00:19:00 -> 00:19:03] llegar a este ser resultado, es tu parte.
+[00:19:03 -> 00:19:06] Yo no lo sé.
+[00:19:06 -> 00:19:08] Ya hay una parte del sistema, entonces,
+[00:19:08 -> 00:19:11] en los detalles del sistema, yo soy un entero.
+[00:19:11 -> 00:19:12] Yo voy a haber resultado.
+[00:19:12 -> 00:19:14] Yo te voy a exigir sobre el resultado.
+[00:19:14 -> 00:19:16] Si tú tienes que apoyar en tu problema.
+[00:19:16 -> 00:19:21] Sí, justo ese tema también está viendo por el tema de las cuáreas.
+[00:19:21 -> 00:19:25] Incluso nos hemos dado cuenta que nosotros estamos avanzando más en el sistema
+[00:19:25 -> 00:19:27] viendo cómo se hace todo correctamente,
+[00:19:27 -> 00:19:29] el armado de hit, todo, y también.
+[00:19:29 -> 00:19:32] ¿Eso va a llegar?
+[00:19:32 -> 00:19:34] ¿Cuándo llega el falso?
+[00:19:34 -> 00:19:36] Por este entero, el telefón logístico.
+[00:19:36 -> 00:19:37] No lo tengo.
+[00:19:37 -> 00:19:38] ¿Vamos a ver?
+[00:19:38 -> 00:19:39] Que lo revisa y él.
+[00:19:39 -> 00:19:43] Este.
+[00:19:43 -> 00:19:50] Para otro paso, para poder terminar el tema de logística y tener completo los kits y todo el armado,
+[00:19:50 -> 00:19:53] este procedimiento que van a hacer las...
+[00:19:53 -> 00:19:56] Que queremos que las doctoras y las cosmetras...
+[00:19:56 -> 00:19:57] Claro, claro.
+[00:19:57 -> 00:20:01] Esa fue la propuesta de la semana pasada, que yo había sugerido que como usted nos vamos a sentar
+[00:20:01 -> 00:20:03] a ver qué procedimiento cada cosa que lleva,
+[00:20:03 -> 00:20:05] yo creo que las doctoras les pueden apoyar en eso.
+[00:20:05 -> 00:20:08] ¿Ya tener una de los estudios de todo lo que usa?
+[00:20:08 -> 00:20:11] ¿Y ustedes a todas agarrar una?
+[00:20:11 -> 00:20:12] ¿Laborar la más inteligencia?
+[00:20:12 -> 00:20:13] Ok.
+[00:20:13 -> 00:20:17] Aquí están todos los procedimientos que debe ser un hypo,
+[00:20:17 -> 00:20:19] este toxinas, todo esto.
+[00:20:19 -> 00:20:25] Ya están enocados todos los posibles sesiones y acá están todos sus insumos.
+[00:20:25 -> 00:20:30] Para que puedan coger fácilmente, incluso pueden escribirnos el gel y el estado de mi.
+[00:20:31 -> 00:20:33] ¿Hay producto en la conservadora?
+[00:20:33 -> 00:20:35] El hornelofimo es comprado.
+[00:20:35 -> 00:20:41] Hay productos en la conservadora nueva y no sé si lo más peor tienes que más peor también.
+[00:20:41 -> 00:20:43] Sí, como va a entrar a la conservadora.
+[00:20:43 -> 00:20:45] Entonces, se tiene que agregar esto.
+[00:20:45 -> 00:20:47] No se lo hayas de ser unidad de sabrita.
+[00:20:47 -> 00:20:52] Pero ¿por qué es el frasco de 500 ml? ¿Eso recién?
+[00:20:52 -> 00:20:54] Es un ejemplo.
+[00:20:54 -> 00:20:55] Es para aquellas más bien.
+[00:20:55 -> 00:20:57] ¿Cuánto gliso de enocados?
+[00:20:57 -> 00:20:58] ¿Unsan un entremiliso de enocados?
+[00:20:58 -> 00:21:01] O sea, para un relleno y un vender, ellas tienen que decir.
+[00:21:01 -> 00:21:04] Uso, tres gásas, así.
+[00:21:04 -> 00:21:08] Hay dos geninas, los abujas, las ganas, las ganas, las ganas.
+[00:21:08 -> 00:21:09] Sí, perfecto.
+[00:21:09 -> 00:21:11] Ya que lo has lo con laura.
+[00:21:11 -> 00:21:13] Me lo pueden llevar y las cientos.
+[00:21:13 -> 00:21:18] Aprovecha que ahorita hay otras doctoras, porque cuando se vayan las que están entrenando para botuclinic,
+[00:21:18 -> 00:21:20] ya no vas a poder tomarla.
+[00:21:20 -> 00:21:22] Ya laura ya no va a tener tiempo de irse.
+[00:21:22 -> 00:21:27] Entonces, este es el momento para que, apenas llegues, se siente hacer eso.
+[00:21:28 -> 00:21:31] Con esto acá, bueno, las responsables van a colocar su nombre,
+[00:21:31 -> 00:21:33] colocarían todos los insumos y lo marcarían como listo
+[00:21:33 -> 00:21:36] y eso va a que registraron el excelente que tenemos nosotros
+[00:21:36 -> 00:21:40] para hallar mar todos los kits de sesión.
+[00:21:40 -> 00:21:45] Es el fruto tentativo del servicio.
+[00:21:45 -> 00:21:49] Como en el sistema se va a ver, este planada.
+[00:21:49 -> 00:21:51] ¿Cómo te va a hacer la orden?
+[00:21:51 -> 00:21:52] ¿Cuándo es algo dulce?
+[00:21:52 -> 00:21:53] Este, ya antes de...
+[00:21:53 -> 00:21:54] Ya, ya, ya.
+[00:21:54 -> 00:21:57] Este llega el paciente, se le hace, bueno, con la doctora es la evaluación, ¿no?
+[00:21:57 -> 00:22:01] Luego se le arrolicen la ecotización de todos los pedidos,
+[00:22:01 -> 00:22:06] se confirma, bueno, esto es por parte de tanto recepción como el paciente, ¿no?
+[00:22:06 -> 00:22:09] Su ecotización, pedido, boleto, todo.
+[00:22:09 -> 00:22:15] Internamente, se le arma el kit de sesión, el kit de sesión y se verifica en el stop.
+[00:22:15 -> 00:22:19] Por último, se le entrega la sesión y ya queda como para que se roba.
+[00:22:19 -> 00:22:23] Entonces, ¿ya tienes que poner a la secretaria donde ellos?
+[00:22:23 -> 00:22:24] Por arriba.
+[00:22:24 -> 00:22:26] Por el COVID, por favorita no están cobrando.
+[00:22:26 -> 00:22:29] Claro, arriba.
+[00:22:29 -> 00:22:32] Y el producto va a subir el paciente arriba.
+[00:22:32 -> 00:22:34] Claro que es que estuviera pagando.
+[00:22:34 -> 00:22:37] Ya, es que hay que activar los conciertos de arriba, entonces.
+[00:22:37 -> 00:22:39] Ya tienen que activar los conciertos de arriba.
+[00:22:39 -> 00:22:41] Por lo menos, ¿por qué no hay veas a nadie?
+[00:22:41 -> 00:22:42] ¿Por qué no hay veas a nadie?
+[00:22:42 -> 00:22:44] ¿Tobiendo si fue?
+[00:22:44 -> 00:22:45] ¿Cuándo va a ver ahí?
+[00:22:45 -> 00:22:46] No hay aire, es la audita.
+[00:22:46 -> 00:22:47] ¿Estás la audita?
+[00:22:47 -> 00:22:48] ¿Estás la audita?
+[00:22:48 -> 00:22:49] Pero si hay un...
+[00:22:49 -> 00:22:51] No, si no, no hay un concierto, no hay un machiquitito.
+[00:22:51 -> 00:22:52] Y todavía no está las sinas.
+[00:22:52 -> 00:22:54] Y las cabinas también están...
+[00:22:54 -> 00:22:55] ¿Cómo hay?
+[00:22:55 -> 00:22:56] Ah, las cabinas.
+[00:22:56 -> 00:22:59] Pero esto subiéndola, las cabinas, las cabinas.
+[00:22:59 -> 00:23:00] ¿Las doctores también?
+[00:23:00 -> 00:23:01] ¿Las comias?
+[00:23:01 -> 00:23:03] La comias, tenemos dos dos dos, este, María Laura.
+[00:23:03 -> 00:23:04] Ah, sí, y eso es para hacer.
+[00:23:04 -> 00:23:05] Y eso es para hacer.
+[00:23:05 -> 00:23:06] Y eso es para organizar eso con ya bien.
+[00:23:06 -> 00:23:07] Ya, bien listo.
+[00:23:07 -> 00:23:08] Dale Baby.
+[00:23:08 -> 00:23:12] Por último, para el tema de la digitalización de historias,
+[00:23:12 -> 00:23:18] también ya tenemos este sistema donde tiene un programa para descargar en cada una de las laptops,
+[00:23:18 -> 00:23:20] de los responsables.
+[00:23:20 -> 00:23:26] Ellos van a instalarlo y van a empezar a digitalizar todo lo que digitaliza el escáner,
+[00:23:26 -> 00:23:27] directamente se va a subir acá.
+[00:23:27 -> 00:23:33] Esto ya está enlazado con el odu, cosa que relaciona.
+[00:23:33 -> 00:23:35] Historia clínica con el paciente en el odu.
+[00:23:35 -> 00:23:38] Y vamos a abrir un apartado ahí para que directamente con un clic,
+[00:23:38 -> 00:23:42] al paciente se pueda ver todos sus datos, tanto Historia clínica, fotos y diferentes.
+[00:23:42 -> 00:23:44] Este va a ser su espacio.
+[00:23:44 -> 00:23:49] Todo esto está subido en la página web de Star Mulaser en un apartado extra.
+[00:23:49 -> 00:23:54] Porque nos habíamos dado cuenta que también nos está usando el hosting,
+[00:23:54 -> 00:23:57] que tenía el almacenamiento amplio para historias para diferentes cosas.
+[00:23:57 -> 00:23:58] El servidor también ya usas.
+[00:23:58 -> 00:23:59] Y ahora ya le estamos dando.
+[00:23:59 -> 00:24:00] Y también hacer.
+[00:24:00 -> 00:24:02] ¿Tiene doble?
+[00:24:02 -> 00:24:03] Sí.
+[00:24:03 -> 00:24:07] ¿Tienes nuestro servidor y tienes un backup en el nuevo?
+[00:24:07 -> 00:24:13] Ares, el servidor en la nube, sería el principal y el backup que da cáncer.
+[00:24:13 -> 00:24:14] Queden un servidor.
+[00:24:14 -> 00:24:19] Es el porcise, lo que es el sistema si nos quiere quitar toda la información.
+[00:24:19 -> 00:24:24] No, es por si se te cae en la nube, tienes toda la información.
+[00:24:24 -> 00:24:29] Ahora, ¿qué pasaría si nosotros migraramos de lodo a otra empresa?
+[00:24:29 -> 00:24:33] Ellos podrían quedarse con nuestra información, no dar, no dar.
+[00:24:33 -> 00:24:36] O igual le tienen que entregar por le.
+[00:24:36 -> 00:24:41] No, se solicito todas sus bases de datos y se migra a otra plataforma de la que.
+[00:24:41 -> 00:24:45] Tanto la base de datos de pacientes, base de datos de productos, base de datos.
+[00:24:45 -> 00:24:47] Oye, si no, otro modo, también otro proedor de datos.
+[00:24:47 -> 00:24:48] ¿No?
+[00:24:51 -> 00:25:19] Bueno, no tenemos la diapositiva, exacta, pero les explicas el flujo como la todo flujo completo.
+[00:25:19 -> 00:25:20] Sobre.
+[00:25:20 -> 00:25:22] Lo del carro de que me hagas.
+[00:25:22 -> 00:25:25] Y que todos los insumis tienen.
+[00:25:25 -> 00:25:26] Ah, ni quieren ni así.
+[00:25:26 -> 00:25:33] No he mencionado brevemente, pero en la reunión anterior se había definido que las chicas se van a subir por su insumis.
+[00:25:33 -> 00:25:36] Sí, pero todos los productos tienen que decir.
+[00:25:36 -> 00:25:37] ¿Hay dos opciones?
+[00:25:37 -> 00:25:38] Definitivamente, de a ti.
+[00:25:38 -> 00:25:40] Sí, por ejemplo.
+[00:25:40 -> 00:25:44] El mídiun usa guante, jenina de azúcar.
+[00:25:44 -> 00:25:47] Si es que ese kit se le va a entregar en su pantalla.
+[00:25:47 -> 00:25:48] No, no, no, no, no.
+[00:25:48 -> 00:25:52] A mí déjame con mis cosas abajo y que solo maneja el producto.
+[00:25:52 -> 00:25:56] Porque si tú le vas a entregar un kit con guantes, no sé bien o si cuánto.
+[00:25:56 -> 00:25:59] ¿Qué pasa si se contamina el guante a medio de otro serimiento?
+[00:25:59 -> 00:26:01] La canula se la chobo.
+[00:26:01 -> 00:26:04] Yo fue cambiar dos, tres canules en un procedimiento y no por el error de ellas.
+[00:26:04 -> 00:26:05] ¿Ah?
+[00:26:05 -> 00:26:07] Ahora te es error de ellas, pero también puedo cambiar por el error níos.
+[00:26:07 -> 00:26:11] Si yo choco el guante con la canula, yo no voy a ahorrar una canula,
+[00:26:11 -> 00:26:13] meterle una canula suciel paciente.
+[00:26:13 -> 00:26:16] Yo tengo que tener a mis disposición los guantes y las canules.
+[00:26:16 -> 00:26:17] No puedo terminar un backup.
+[00:26:17 -> 00:26:19] Todo el material médico usted lo tiene.
+[00:26:19 -> 00:26:22] Ay, tú quieres dar un backup para que yo tenga el material abajo
+[00:26:22 -> 00:26:24] y ellos bajen con todo un kit completo.
+[00:26:24 -> 00:26:28] ¿Y cómo vas a llevar la condabilidad de lo que se usó adicional abajo?
+[00:26:28 -> 00:26:30] Es el que se va a dar.
+[00:26:30 -> 00:26:32] Que no va a estar contando agujicas todos los días.
+[00:26:32 -> 00:26:33] No, no, no.
+[00:26:33 -> 00:26:36] O sea, entregaría el insumo principal pero los materiales médicos los tienen.
+[00:26:37 -> 00:26:39] Claro, solo insumo principal.
+[00:26:39 -> 00:26:42] Pero después se puede, o sea, digamos,
+[00:26:42 -> 00:26:44] ¿cuánto al veces puedes tener el error?
+[00:26:44 -> 00:26:45] No entendía.
+[00:26:45 -> 00:26:47] Dos, tres veces.
+[00:26:47 -> 00:26:50] ¿Quieres ver eso?
+[00:26:50 -> 00:26:56] ¿Enso le puedes tener una caja o algo y después contabilízan ellos?
+[00:26:56 -> 00:26:57] Si, si.
+[00:26:57 -> 00:26:59] Usan por a o por b, tienen que también anotarlo.
+[00:26:59 -> 00:27:01] Mucha, pero eso va a estar difícil.
+[00:27:01 -> 00:27:02] No, no, no, no.
+[00:27:02 -> 00:27:05] Porque eso va a ser difícil porque, o sea, con el volumen de pacientes.
+[00:27:06 -> 00:27:09] Ahora ahorita podrías hacerlo por el peor de dos en la razón.
+[00:27:09 -> 00:27:10] Pero no es la realidad.
+[00:27:10 -> 00:27:12] Pero la realidad es que se van a quedar dos.
+[00:27:12 -> 00:27:17] Entonces, cuando su suceda, si no apunta a un producto,
+[00:27:17 -> 00:27:19] ¿cuál es el que va a apuntar un guante, no due a asa?
+[00:27:19 -> 00:27:21] ¿Cuál es el que hagas?
+[00:27:21 -> 00:27:25] Vícteme el uso de las agujas, treta y un oje,
+[00:27:25 -> 00:27:27] uso de las treta y dos.
+[00:27:27 -> 00:27:29] Te pueden dejar una caja o una caja o una caja.
+[00:27:29 -> 00:27:30] Eso es más o menos.
+[00:27:30 -> 00:27:32] Tengo que tener una caja en cada ambiente.
+[00:27:32 -> 00:27:35] Por eso, pues te pueden dejar una caja o una caja o una caja.
+[00:27:36 -> 00:27:37] De esas cajitas.
+[00:27:37 -> 00:27:39] Sí.
+[00:27:39 -> 00:27:42] No, no, no, no, no, no, no, no.
+[00:27:42 -> 00:27:43] Sí, de grandes manos.
+[00:27:43 -> 00:27:46] La finalidad, lo que usted quiere es, obviamente,
+[00:27:46 -> 00:27:47] el control de la armación.
+[00:27:47 -> 00:27:50] Entonces, cada kit, cuando es su salida,
+[00:27:50 -> 00:27:52] obviamente va a la salida de los mismos pequeños.
+[00:27:52 -> 00:27:55] Usted tiene su material médico al alcance.
+[00:27:55 -> 00:27:58] Y al final del mes, al corte,
+[00:27:58 -> 00:28:02] obviamente va a salir cuántas, cuantos kits y cuantas agujas se usaron.
+[00:28:02 -> 00:28:03] Entonces, ya está bien más.
+[00:28:03 -> 00:28:04] Ya está bien más.
+[00:28:04 -> 00:28:05] Ya están más menos.
+[00:28:05 -> 00:28:07] ¿Qué haces más menos con lo que no se apaga?
+[00:28:07 -> 00:28:08] Ya, cuando me aquí.
+[00:28:08 -> 00:28:09] ¿Qué tiene que dar ahí?
+[00:28:09 -> 00:28:10] Ya, cuando me aquí.
+[00:28:10 -> 00:28:12] Y a fin de mes de vez, ¿cuál tu so?
+[00:28:12 -> 00:28:14] Ya, para tener un mapeo entendí.
+[00:28:14 -> 00:28:15] Ya, cuando me aquí.
+[00:28:15 -> 00:28:17] Y ahora, justo que estamos tocando este tema,
+[00:28:17 -> 00:28:20] va a ver una herramienta adicional más que es la agenda.
+[00:28:20 -> 00:28:22] Que todavía no sea cojado bien la idea,
+[00:28:22 -> 00:28:24] pero la agenda también se va a dar una reforma.
+[00:28:24 -> 00:28:25] ¿No?
+[00:28:25 -> 00:28:26] Una reforma de la agenda.
+[00:28:26 -> 00:28:27] ¿Por qué?
+[00:28:27 -> 00:28:30] Porque eso no se ayuda a pronosticar lo que usted va a usar el día.
+[00:28:30 -> 00:28:31] Ya.
+[00:28:31 -> 00:28:32] ¿Por qué hay pacientes que usted receta última?
+[00:28:32 -> 00:28:35] Pero hay pacientes que ya vienen agentados para entenderlo.
+[00:28:35 -> 00:28:38] Entonces, yo lo tengo en el mostrador preparado.
+[00:28:38 -> 00:28:41] Ya tengo mis materiales ahí listos para que cuando vengan
+[00:28:41 -> 00:28:43] pacientes de X, llegar con su nombre.
+[00:28:43 -> 00:28:44] ¿Está bien?
+[00:28:44 -> 00:28:45] Con el nombre.
+[00:28:45 -> 00:28:46] ¿También?
+[00:28:46 -> 00:28:47] Con nombre.
+[00:28:47 -> 00:28:48] Bien, te diga idea.
+[00:28:48 -> 00:28:51] ¿Tú quieres tener una idea de cuánto es lo que realmente utilizo
+[00:28:51 -> 00:28:54] una fíjaro para hacer una tasación manual?
+[00:28:54 -> 00:28:55] Claro.
+[00:28:55 -> 00:28:56] Para hacer un capítulo.
+[00:28:56 -> 00:28:57] Ya está bien.
+[00:28:57 -> 00:28:58] Claro, que es un número más.
+[00:28:58 -> 00:28:59] Y es un número real.
+[00:29:00 -> 00:29:04] Y lo otro de tener ya preparado todo lo que va a utilizar en el día,
+[00:29:04 -> 00:29:07] ayuda para ayudar a usar un poco más con el hecho de que busco esto,
+[00:29:07 -> 00:29:08] busco el otro.
+[00:29:08 -> 00:29:12] Igualmente también en el Carrix que se está implementando se va a registrar
+[00:29:12 -> 00:29:13] todos salidos.
+[00:29:13 -> 00:29:16] A todo salido va a pasar si o si por ese Carrix tanto sea la piseros,
+[00:29:16 -> 00:29:18] cualquier cosa y hay más de manera.
+[00:29:18 -> 00:29:21] Y hay vamos a tener la metrícula de la pluma de esta nota.
+[00:29:21 -> 00:29:25] Oye, mente esa información no va al sistema, pero ya la tengo ahí.
+[00:29:26 -> 00:29:30] O sea, la piseros salió su kid de usted para que pasillete.
+[00:29:30 -> 00:29:33] Y ya con eso se vamos armando, ¿no?
+[00:29:33 -> 00:29:35] Vamos armando lo que como deirse.
+[00:29:35 -> 00:29:38] Oye, es como que de ensayos, horror, para ir a marchar blancas, como lo quieren ver.
+[00:29:38 -> 00:29:42] Pero el carrix, todo lo que salga, todo va en el car.
+[00:29:42 -> 00:29:43] ¿Y ya está bien?
+[00:29:43 -> 00:29:44] Sí.
+[00:29:44 -> 00:29:48] Y justo lo que estaba hablando de la agenda, el horario que tiene actualmente es un Excel
+[00:29:48 -> 00:29:51] que, bueno, según yo lo vi es un poco en borroso, ¿no?
+[00:29:51 -> 00:29:53] Se ve coloores, se ve en palabras por todos lados.
+[00:29:53 -> 00:29:59] Entonces, eso también lo que estamos pensando es como dijo, modificarlo, adaptarlo de otra manera.
+[00:29:59 -> 00:30:02] Y que de eso de un descargo diario.
+[00:30:02 -> 00:30:05] O sea, podamos ver todas las decisiones que se van a hacer ese día
+[00:30:05 -> 00:30:07] y ya tener kids para armados como mi.
+[00:30:07 -> 00:30:12] ¿Algúenme?
+[00:30:12 -> 00:30:15] ¿Cómo conmigo?
+[00:30:15 -> 00:30:16] ¿Qué le piste bien?
+[00:30:16 -> 00:30:17] ¿Por qué no?
+[00:30:17 -> 00:30:18] Porque el día antes ya lo tiene.
+[00:30:18 -> 00:30:19] ¿Pasillamos?
+[00:30:19 -> 00:30:20] Sí, el día lo tiene todo lo mismo.
+[00:30:20 -> 00:30:21] Sí, bueno.
+[00:30:21 -> 00:30:23] En la tarde ya está la agenda de guía, ¿no?
+[00:30:23 -> 00:30:27] Oye, me di el día ya está porque mandan un reportatorio,
+[00:30:27 -> 00:30:29] y la siguiente es lo de mañana y yo tengo una manda.
+[00:30:29 -> 00:30:32] Exacto, usted te da un pronóstico de más o menos que es los dos.
+[00:30:32 -> 00:30:36] Si algo no nos va a hacer durante el día, la chica es lo borra y mueve para otro día.
+[00:30:36 -> 00:30:43] Entonces, en la noche vas a tener un tipo de tipo 5, ya lo dijeron y ya tendré el listo.
+[00:30:43 -> 00:30:48] También queremos presentar la página de botulín que ya está lanzada al sistema.
+[00:30:48 -> 00:30:53] Actualmente le hemos puesto referencias no tan exactas, porque no te hablando de eso.
+[00:30:54 -> 00:30:58] ¿Qué más es desarrollado de la página de la historia clínica?
+[00:30:58 -> 00:31:00] ¿Listria clínica?
+[00:31:00 -> 00:31:03] No, es esta para tener todas las historias digitalizadas.
+[00:31:03 -> 00:31:07] Ya, nada más antes, pero todavía no has avanzado en lo que este vi.
+[00:31:07 -> 00:31:09] Ahí hay un intentado, pero...
+[00:31:09 -> 00:31:11] ...se nos despresemos todos.
+[00:31:11 -> 00:31:12] ¿Ladie?
+[00:31:12 -> 00:31:13] ¿Estamos en historias?
+[00:31:13 -> 00:31:15] Bueno, creo que usted se refiere a lo de...
+[00:31:15 -> 00:31:17] Ya tener en digital, no es cada cosa que hay, no.
+[00:31:17 -> 00:31:19] Los nuevos ingresos de datos.
+[00:31:19 -> 00:31:21] ¿Qué no se refiere a los...
+[00:31:22 -> 00:31:25] ¿A ver, ahorita tú se están mirando los papeles?
+[00:31:25 -> 00:31:26] ¿Y eso es la mitad de sí?
+[00:31:26 -> 00:31:27] ¿Ya lo se paró ya?
+[00:31:27 -> 00:31:31] ¿Qué es compasible de nuevo? ¿Qué sí lo tenía?
+[00:31:31 -> 00:31:34] ¿Listria digital? ¿Estás de tú? ¿Listras digitalizadas?
+[00:31:34 -> 00:31:36] Pero proyecta lo que tiene.
+[00:31:36 -> 00:31:39] Ya lo estuve mostrando en el trono.
+[00:31:39 -> 00:31:41] Vean, ¿viríéndole para que la tengas mientras terminamos?
+[00:31:41 -> 00:31:44] Ahí, ahí tienes varias cosas.
+[00:31:44 -> 00:31:47] Uno es botulini, el otro va a ser otra.
+[00:31:47 -> 00:31:48] Lo hace el otro la página.
+[00:31:48 -> 00:31:49] Vamos, vamos.
+[00:31:49 -> 00:31:50] ¿No es patrón?
+[00:31:51 -> 00:31:52] ¿Sante?
+[00:31:52 -> 00:31:53] No, lo estuve.
+[00:31:53 -> 00:31:55] No, la mía es mi página.
+[00:31:55 -> 00:31:57] Hay que ser mi página del vía, ¿no?
+[00:31:57 -> 00:31:59] Sí, yo no creo que es una página para...
+[00:31:59 -> 00:32:01] Hay que crear una página.
+[00:32:01 -> 00:32:02] Porque ya...
+[00:32:02 -> 00:32:03] ¿Por qué va a desaparecer?
+[00:32:03 -> 00:32:05] Es un patrón de sentidos antiguas.
+[00:32:05 -> 00:32:06] ¿Por qué va a desaparecer?
+[00:32:06 -> 00:32:07] O sea, ¿qué debería para usted?
+[00:32:07 -> 00:32:09] Se va a quedar para mí, pero ya...
+[00:32:09 -> 00:32:10] Cambiados, cambios.
+[00:32:10 -> 00:32:12] Ya, ¿y ahora tú y yo vas a tener otro...
+[00:32:12 -> 00:32:15] O sea, el otro va a tener pura estormología.
+[00:32:15 -> 00:32:18] Y también tenemos que empezar a desarrollar sus redes.
+[00:32:18 -> 00:32:21] Ya porque sus redes no existen.
+[00:32:21 -> 00:32:22] Tenemos que mover...
+[00:32:22 -> 00:32:23] Suís.
+[00:32:23 -> 00:32:24] ¿Tú estás en caráter?
+[00:32:24 -> 00:32:25] No.
+[00:32:25 -> 00:32:32] Vamos a empezar a trabajar toda la parte de la página de Instagram, tiktok, todo esto.
+[00:32:32 -> 00:32:34] Y nada de figuritas, animalitos.
+[00:32:34 -> 00:32:35] ¡Buchan!
+[00:32:35 -> 00:32:37] No se han chancado duro ahorita.
+[00:32:37 -> 00:32:42] No, de verdad, mira, ¿cómo es posible que hayan hecho eso con...
+[00:32:42 -> 00:32:43] ¿Te va a leer?
+[00:32:43 -> 00:32:44] Para que te hace...
+[00:32:44 -> 00:32:47] ¿Tú tienes que tener cuidado con lo que publicas?
+[00:32:47 -> 00:32:49] ¿Tú tienes que enseñar antes de lo que...
+[00:32:49 -> 00:32:51] Sí, mira lo que han puesto acá.
+[00:32:51 -> 00:32:52] Un huevo.
+[00:32:52 -> 00:32:53] Nunca me hubiera hecho eso.
+[00:32:53 -> 00:32:54] Buenos días.
+[00:32:54 -> 00:32:55] ¡Cumpló!
+[00:32:55 -> 00:32:57] No sé qué, ¿dónde esperaste acá?
+[00:32:57 -> 00:32:58] Buenos días.
+[00:32:58 -> 00:33:00] Acabo de añadir a Fabrizio que es la persona que nos acompaña.
+[00:33:00 -> 00:33:03] Vistas en los hospitales, tomamos fotos, evite y crea contenidos para que...
+[00:33:03 -> 00:33:07] Se agrega el grupo de trabajo y podamos trabajar coordinadamente.
+[00:33:07 -> 00:33:10] Esta es la paleta de colores de dignidad médica.
+[00:33:10 -> 00:33:12] Han mandado la paleta de colores.
+[00:33:12 -> 00:33:18] Después, una amiga puso bus.
+[00:33:18 -> 00:33:22] Apuesto, cumpla con reporta que no se están siguiendo buts desde hace 40 minutos.
+[00:33:22 -> 00:33:24] Y lo estamos haciendo nosotros por favor.
+[00:33:24 -> 00:33:27] Hay que mejorar opciones como de cuentas reales latinoamericanas.
+[00:33:27 -> 00:33:29] Es un poco más caro pero se ve mejor.
+[00:33:29 -> 00:33:33] Si alguien quisiera entrar a nuestros seguidores en cuanto a los curvas cuantas de India.
+[00:33:33 -> 00:33:36] Si bien el número de seguidores puede impresionar,
+[00:33:36 -> 00:33:38] si entran, a ver podríamos quedar mal.
+[00:33:38 -> 00:33:39] Es un arma de doble fibro.
+[00:33:39 -> 00:33:42] No entiendo nada de eso, voy a preguntar la chal difítica.
+[00:33:42 -> 00:33:44] Pero aquí el hombre es puso.
+[00:33:44 -> 00:33:47] Considero que por teme trabajo mejor iria a su vez personalmente.
+[00:33:47 -> 00:33:49] ¿Dónde puesto eso de los animales?
+[00:33:49 -> 00:33:52] No creo.
+[00:33:52 -> 00:33:54] Pero eso de los animales lo hizo lo público.
+[00:33:54 -> 00:33:57] Ah, acá.
+[00:33:57 -> 00:33:58] ¿Dónde se me hizo?
+[00:33:58 -> 00:34:02] Durante ese video se ha insertado una serie muy encos perros, gatos.
+[00:34:02 -> 00:34:06] Esto puede ser una estrategia especial porque no han comentado que esto le quita ser ideal mensaje.
+[00:34:06 -> 00:34:08] Creo que sería mejor sacarlo.
+[00:34:08 -> 00:34:11] O sea, esto no me puede volver a pasar.
+[00:34:11 -> 00:34:12] Sí.
+[00:34:12 -> 00:34:13] Ok?
+[00:34:13 -> 00:34:14] De ninguna manera.
+[00:34:14 -> 00:34:17] Ahora ya me están diciendo, ¿sabes que es mandan los videos?
+[00:34:17 -> 00:34:21] Les vamos a seditar nosotros.
+[00:34:21 -> 00:34:23] O sea, por eso pierdes un trabajo.
+[00:34:23 -> 00:34:26] Pero esos obvices, tú solo, ¿si no te oris en el nadie?
+[00:34:26 -> 00:34:28] Bueno, pasé la encarga.
+[00:34:28 -> 00:34:30] Y es de que pasé a mi continuo que sí.
+[00:34:30 -> 00:34:31] Ya se hizo.
+[00:34:31 -> 00:34:32] Ya se.
+[00:34:32 -> 00:34:34] Pero no, pues, no, pero es por el hecho.
+[00:34:34 -> 00:34:39] Pero si hay ellas tienen un que hay un ranzón y ya se le va a reivindro.
+[00:34:39 -> 00:34:40] Claro.
+[00:34:40 -> 00:34:41] Pero igual reúnete con ella.
+[00:34:41 -> 00:34:42] Puedes le puchan.
+[00:34:42 -> 00:34:44] Me llamo en la atención hoy día por los perros, gatos.
+[00:34:44 -> 00:34:45] No sé qué.
+[00:34:45 -> 00:34:47] Entonces, ¿quién va a tomar esas decisiones?
+[00:34:47 -> 00:34:50] Porque ella lo toma como un que hay que bonito, porque ella le gusta eso.
+[00:34:50 -> 00:34:54] Pero no es a lo que lleva la seriedad del caso, que es ese zapá, finaro.
+[00:34:54 -> 00:34:57] Entonces, ¿tiene que tener unas reuniones reales y tienes que...
+[00:34:57 -> 00:35:00] ¿Vas a tener una reunión en el área de marketing?
+[00:35:00 -> 00:35:02] Ya, entonces.
+[00:35:02 -> 00:35:07] ¿A ver qué hacer el plan de la página web de Johanna?
+[00:35:07 -> 00:35:15] Dejó saber que no existe esa página.
+[00:35:15 -> 00:35:19] O sea, el moláser actualizarla y vitalizarle toda la parte estética.
+[00:35:19 -> 00:35:21] Y cambiarle los colores porque ya no se ha vuelado a la página.
+[00:35:21 -> 00:35:22] Y actualizarla, ¿no?
+[00:35:22 -> 00:35:27] O sea, modernizarla la página y qué queda en la parte de octavolotina.
+[00:35:27 -> 00:35:31] Lo que queremos es que cada uno tenga su propiedad.
+[00:35:31 -> 00:35:32] Ya sé parado, ya no.
+[00:35:32 -> 00:35:33] Ya que cambiarle luego el doctor.
+[00:35:33 -> 00:35:37] De hecho, desde que entró de la crisis, ahora ves a fuera JTB.
+[00:35:37 -> 00:35:40] O sea, la crínica va a ser JTB, todo va a ser JTB.
+[00:35:40 -> 00:35:43] Para temas legales, va a estar obstáculo, ¿no?
+[00:35:43 -> 00:35:46] Al frente va a ser obstáculo.
+[00:35:46 -> 00:35:49] Al frente va a ser obstáculo.
+[00:35:49 -> 00:35:53] Entonces, cada uno va a tener su propiedad.
+[00:35:53 -> 00:35:54] Ya.
+[00:35:54 -> 00:35:58] Separezó también tenemos que crear nuestra propia imagen en redes.
+[00:35:58 -> 00:36:02] ¿Por qué los presíndices? ¿A dónde vas a obstáculo?
+[00:36:02 -> 00:36:07] ¿A qué te hacer votos o hiélurónicos estética como que no juega?
+[00:36:07 -> 00:36:09] El lenguaje no se macho.
+[00:36:09 -> 00:36:11] Está el moláser con este clav.
+[00:36:12 -> 00:36:13] Entonces.
+[00:36:13 -> 00:36:15] Claro, porque dice cómo se llame tu clínica?
+[00:36:15 -> 00:36:16] ¿O están molacos?
+[00:36:16 -> 00:36:18] No, ahora se va a llamar Johanna Berni.
+[00:36:18 -> 00:36:20] Porque a panse estético no suena.
+[00:36:20 -> 00:36:22] Es muy difícil de pronunciar.
+[00:36:22 -> 00:36:24] Es un nombre terrible para verle puesto en empresa.
+[00:36:24 -> 00:36:28] Yo no fui.
+[00:36:28 -> 00:36:30] Yo no fui.
+[00:36:30 -> 00:36:32] Yo no fui.
+[00:36:32 -> 00:36:34] Entonces, ¿entre ese número de sí?
+[00:36:34 -> 00:36:35] Yo van a ver.
+[00:36:35 -> 00:36:37] ¿Qué es el nombre comercial?
+[00:36:37 -> 00:36:39] Además de ahí, la conocen.
+[00:36:39 -> 00:36:40] Es más que yo.
+[00:36:40 -> 00:36:41] Yo ya una marca.
+[00:36:41 -> 00:36:44] Yo estamos de la clínica de la doctora Ayuranda Berni.
+[00:36:44 -> 00:36:45] Sí, sí.
+[00:36:45 -> 00:36:46] Sí, tú deces.
+[00:36:46 -> 00:36:47] Yo amo de a panse estético.
+[00:36:47 -> 00:36:48] ¿Qué?
+[00:36:48 -> 00:36:49] ¿Qué es?
+[00:36:49 -> 00:36:50] No, es que no.
+[00:36:50 -> 00:36:51] Entonces, ya sí.
+[00:36:51 -> 00:36:53] Ya es nombre se han posicionado solo.
+[00:36:53 -> 00:36:54] Y a caballero, seguiremos con eso.
+[00:36:54 -> 00:36:55] No hay más.
+[00:36:55 -> 00:36:58] Así que, pues, pues, también estamos investigando página web.
+[00:36:58 -> 00:37:02] Y habíamos visto una referencia como estos estilos.
+[00:37:02 -> 00:37:03] Bueno, esto...
+[00:37:03 -> 00:37:05] ¿Qué es lo que vamos a cargar?
+[00:37:05 -> 00:37:06] No, no, no.
+[00:37:07 -> 00:37:12] Entonces, tienes que conseguir el host para yo anabernedo.
+[00:37:12 -> 00:37:13] Un host...
+[00:37:13 -> 00:37:16] No, claro, entonces, que compro un host, no.
+[00:37:16 -> 00:37:19] Para yo anabernedo, hacer una página de Carlos Fernández.
+[00:37:19 -> 00:37:22] Porque lo tienes o tal, con las es.com.p.
+[00:37:22 -> 00:37:25] Y ya tienen que ser yo anabernedo.
+[00:37:25 -> 00:37:28] Quínica, clínica, yo anabernedo.
+[00:37:28 -> 00:37:31] Conto.com.p.
+[00:37:31 -> 00:37:33] Con clínica o de frente, yo no.
+[00:37:33 -> 00:37:35] No, yo anabernedo parece...
+[00:37:35 -> 00:37:36] No, no, no.
+[00:37:36 -> 00:37:37] Quínica.
+[00:37:37 -> 00:37:38] Solo mi nombre.
+[00:37:38 -> 00:37:39] Quínica.
+[00:37:39 -> 00:37:40] Quínica.
+[00:37:40 -> 00:37:41] Quínica y anabernedo.
+[00:37:41 -> 00:37:44] Claro, porque me lo quisi,
+[00:37:44 -> 00:37:46] Quínica, robo, yo, clínica.
+[00:37:46 -> 00:37:49] Ah, eh.
+[00:37:49 -> 00:37:50] Quínica y anabernedo.
+[00:37:50 -> 00:37:51] Conto.com.
+[00:37:51 -> 00:37:56] Con clínica y que te desarrollarás tu clínica y que te desarrollás ante.
+[00:37:56 -> 00:38:01] Porque en tu redes estás como doctora y anabernedo.
+[00:38:01 -> 00:38:02] Sí.
+[00:38:02 -> 00:38:05] Pero yo no me gusta bien si ponés en la lista de anabernedo.
+[00:38:05 -> 00:38:07] Entonces, ¿qué busca el host?
+[00:38:07 -> 00:38:08] Es siempre la cosa.
+[00:38:08 -> 00:38:09] Y si esperamos el host.
+[00:38:09 -> 00:38:10] Es un lascollecha ahí, ¿no?
+[00:38:10 -> 00:38:11] Sí, con eso.
+[00:38:11 -> 00:38:12] Ya.
+[00:38:12 -> 00:38:13] Vale.
+[00:38:13 -> 00:38:14] Ya voy a empezar.
+[00:38:14 -> 00:38:15] Ha ganado todo, ¿no?
+[00:38:15 -> 00:38:16] Todavía está aparte.
+[00:38:16 -> 00:38:17] Sí, está preparado.
+[00:38:17 -> 00:38:18] Sí, está preparado.
+[00:38:18 -> 00:38:19] Y se transcribieron.
+[00:38:19 -> 00:38:20] Está ahí con la nota.
+[00:38:20 -> 00:38:21] Este...
+[00:38:21 -> 00:38:22] Que lo...
+[00:38:22 -> 00:38:23] Ah, no.
+[00:38:23 -> 00:38:24] Tienes.
+[00:38:24 -> 00:38:25] Entonces, ¿qué lo tienes?
+[00:38:25 -> 00:38:26] Entonces, ¿qué tienes?
+[00:38:26 -> 00:38:27] El narque tiene este encero.
+[00:38:27 -> 00:38:28] Está peor que almacen.
+[00:38:28 -> 00:38:31] Entonces, tenemos que empezar.
+[00:38:31 -> 00:38:32] Entonces, ¿qué tienes que hacer?
+[00:38:32 -> 00:38:33] Eso es lo otro.
+[00:38:33 -> 00:38:35] En marketing, me tienes que hacer...
+[00:38:36 -> 00:38:37] Un plan.
+[00:38:38 -> 00:38:40] ¿Cuál es tu plan?
+[00:38:42 -> 00:38:44] ¿Cuáles son cruzades?
+[00:38:44 -> 00:38:45] ¿Cuáles son cruzades?
+[00:38:45 -> 00:38:46] ¿Cuáles son autotentivos?
+[00:38:46 -> 00:38:49] ¿Cómo olmaz? ¿Qué cosas vas a desarrollar?
+[00:38:49 -> 00:38:50] ¿Qué tienes que hacer?
+[00:38:50 -> 00:38:52] ¿Un plan?
+[00:38:52 -> 00:38:53] Entonces, ¿cuál es el plan?
+[00:38:53 -> 00:38:55] Vamos a empezar desarrollando.
+[00:38:55 -> 00:38:56] A ponés.
+[00:38:56 -> 00:38:57] ¿Qué hacer esto?
+[00:38:58 -> 00:38:59] ¿Unsetlo otro?
+[00:38:59 -> 00:39:00] ¿Cuánto tiempo te va a tomar?
+[00:39:00 -> 00:39:01] ¿Me tienes que decir?
+[00:39:01 -> 00:39:02] En tres semanas tengo esto.
+[00:39:02 -> 00:39:03] En tres semanas tengo esto.
+[00:39:03 -> 00:39:08] tengo hoy, en una semana tengo esto, gracias tu tromograma, pero para eso primero
+[00:39:08 -> 00:39:13] lo que tienes es tu plan es tu plan, lo hemos permitido, la agenda que hicimos, entonces el
+[00:39:13 -> 00:39:22] próximo miércoles, el sitio el plan para las tres, mira, tienes, yo no me entendo, pero
+[00:39:22 -> 00:39:28] vamos a cerrar, ¿sante? No, sante, ya existe, ya tenemos todo, solo me le he quedado, pero
+[00:39:28 -> 00:39:35] sí, ya está, ya está el 100% o por aquí, ya está, no tiene nada, porque ya es red,
+[00:39:35 -> 00:39:40] es empezado a mover las reds, pero por eso tengo que hacer mi plan, son tres cosas, son tres
+[00:39:40 -> 00:39:47] cosas, es botucuín, sante, o tal no le hace, bueno, vamos a hacer un máquina de
+[00:39:47 -> 00:39:54] red, un ponte primero, vamos a ver, ya, estamos de acuerdo, ya, en todas las, ¿qué
+[00:39:54 -> 00:39:58] vamos a hacer con cada una de ellas, si ya está la página actualizada, porque lo sante
+[00:39:58 -> 00:40:04] que ya tiene todo, ya solamente es, a ver, mi plan de acá va a ser, ¿cómo voy a hacer
+[00:40:04 -> 00:40:11] para que esa página se posiciona, empieza a tener el efecto red, y lo otro es que tenemos
+[00:40:11 -> 00:40:17] que ver en la otra, este cero, porque todas se te hay que crear la página web, toda la
+[00:40:17 -> 00:40:22] página web, ¿no hay una de las? Sí, tiene que tener una de las, ¿no?
+[00:40:22 -> 00:40:28] A ver, abre, botuclinis, sí, sí, sí, aún no es fuerte algunas cosas como el logo
+[00:40:28 -> 00:40:36] de la marca, por lo que hay, este, no sé, la parte de los fans, no sé, la parte de
+[00:40:36 -> 00:40:39] ya mejorada, no sé, pero es el doctor porque el doctor no había nada, doctor a veces
+[00:40:39 -> 00:40:44] el día sí de pasadita y de la bajada, ¿no? Este es el web donde se pueden ver todos los
+[00:40:44 -> 00:40:48] tratamientos, bueno, el tratamiento de box, todos sus diferentes preguntas, preguntas
+[00:40:48 -> 00:40:55] frecuentes, ahí apartado de nosotros, tratamientos y promoción, no sólo es que esta, este,
+[00:40:55 -> 00:41:01] aplicar qué es botuclinis, botuclinis, ahorita es información como que un poco general,
+[00:41:01 -> 00:41:03] porque no tenemos también datos específicos.
+[00:41:03 -> 00:41:10] Maillón, este, arriba muestra esa bolita del doctor.
+[00:41:10 -> 00:41:15] Sí, este, aquí vamos a lo que se tiene planar también es poner pacientes de verdad, con
+[00:41:15 -> 00:41:20] anteciente después, donde como pueden optar hay marcas de, de arruitas y todo eso, ¿no?
+[00:41:20 -> 00:41:24] Entonces, cuando la, la misma paciente pasa incluso por su celular o por el dispositivo,
+[00:41:24 -> 00:41:29] podemos buscar una de esas viejas ojos azules que vienen a la clínica que planchamos,
+[00:41:29 -> 00:41:33] puede ver en después, incluso acá, cosas rogas se van, desaparecidas.
+[00:41:33 -> 00:41:35] Bueno, esa es una cosa real.
+[00:41:35 -> 00:41:36] ¿Cómo después de colocar el botuclinis?
+[00:41:36 -> 00:41:46] Se puede ver tanto en la frente, tanto, ahí, la parte de frente y tanto en la bionón.
+[00:41:46 -> 00:41:54] Otros apartados, los tratamientos por si quieren aplicar más, más, más, más, diferentes
+[00:41:54 -> 00:41:55] cositas.
+[00:41:55 -> 00:41:57] Sí, es ahí hay hay hay hay hay, y pertenente, por ejemplo.
+[00:41:57 -> 00:41:59] Todo se cor魚a una vía guasas, ¿cuándo?
+[00:41:59 -> 00:42:00] El segundo dijo un todo.
+[00:42:00 -> 00:42:01] Se nira en gwasa.
+[00:42:01 -> 00:42:03] Sí, pero en gulus, eso es ríos.
+[00:42:03 -> 00:42:04] Ah, para todas las redes.
+[00:42:04 -> 00:42:05] Sí.
+[00:42:05 -> 00:42:10] Ya, pero eso tiene que conectar con el deadline, recuerda que el deadline es sus sistemas de citas
+[00:42:10 -> 00:42:16] de ellos, este es porque el mismo, justamente en este caso ya no va a ser vía guasas,
+[00:42:16 -> 00:42:21] queremos liberar al gwasa, obviamente vamos a escribir, pero que el paciente es mismo,
+[00:42:21 -> 00:42:27] Agen de sus cita, ya están los tiempos estructurados de 15 minutos por cada uno, que fue la
+[00:42:27 -> 00:42:31] reunión de PNI que tú tuviste, donde el paciente mismo va a escoger el horario y va a ir
+[00:42:31 -> 00:42:32] llenando sus cita.
+[00:42:32 -> 00:42:34] Ah, bueno, entonces, ¿esto?
+[00:42:34 -> 00:42:35] Esta parte de acá de...
+[00:42:35 -> 00:42:37] Voy a tener un WhatsApp tip para consultas.
+[00:42:37 -> 00:42:38] Para consultas.
+[00:42:38 -> 00:42:42] Pero el mismo paciente se va a agenda sus cita online.
+[00:42:42 -> 00:42:46] De acuerdo, entonces, cuando cliquen directamente a agenda cita, va a rediligir a la parte
+[00:42:46 -> 00:42:53] de PNI que es el sistema que hemos consultado con los inventarios o citas online para que ya
+[00:42:53 -> 00:42:56] no alguien esté respondiente y programando va a tener su cita.
+[00:42:56 -> 00:43:01] Como ya tenemos cada 15-15 minutos, va a ser las citas que se manada, el mismo paciente
+[00:43:01 -> 00:43:04] escoge y se agenda y se va a llenar todos los datos.
+[00:43:04 -> 00:43:05] El mismo paciente.
+[00:43:05 -> 00:43:06] Ok, perfecto.
+[00:43:06 -> 00:43:09] Para liberar, porque poner una persona y que responda...
+[00:43:09 -> 00:43:13] Es porque va a ser el que nos pongo a la hora de estar en este libro.
+[00:43:13 -> 00:43:18] Y ya estamos haciendo pruebas en el Doctor Ayapago, yo Ayapago en el IIST en la DISTANSI.
+[00:43:18 -> 00:43:20] El primer era que me volví a mi volumen.
+[00:43:20 -> 00:43:24] No, yo le fue a este, le he dicho que en Prohibido, que me va a volver a votar su
+[00:43:24 -> 00:43:25] memorando en el Ministerio de DISTANSI.
+[00:43:25 -> 00:43:27] Como que no, si, llamado eso, me corte.
+[00:43:27 -> 00:43:30] El uno después, después de esa llamada atención, usted llamó el nuevo.
+[00:43:30 -> 00:43:31] Se acuerda para su paciente.
+[00:43:31 -> 00:43:32] Vamos a ver.
+[00:43:32 -> 00:43:33] Si.
+[00:43:33 -> 00:43:34] Intendí ligar a ella.
+[00:43:34 -> 00:43:35] Yo le he dicho que...
+[00:43:35 -> 00:43:36] Muy poco.
+[00:43:36 -> 00:43:39] Porque ella se va acostumbrado, porque nadie les va a gustar.
+[00:43:41 -> 00:43:42] Al fijo.
+[00:43:42 -> 00:43:44] Yo le he dicho que el Doctor va a mandar llamar a sus amigas a la NX así que...
+[00:43:44 -> 00:43:46] ...de ustedes que no contesten mi.
+[00:43:46 -> 00:43:47] Porque a la teleponso...
+[00:43:47 -> 00:43:52] Pero porque mira, tienes tres teléfonos y tú todo lo tiras para asegurar.
+[00:43:52 -> 00:43:54] No van a...
+[00:43:54 -> 00:43:58] Estas ya las han acostumbrado, han sido años de no contestar el teléfono.
+[00:43:58 -> 00:44:01] Se siga en el elevado con el volumen y no les da la carne contestar.
+[00:44:01 -> 00:44:04] Y eso así, una costumbre, las que vienen a prene.
+[00:44:04 -> 00:44:06] Por eso, por eso, por eso, y eso, y eso, y eso, y eso, y eso, y eso.
+[00:44:06 -> 00:44:07] Y yo le he dicho a las tres teléfonos.
+[00:44:07 -> 00:44:09] Ah, si, cualquier cosa es por permanezas.
+[00:44:09 -> 00:44:11] Porque las otras dos, ya son nueve.
+[00:44:11 -> 00:44:12] Yo le he dicho a Romi.
+[00:44:12 -> 00:44:14] Ahora, ahora, ¿y usted pasa eso?
+[00:44:14 -> 00:44:16] El Doctor me llamó llamado a las ocho y me dijo, ¿y eso?
+[00:44:16 -> 00:44:17] Oye, diez, ¿no?
+[00:44:17 -> 00:44:18] Y no me contestan.
+[00:44:18 -> 00:44:20] Ahí mismo a las llamas, me les fue un mensaje de mis...
+[00:44:20 -> 00:44:23] Yo quiero tener las cámaras de counter en mi celular.
+[00:44:23 -> 00:44:24] Sí, el auto para poder girarlas.
+[00:44:24 -> 00:44:27] Es más, está bueno con una pantalla en mi escritorio, vamos a mirar.
+[00:44:27 -> 00:44:30] Ni consultorio, me voy a vigilar a tu en esta.
+[00:44:30 -> 00:44:32] No, no creo que me le he dicho.
+[00:44:32 -> 00:44:35] Cuando el paciente está pagando ahí, con una paciente enlócado.
+[00:44:36 -> 00:44:38] El redge, redge.
+[00:44:38 -> 00:44:39] Acá venía antes de ahí.
+[00:44:39 -> 00:44:41] Lemos encontrados su billetera.
+[00:44:41 -> 00:44:43] Es necesario ser en la cámara, nos ha ayudado.
+[00:44:43 -> 00:44:46] En el sillón de abajo, del primer piso de recepción,
+[00:44:46 -> 00:44:48] ahí ha estado como más de una hora.
+[00:44:48 -> 00:44:51] Porque la billetera era una negra, más sencillo negro, no se contaba.
+[00:44:51 -> 00:44:52] Se le cayó.
+[00:44:52 -> 00:44:53] Lo opuesto ahí, porque está puesto.
+[00:44:53 -> 00:44:56] Y entonces, cuando se ha sentado, me imagino.
+[00:44:56 -> 00:44:59] Y de ahí lo agargo,
+[00:44:59 -> 00:45:01] me lembra que la cámara me guía todos todos los días.
+[00:45:01 -> 00:45:03] Y abro, que había bastante efectivo.
+[00:45:03 -> 00:45:06] Pero yo lo abro para ver el DNI llamada la paciente.
+[00:45:06 -> 00:45:09] No tenían ningún documento nada, más que efectivo y fotito chiquito.
+[00:45:09 -> 00:45:13] Entonces, si yo sumo decir, a alguien se le ha caído,
+[00:45:13 -> 00:45:15] la repeta me daba un decir, yo, yo, yo, varios.
+[00:45:15 -> 00:45:19] O de repente la persona que nos lo guardamos en la cámara se ve.
+[00:45:19 -> 00:45:21] Y de ahí esperamos a que llame la paciente.
+[00:45:21 -> 00:45:26] Y llama y dice, señor Vika, alguien me ha sacado la habitera de mi cartera.
+[00:45:26 -> 00:45:28] ¿Qué cosa?
+[00:45:28 -> 00:45:29] ¿Qué cosa?
+[00:45:29 -> 00:45:30] ¿Qué es? ¿Qué cosa? ¿Qué se va a decir?
+[00:45:30 -> 00:45:32] No, señora, ¿usted? ¿Apuedes tu subida este?
+[00:45:34 -> 00:45:37] Ya, mi pueblo me naba no me gusta posando el que yo se recuerdo,
+[00:45:37 -> 00:45:39] pero yo ya la repeta se me acario.
+[00:45:39 -> 00:45:42] Me nabía el siguiente y le dimos el vieter.
+[00:45:42 -> 00:45:43] ¿Por qué?
+[00:45:43 -> 00:45:44] Ya son las señal de las cámaras.
+[00:45:44 -> 00:45:46] Sí, yo tengo las cámaras, le puedo enseñar.
+[00:45:46 -> 00:45:48] Yo he abierto, le digo, soy el administrador,
+[00:45:48 -> 00:45:51] yo he abierto para buscar un DNI y poder contactarla.
+[00:45:51 -> 00:45:52] Entonces, si yo subo y digo,
+[00:45:52 -> 00:45:54] a alguien se le ha caído, de repente,
+[00:45:54 -> 00:45:57] yo he al personaje bocado, porque todavía ninguno comenta.
+[00:45:57 -> 00:45:59] No sé, no se propuso, muchas gracias.
+[00:45:59 -> 00:46:02] Si desean encuentro, se llora, porque por favor,
+[00:46:02 -> 00:46:06] la cámara, en todo momento, ha seguido la vieter.
+[00:46:06 -> 00:46:09] ¿El sí que pasa al cajo y desde ahí hasta el dormitelo?
+[00:46:09 -> 00:46:11] No, no sé, se preocupen, se preocupen.
+[00:46:11 -> 00:46:12] ¿Víticul?
+[00:46:12 -> 00:46:16] Pero lo que, ¿cómo va a decir que le hemos sacado la vieter de su cártel?
+[00:46:16 -> 00:46:18] No, es todo que estás firmado.
+[00:46:18 -> 00:46:21] Y no te olvides a todos las cámaras,
+[00:46:21 -> 00:46:22] todo con consultorio.
+[00:46:22 -> 00:46:26] O sea, las cámaras de los consultorios que vamos a poner,
+[00:46:26 -> 00:46:30] nadie les tiene que mirar, sólo van a servir como prueba,
+[00:46:30 -> 00:46:33] en el caso que hay algún incidente legal, nada más.
+[00:46:33 -> 00:46:34] Una cosa también.
+[00:46:34 -> 00:46:38] Sí, y en las autorizaciones, y ya se ha que tener con el abogado,
+[00:46:38 -> 00:46:42] cuando firme el paciente de las primeras autorizaciones que ahí sepa,
+[00:46:42 -> 00:46:46] que está siendo firmado todo el tiempo en todos los ambientes, ¿no?
+[00:46:46 -> 00:46:49] Por seguridad, o sea, desde la recepción, ¿no?
+[00:46:49 -> 00:46:52] Usted está siendo firmado desde que entrara la clínica por seguridad,
+[00:46:52 -> 00:46:55] porque así también se usted olvida alguna cosa,
+[00:46:55 -> 00:46:58] o sea, que nosotros vamos a poder determinar donde le dejo,
+[00:46:58 -> 00:47:00] o sea, por el bonito.
+[00:47:00 -> 00:47:03] Y si alguna, comproder una, que sí le inicia,
+[00:47:03 -> 00:47:06] que me van a dar a bargar dentro de la camina también con tu auto.
+[00:47:06 -> 00:47:07] Esa es una creación, ¿no?
+[00:47:07 -> 00:47:08] No, no, no.
+[00:47:08 -> 00:47:09] Sí, está de muy bueno.
+[00:47:09 -> 00:47:11] Claro, porque en el caso de las comiencias, ¿no?
+[00:47:11 -> 00:47:12] Sí, les está desnudando.
+[00:47:12 -> 00:47:16] Pero igual, sí sería bueno que mires,
+[00:47:16 -> 00:47:17] pero no ellos, pues.
+[00:47:17 -> 00:47:18] No.
+[00:47:18 -> 00:47:20] No, el que te habita para todo,
+[00:47:20 -> 00:47:21] hasta el doctor lo van a poder ver.
+[00:47:21 -> 00:47:23] Si alguien también las cámaras en su,
+[00:47:23 -> 00:47:26] no sé, a mí la tentataís me ha dicho que ya tienen todos sícticos.
+[00:47:26 -> 00:47:27] No, no, no.
+[00:47:27 -> 00:47:32] Te deja que ha sacado un imagen, o sea.
+[00:47:32 -> 00:47:33] Y le van a decir, ¿cuál es su más?
+[00:47:33 -> 00:47:34] Voy a pensar.
+[00:47:34 -> 00:47:36] No, me estoy en un símbolo de imagen.
+[00:47:36 -> 00:47:37] Hay que pensar, ¿sabí?
+[00:47:37 -> 00:47:38] No, voy a pensar.
+[00:47:38 -> 00:47:39] Sí, ya sí.
+[00:47:39 -> 00:47:41] Ya terminamos eso.
+[00:47:41 -> 00:47:43] ¿Qué es lo más nervioso que sí que ha trabajado?
+[00:47:46 -> 00:47:48] Sí, bueno, acá también se tiene que pensar la parte de nosotros,
+[00:47:48 -> 00:47:49] poner las diferentes redes.
+[00:47:49 -> 00:47:50] ¿No? ¿Cuándo no las es?
+[00:47:50 -> 00:47:52] Con su crop y su respectivo, de Google Map.
+[00:47:52 -> 00:47:53] De Google Map.
+[00:47:53 -> 00:47:54] Sí, su moto.
+[00:47:54 -> 00:47:55] Y la foto por lo que.
+[00:47:55 -> 00:47:58] Y ahí tienes que, ¿no?
+[00:47:58 -> 00:48:02] Eso que ingres por si sanado en la buscaron.
+[00:48:02 -> 00:48:05] Sí, justo eso también estamos viendo el tema del cebo para esta página.
+[00:48:05 -> 00:48:12] Pero como, ¿cómo va a un falta entre ir algunos datos en su buscaron?
+[00:48:12 -> 00:48:16] A la larga vamos a tener que tener alguien que grave cosas todos los días,
+[00:48:16 -> 00:48:17] y así la clínica.
+[00:48:17 -> 00:48:18] Sí, es a la puerta.
+[00:48:18 -> 00:48:19] ¿Por qué?
+[00:48:19 -> 00:48:20] Sí.
+[00:48:20 -> 00:48:23] Necesitamos ahí que grave el procedimiento, al toque el mediter y lo puedas decir.
+[00:48:23 -> 00:48:24] Sí.
+[00:48:24 -> 00:48:25] No tenga que parar usted.
+[00:48:25 -> 00:48:27] No tenga que parar yo por el que.
+[00:48:27 -> 00:48:28] ¿Qué es el envidio?
+[00:48:28 -> 00:48:33] Claro, para subir y contenido todos los días, así como el celachir, todo lo.
+[00:48:33 -> 00:48:36] Mis amigas se graban ellas mismas y reditas, y no en segundo y lo suben.
+[00:48:36 -> 00:48:37] No es mi habilidad.
+[00:48:37 -> 00:48:41] Por eso es que mejor hay que buscar a alguien, así como él, para que al toque,
+[00:48:41 -> 00:48:44] puede subir contenido o decir a mí.
+[00:48:44 -> 00:48:46] Claro, puede usar a la entrada.
+[00:48:46 -> 00:48:47] ¿Usted no puede ser?
+[00:48:47 -> 00:48:48] Sí.
+[00:48:48 -> 00:48:49] Sí.
+[00:48:49 -> 00:48:51] Es como, no, que siempre es que se busca nunca.
+[00:48:51 -> 00:48:52] Yo cada vez.
+[00:48:52 -> 00:48:54] No, pero la chica no servía.
+[00:48:54 -> 00:48:55] Sí.
+[00:48:55 -> 00:48:57] Bueno, será pues hasta que encuentras a alguien que siga.
+[00:48:57 -> 00:49:16] ¿Quién sabe qué es que hay que besar un montón de esa
+[00:49:16 -> 00:49:17] clínica?
+[00:49:17 -> 00:49:18] Sí.
+[00:49:18 -> 00:49:19] Sí.
+[00:49:19 -> 00:49:26] Ah, ahí vas tu clín en en España.
+[00:49:26 -> 00:49:28] Tende.
+[00:49:28 -> 00:49:30] Es simple.
+[00:49:30 -> 00:49:34] Siempre coge el país.
+[00:49:34 -> 00:49:38] Por que si soy la consultiva o un poco con el
+[00:49:38 -> 00:49:42] isto o la la la la la la la la la la la la calvo.
+[00:49:42 -> 00:49:47] Sí porque sí, solo la consulta, no fue con la dos horas la jugada de Carlos, que podríamos
+[00:49:47 -> 00:49:51] poner el nombre de Gotrukirin y dijo que no había ningún Gotrukirin y en serio, más
+[00:49:51 -> 00:49:55] ella que sabe más de eso de ella, ella misma en esa vez.
+[00:49:55 -> 00:49:57] Ya, no hay nada.
+[00:49:57 -> 00:49:58] ¿Qué?
+[00:49:58 -> 00:49:59] No existe.
+[00:49:59 -> 00:50:05] En este caso lo que tiene que, como en España está deputicionado hace años ya, el buscador
+[00:50:05 -> 00:50:08] de Google ya va hacia España, porque ya tiene tiempos.
+[00:50:08 -> 00:50:10] Ahora está más Brasil que España, ¿no?
+[00:50:10 -> 00:50:15] Sí, pero es que en Brasil hay voto clínico.
+[00:50:15 -> 00:50:16] Sí, voto clínico.
+[00:50:16 -> 00:50:19] No, yo cuento voto clínico.
+[00:50:19 -> 00:50:22] Claro, sí, no, que vota después ahí, creo que le rejira a Gotrukirin y creo que
+[00:50:22 -> 00:50:23] no.
+[00:50:23 -> 00:50:24] No.
+[00:50:24 -> 00:50:29] La ira, primero, la ira te es en una reseña de voto clínico, desde cuando hasta
+[00:50:29 -> 00:50:31] le ha empresa a la hierta todo eso.
+[00:50:31 -> 00:50:33] ¿Y ustedes te votar?
+[00:50:33 -> 00:50:35] Cuando vas direcciones a la ira.
+[00:50:35 -> 00:50:36] Sí.
+[00:50:36 -> 00:50:37] ¿Te vota?
+[00:50:37 -> 00:50:38] ¿Casa voto clínico?
+[00:50:38 -> 00:50:39] ¿Qué la ira?
+[00:50:39 -> 00:50:47] ¿Enciende?
+[00:50:47 -> 00:50:48] A toque te vota Brasil.
+[00:50:48 -> 00:50:56] No, te sentas tan chocado.
+[00:50:56 -> 00:50:57] ¿Casa?
+[00:50:57 -> 00:50:58] Yo creo, pero no.
+[00:50:58 -> 00:50:59] Me la veré.
+[00:50:59 -> 00:51:00] No, no, no, no, no.
+[00:51:00 -> 00:51:01] Yo lo he visto.
+[00:51:01 -> 00:51:09] Ya, los moreles de que ellos que faltan cuando lo atrean.
+[00:51:09 -> 00:51:10] ¿El cual es?
+[00:51:10 -> 00:51:14] Bien, en todo, para arriba, para la mesa y lo de dos.
+[00:51:14 -> 00:51:15] Y eso es temporalmente.
+[00:51:15 -> 00:51:19] ¿Cuánto de unos meses más y ese van a ir a suficina y linda al frente?
+[00:51:19 -> 00:51:20] ¿No?
+[00:51:21 -> 00:51:22] Ya.
+[00:51:22 -> 00:51:30] De MacKeyes, ¿cómo lo vamos a dar como vamos a seguridad a forma?
+[00:51:30 -> 00:51:31] Seguridad.
+[00:51:31 -> 00:51:36] Los carros son los de los carros en el fondo.
+[00:51:36 -> 00:51:37] Claro.
+[00:51:37 -> 00:51:38] Y solo guante.
+[00:51:38 -> 00:51:39] Elante que...
+[00:51:39 -> 00:51:40] Elante que no.
+[00:51:40 -> 00:51:41] Elante que no.
+[00:51:41 -> 00:51:42] Elante que no.
+[00:51:42 -> 00:51:43] Elante que no.
+[00:51:43 -> 00:51:45] Elante que no.
+[00:51:45 -> 00:51:46] Elante que no.
+[00:51:46 -> 00:51:47] Elante que no.
+[00:51:47 -> 00:51:48] Elante que no.
+[00:51:48 -> 00:51:49] Elante que no.
+[00:51:49 -> 00:51:50] Elante que no.
+[00:51:50 -> 00:51:51] Y eso, yo lo vi lo que lo acabo.
+[00:51:51 -> 00:51:54] Sí, donde está la refrigeradora, ahí está lo loca.
+[00:51:54 -> 00:51:56] ¿Y esa refrigeradora tiene que salir?
+[00:51:56 -> 00:51:57] La otra.
+[00:51:57 -> 00:51:58] La otra.
+[00:51:58 -> 00:52:01] ¿Y esa donde lo hace?
+[00:52:01 -> 00:52:03] La de abajo también tiene que salir ya.
+[00:52:03 -> 00:52:06] La de las chicas, donde van sus crees, los botos.
+[00:52:06 -> 00:52:10] Pero que yo tiene que estar en el cuarto piso, pues.
+[00:52:10 -> 00:52:11] No, eso es un espacio.
+[00:52:11 -> 00:52:14] ¿Y esa refrigeradora?
+[00:52:14 -> 00:52:22] La abajo tiene una vez algún congeladora con que...
+[00:52:22 -> 00:52:24] Esa es la cosa, ya sus mascarillas.
+[00:52:25 -> 00:52:29] Y eso, me dan lo donde está el date.
+[00:52:29 -> 00:52:30] ¿No?
+[00:52:30 -> 00:52:33] Porque si es que la refrigeradora vota a la abajo después,
+[00:52:33 -> 00:52:34] ¿no?
+[00:52:34 -> 00:52:35] Si, la de esa.
+[00:52:35 -> 00:52:36] ¿Ese es la otra?
+[00:52:36 -> 00:52:38] Claro, a veces la refrigeradora vota a la abajo.
+[00:52:38 -> 00:52:39] ¿Hom sea servido?
+[00:52:39 -> 00:52:40] ¿Hom sea servido?
+[00:52:40 -> 00:52:42] ¿No?
+[00:52:42 -> 00:52:43] ¿No?
+[00:52:43 -> 00:52:45] ¿Un acoces no les dan los tableros?
+[00:52:45 -> 00:52:46] Escuchame.
+[00:52:46 -> 00:52:47] ¿Podemos maldro?
+[00:52:47 -> 00:52:48] A Eco estado.
+[00:52:48 -> 00:52:49] Esa es la verdad.
+[00:52:49 -> 00:52:50] ¿Escuchan?
+[00:52:50 -> 00:52:51] Esa es la verdad.
+[00:52:51 -> 00:52:52] ¿C까요?
+[00:52:52 -> 00:52:56] ¿A eso podemos tener un frío bar con los higeles?
+[00:52:56 -> 00:52:58] ¿Por qué son los higeles?
+[00:52:58 -> 00:53:02] Es más, un frío bar chiquito con higeles, pero son los higeles,
+[00:53:02 -> 00:53:07] pero podemos llevar higiros a la congeladora que tenemos acá.
+[00:53:07 -> 00:53:09] ¿Este friquitere de acá?
+[00:53:09 -> 00:53:14] No, pero ahí está también pa' accedir a mucha de...
+[00:53:14 -> 00:53:17] Pero eso solo tiene que estar frío, no congelado.
+[00:53:17 -> 00:53:22] Podríamos llevar este refrigerador si tenemos acá y ponerlo en el consulcido.
+[00:53:22 -> 00:53:27] Pero no se refiere a sacar el refrigerador en la otra.
+[00:53:27 -> 00:53:29] Claro, pero que es una o la bar.
+[00:53:29 -> 00:53:31] Tienes que sacar esa, la verdad no es sacar.
+[00:53:31 -> 00:53:35] Y vas a ponerla congeladora ahí donde está el refrigerador.
+[00:53:35 -> 00:53:36] Pero cuéjame, ¿por qué?
+[00:53:36 -> 00:53:39] No, va a ir impotrado porque va a quedar con un frío bar.
+[00:53:39 -> 00:53:42] Así va a lo que va a ser el congelador.
+[00:53:42 -> 00:53:45] La congeladora no va a que hemos comprado, va a ir ahí para que pasas.
+[00:53:45 -> 00:53:48] Pero es el que se ve.
+[00:53:48 -> 00:53:49] No, pero ahí no es por el sabor.
+[00:53:49 -> 00:53:53] El botón hay parte que va congelado y parte que ven refrigerador.
+[00:53:53 -> 00:53:56] Podríamos compro congelador.
+[00:53:56 -> 00:53:57] Y refrigeradora.
+[00:53:57 -> 00:53:58] ¿Qué es?
+[00:53:58 -> 00:53:59] Con todo lo que está.
+[00:53:59 -> 00:54:01] La gran desconceradora.
+[00:54:01 -> 00:54:05] Bueno, esa la podría incluso poner hasta en la oficina de ya.
+[00:54:05 -> 00:54:09] Sinísis y es la cruza a los jendes fríos y ponerlo en un mueble
+[00:54:09 -> 00:54:12] que la atato le mascar.
+[00:54:12 -> 00:54:15] Claro, para que da donde la vas a poner.
+[00:54:15 -> 00:54:17] ¿Pues tienes que subir la tía que tiene en el quinto?
+[00:54:17 -> 00:54:18] Pero es un lugar de…
+[00:54:18 -> 00:54:20] Ok, entonces llevo el arriba en lo que hicimos.
+[00:54:20 -> 00:54:21] Estallas tenías.
+[00:54:21 -> 00:54:24] Ya, este, en la del fondo.
+[00:54:24 -> 00:54:25] En la del fondo ya.
+[00:54:25 -> 00:54:26] En la del fondo ya.
+[00:54:26 -> 00:54:27] Exactamente ya.
+[00:54:27 -> 00:54:30] Ya, pero ahí tenías guardando los votos de la torre.
+[00:54:30 -> 00:54:31] No, todo.
+[00:54:31 -> 00:54:33] Pero ya lo guardaría en la tínica.
+[00:54:33 -> 00:54:34] En la tínica.
+[00:54:34 -> 00:54:38] Lo que dice, y lo que dice, ya se le di es que tienen que estar pasando para sacar sus
+[00:54:38 -> 00:54:40] tuces.
+[00:54:40 -> 00:54:43] Bien, pero si lo único es tu vez que le di las tuces,
+[00:54:43 -> 00:54:44] y son sus chicas.
+[00:54:44 -> 00:54:47] Porque sus chicas son las que vas exactamente.
+[00:54:47 -> 00:54:49] Y a ti, en el que tu te lo guardaría.
+[00:54:49 -> 00:54:50] Ya, pero no hay no puedes poner.
+[00:54:50 -> 00:54:51] No, no, no.
+[00:54:51 -> 00:54:52] No, no, no.
+[00:54:52 -> 00:54:53] Ya son ya.
+[00:54:53 -> 00:54:57] El voto si todo se palogística y esos jeles es el mandaloso su consultor.
+[00:54:57 -> 00:54:59] Pero no son votos avientos.
+[00:54:59 -> 00:55:01] Pero son para lo local.
+[00:55:01 -> 00:55:02] Pero igual son votos.
+[00:55:02 -> 00:55:03] Parece, sí.
+[00:55:03 -> 00:55:06] Pero solo vamos a seguir para allá.
+[00:55:06 -> 00:55:07] O lo gist.
+[00:55:07 -> 00:55:10] En realidad ella dice que tener solo una replipada a los jeles.
+[00:55:10 -> 00:55:11] Pero si es una replipada a los jeles,
+[00:55:11 -> 00:55:13] no puede tener cosas.
+[00:55:13 -> 00:55:14] Pero si es una replipada a los jeles,
+[00:55:14 -> 00:55:15] no puede tener cosas.
+[00:55:15 -> 00:55:18] Ya, entonces lo vamos a poner en mi consultorio que hubo.
+[00:55:18 -> 00:55:21] Con el frío va a dar que se me lo bloqueo.
+[00:55:21 -> 00:55:24] Y allá está ahí, ahí está, pero me esperando.
+[00:55:24 -> 00:55:25] Pero, ¿cómo?
+[00:55:25 -> 00:55:28] Ya, pues mientras está, ahorita no vas a tener inspección.
+[00:55:28 -> 00:55:30] Porque no me espas en inspección.
+[00:55:30 -> 00:55:33] Entonces mientras tanto los vamos a poner ahí.
+[00:55:33 -> 00:55:35] No sé si necesitas ahorita.
+[00:55:35 -> 00:55:36] ¿En dónde?
+[00:55:36 -> 00:55:38] En lo que gistica.
+[00:55:38 -> 00:55:39] Y luego...
+[00:55:39 -> 00:55:41] ¿Qué logística no tiene ese espacio, o no?
+[00:55:41 -> 00:55:42] En frí...
+[00:55:42 -> 00:55:44] No, es una simbular de temor.
+[00:55:44 -> 00:55:45] De ahí es un conocido.
+[00:55:45 -> 00:55:46] Una bolsita.
+[00:55:46 -> 00:55:47] De la doctora sures un gulero.
+[00:55:47 -> 00:55:48] Un culosito.
+[00:55:48 -> 00:55:50] Y de ahí todos los jeles de jace.
+[00:55:50 -> 00:55:52] Ah, vas a poner en dónde, en mi rinjero.
+[00:55:52 -> 00:55:53] Me lo tengo en mi conservador.
+[00:55:53 -> 00:55:55] Y ese repugiado de donde va?
+[00:55:55 -> 00:55:58] Son de jeles que ya usan.
+[00:55:58 -> 00:55:59] Porque esa básicamente es lo de jeles.
+[00:55:59 -> 00:56:00] Básicamente es el jel.
+[00:56:00 -> 00:56:01] El jel.
+[00:56:01 -> 00:56:02] El jutil ya lo subí.
+[00:56:02 -> 00:56:04] Y le estamos dando a mis ideos uno a uno.
+[00:56:04 -> 00:56:07] Sí, pero ahora la puedes dejar de esto porque lo creamos por la gente.
+[00:56:07 -> 00:56:08] Por la gente, por los pasillantes.
+[00:56:08 -> 00:56:09] Como si fuera no posible.
+[00:56:09 -> 00:56:10] O sea, el jel.
+[00:56:10 -> 00:56:11] Ah, pues.
+[00:56:12 -> 00:56:13] Si, si.
+[00:56:13 -> 00:56:17] O sea, ya se linda sus amigas, pero no legales los jeles de jutil como si fuera.
+[00:56:17 -> 00:56:18] Si fuera, y el jellero.
+[00:56:18 -> 00:56:19] Si fuera, los cuchos.
+[00:56:19 -> 00:56:20] Exactamente.
+[00:56:20 -> 00:56:21] No, no, no.
+[00:56:21 -> 00:56:22] Está bien.
+[00:56:22 -> 00:56:24] Ya.
+[00:56:24 -> 00:56:25] Ya.
+[00:56:25 -> 00:56:26] ¿Qué el vengo?
+[00:56:26 -> 00:56:27] Ya.
+[00:56:27 -> 00:56:29] Ya que le voy a pasar tu.
+[00:56:29 -> 00:56:32] ¿Qué se comparta?
+[00:56:32 -> 00:56:34] Ya, entonces ya ya, ya no, ¿no?
+[00:56:34 -> 00:56:35] Ya, ya.
+[00:56:35 -> 00:56:36] Ya, ya.
+[00:56:36 -> 00:56:37] Ya, vengo paciente, mío.
+[00:56:37 -> 00:56:38] Vengo esta.
+[00:56:38 -> 00:56:39] Vengo.
+[00:56:39 -> 00:56:40] Vengo.
+[00:56:40 -> 00:56:41] Te voy a voy a volver.
+[00:56:41 -> 00:56:42] Vengo.
+[00:56:42 -> 00:56:44] No, no.
+[00:56:44 -> 00:56:45] No, no, no.
+[00:56:45 -> 00:56:46] No, pero el tema es que pasa si.
+[00:56:46 -> 00:56:47] ¿Qué pasa?
+[00:56:47 -> 00:56:50] Si llega al momento por la familia de la vida, este no le pasa.
+[00:56:50 -> 00:56:53] Esa pregunta de eso de mí, chico.
+[00:56:53 -> 00:57:14] Por qué?
+[00:57:14 -> 00:57:15] Porque mío va a tener agenda.
+[00:57:15 -> 00:57:39] Dietes que doctor cuando usted mueva más.
+[00:57:39 -> 00:57:44] Y acá vamos a ver.
+[00:57:44 -> 00:57:47] Si no, no, si está bien.
+[00:57:47 -> 00:57:52] No, si es que se muestra, entonces me va a ver.
+[00:57:52 -> 00:57:54] Iguales no tienen nada.
+[00:57:54 -> 00:57:55] Así que.
+[00:57:55 -> 00:58:04] que no se que cae yo, o sea, él puede decir a mí nunca me ha pagado porque yo iba a
+[00:58:04 -> 00:58:07] torcer, que si necesitan eso, no es tan eso, no es tan重要.
+[00:58:07 -> 00:58:09] ¿Sabes a quién le puedo anunciar a Porteis?
+[00:58:09 -> 00:58:10] ¿Ya te voy a preguntar qué lo ha hecho?
+[00:58:10 -> 00:58:12] ¿Ele es lo que le hago?
+[00:58:12 -> 00:58:14] ¿Qué agator?
+[00:58:14 -> 00:58:19] Esta es la vista que por ahora es manual ya que falta en la sorroló, para que acá me
+[00:58:19 -> 00:58:22] voten todos los pacientes.
+[00:58:22 -> 00:58:29] A ver, aquí en la escena que había puesto, y acá está casi todos los documentos que
+[00:58:29 -> 00:58:33] hay en una historia que está acá.
+[00:58:33 -> 00:58:40] Esto ya fecha más compleja, los paos y está acá ahí en botón, como ya estaba, porque
+[00:58:40 -> 00:58:46] lo bien se ha estado, que acá ya te he porra todo alodo, pero pensándolo bien, mejor
+[00:58:46 -> 00:58:50] les importa el sistema de la historia, cosa que ya está, cosa que juntas con los
+[00:58:50 -> 00:58:52] sectores del interior de la espacina.
+[00:58:52 -> 00:58:53] ¿Esto qué cosas?
+[00:58:53 -> 00:59:00] Esa es una implodación que he hecho para lo que es de nuevo.
+[00:59:00 -> 00:59:01] ¿Esto qué es?
+[00:59:01 -> 00:59:02] ¿Esto qué es de los pacientes de nuevo?
+[00:59:02 -> 00:59:03] ¿Esto qué es?
+[00:59:03 -> 00:59:06] ¿Acas que me voten?
+[00:59:06 -> 00:59:13] Como digo, esto es la parte más compleja de los paos, porque acá las que rellenan
+[00:59:13 -> 00:59:17] las historias, mangan muy tantas cosas que no se estén ronde, bueno.
+[00:59:17 -> 00:59:23] Abaza que solo nos porta y hace, se junta con los sectores que ya están estaniedad.
+[00:59:24 -> 00:59:26] ¿Con los sectores que ya tenías?
+[00:59:26 -> 00:59:27] O si, no, ya no.
+[00:59:27 -> 00:59:31] No, ya no se sale eso, es total, es tínque llenado.
+[00:59:31 -> 00:59:33] O si no, es una pereza.
+[00:59:33 -> 00:59:35] Es que eso va a estar enlazado con el ojo.
+[00:59:35 -> 00:59:37] Claro, el ojo ya lo van a la cara.
+[00:59:37 -> 00:59:38] El ojo no me parezca bien.
+[00:59:38 -> 00:59:41] Y ahí se va a haber los paos que el paciente ha hecho.
+[00:59:41 -> 00:59:48] Claro, los sentimientos están en un otro lado, a los sentimientos que el paciente va llenado.
+[00:59:50 -> 00:59:54] Y él evolucion y entonces se pasa.
+[00:59:54 -> 00:59:55] La evaluación.
+[00:59:55 -> 00:59:56] Claro.
+[00:59:56 -> 00:59:58] En clínicos, un poco, ¿no?
+[00:59:58 -> 01:00:00] Claro, como va a tener la misma.
+[01:00:00 -> 01:00:02] Pero eso no es más compleja.
+[01:00:02 -> 01:00:05] Por eso se lo mete en parte de la ensayeló y no va a ser suveniente.
+[01:00:05 -> 01:00:08] Y te voy a dar una. ¿Te acuerdas?
+[01:00:08 -> 01:00:09] Una cual.
+[01:00:09 -> 01:00:10] Ahí es.
+[01:00:10 -> 01:00:11] Es esa es la que eres.
+[01:00:11 -> 01:00:13] Está acá.
+[01:00:13 -> 01:00:19] Recuerda que me pidió que lo sepárez por nuestra melodía y por la se.
+[01:00:19 -> 01:00:23] Esto es un para el que es un parácturismo científico, es un del autor.
+[01:00:23 -> 01:00:24] ¿Qué tienes?
+[01:00:24 -> 01:00:28] ¿Y va a haber acá nuevas noces y están todos...
+[01:00:28 -> 01:00:32] Bueno, ¿y esta por el efecto?
+[01:00:32 -> 01:00:35] Esto no sé si te dará que va a ir a su modo de rediro.
+[01:00:35 -> 01:00:36] Para mí es mucho continente.
+[01:00:36 -> 01:00:39] No, hay que eso es para la persona.
+[01:00:39 -> 01:00:40] No, no.
+[01:00:40 -> 01:00:41] A ver, aguantar.
+[01:00:41 -> 01:00:42] La parte delante arriba.
+[01:00:42 -> 01:00:43] A ver eso.
+[01:00:43 -> 01:00:45] Porque solo está tu carro.
+[01:00:45 -> 01:00:46] Vete, no.
+[01:00:46 -> 01:00:47] Tu te tienes que ir al yoke.
+[01:00:47 -> 01:00:48] ¿No?
+[01:00:48 -> 01:00:51] Ahí, dame.
+[01:00:51 -> 01:00:53] Es un excesente, es persona.
+[01:00:53 -> 01:00:54] Eso tiene que ir.
+[01:00:54 -> 01:00:55] ¿Y?
+[01:00:55 -> 01:00:56] Claro.
+[01:00:56 -> 01:00:57] Entra y busca.
+[01:00:57 -> 01:00:59] A ver, ¿cómo es un historia trínica?
+[01:00:59 -> 01:01:03] Porque si esto va a una auditoría tienes nada de todo lo formato de este...
+[01:01:03 -> 01:01:05] Según el ministro, ¿no?
+[01:01:05 -> 01:01:07] O sea, el reglamento de salud.
+[01:01:07 -> 01:01:08] Exactamente.
+[01:01:08 -> 01:01:12] Tienes que tener anamnesios.
+[01:01:12 -> 01:01:17] Tienes que tener antecientes personales, antecientes familiares, antecientes equilos,
+[01:01:17 -> 01:01:18] ante la elejidad.
+[01:01:18 -> 01:01:20] ¿Dónde pone el sinalio?
+[01:01:20 -> 01:01:21] Eso es importante.
+[01:01:21 -> 01:01:22] ¿Y esa leje?
+[01:01:22 -> 01:01:25] Entonces, pero al lérea ya no tiene que ir escondido.
+[01:01:25 -> 01:01:31] Si tiene el paciente alguna alergia, deberías salir grandote, que te dé un aviso.
+[01:01:31 -> 01:01:33] O sea, caso este paciente tiene alergia.
+[01:01:33 -> 01:01:37] ¿Qué pasa si leje con una sustancia de sesión van a pilafir?
+[01:01:37 -> 01:01:38] ¿Qué se ven?
+[01:01:38 -> 01:01:43] Hola, ni estés, ¿cómo invasión de con la doctora que se leje con la ni estés?
+[01:01:43 -> 01:01:44] ¿Y va a poner a la ni estés?
+[01:01:44 -> 01:01:48] Pues esa es la alerija al boto, pues esa es el con el diaduló,
+[01:01:48 -> 01:01:50] y después se le olvides de hacer cualquier cosa.
+[01:01:50 -> 01:01:51] Y te puedes morir.
+[01:01:51 -> 01:01:56] Entonces, si es importante esas cosas,
+[01:01:56 -> 01:01:58] pues alergias ahí están, ¿no?
+[01:01:58 -> 01:01:59] Aléja mecamente en tu salíme.
+[01:01:59 -> 01:02:01] Solo que tiene que tener una alergia.
+[01:02:01 -> 01:02:02] Pero ese lín,
+[01:02:02 -> 01:02:06] es el lín, si el paciente tiene alergia, cuando tú entras al paciente,
+[01:02:06 -> 01:02:08] tiene que hacer una partalla por sacado.
+[01:02:08 -> 01:02:11] Orojo, como una alerja.
+[01:02:11 -> 01:02:14] Pero esa es para el modo de la alergia.
+[01:02:14 -> 01:02:15] No tengo nadie que suelo, ¿no?
+[01:02:15 -> 01:02:20] ¿Qué te pasa?
+[01:02:20 -> 01:02:24] En la que eso no detenía la partada de la vista de la tabeta por su movimiento.
+[01:02:24 -> 01:02:26] ¿Sumos, si los alimentos están en paz o lidos?
+[01:02:26 -> 01:02:28] A ver.
+[01:02:28 -> 01:02:29] Ya me he hecho,
+[01:02:29 -> 01:02:32] yo tiene maldito un piloto de las tabletas.
+[01:02:32 -> 01:02:43] Pues de tímitos, ¿no?
+[01:02:43 -> 01:02:45] Acá son los alimentos subidos.
+[01:02:45 -> 01:02:48] De lents, de lents, de lents, de lents.
+[01:02:48 -> 01:02:51] Y cualquier cosa así es, no,
+[01:02:51 -> 01:02:52] normalmente siempre ponen,
+[01:02:52 -> 01:02:54] no tengo, no tengo, no tengo, no tengo.
+[01:02:54 -> 01:02:56] ¿Avita? No tengo el requiso.
+[01:02:56 -> 01:02:58] No sé, que cuando ponen así,
+[01:02:58 -> 01:02:59] como usted dice, ¿no?
+[01:02:59 -> 01:03:01] En la partada de alerja que pago,
+[01:03:01 -> 01:03:04] ponen así, con que solo digas así,
+[01:03:04 -> 01:03:05] me voy a tener una alerja.
+[01:03:05 -> 01:03:07] Y es alerja, no es nada, puede haber la alerrención.
+[01:03:07 -> 01:03:08] ¿Puedo dar eso?
+[01:03:08 -> 01:03:09] Está en el quiso, ¿no?
+[01:03:09 -> 01:03:10] ¿Qué sé el quiso, no?
+[01:03:10 -> 01:03:11] Esto es la alerja.
+[01:03:11 -> 01:03:12] Ah, en la otra alerja.
+[01:03:12 -> 01:03:15] Sí, pero que cuando ustedes vienen a la reunión,
+[01:03:15 -> 01:03:18] tienen que traer todo lo que van a necesitar para la recertación.
+[01:03:18 -> 01:03:22] Porque la alerja es como que la tabeta que dijimos que va a ir
+[01:03:22 -> 01:03:26] en la recertación para que los pusienes en el movimiento.
+[01:03:26 -> 01:03:27] Su continuamiento, ya no...
+[01:03:27 -> 01:03:29] Y ese lo enseguida a la vez que suba acá.
+[01:03:30 -> 01:03:31] Lista acá.
+[01:03:31 -> 01:03:32] Y ese consentimiento ya lo tiene.
+[01:03:32 -> 01:03:33] Si tienes un piloto.
+[01:03:33 -> 01:03:36] Si, si, este piloto que lo rellen, eso sube acá.
+[01:03:36 -> 01:03:39] Ya, en la historia que viene, que tiene que tener toda la historia que viene.
+[01:03:39 -> 01:03:41] Cá, tienes que diseñar, ¿vale?
+[01:03:41 -> 01:03:44] En el caso de la autora, tienes también la opción plada de votos.
+[01:03:44 -> 01:03:46] Que también te va a hacer el pago a tu clínico.
+[01:03:46 -> 01:03:47] Sí.
+[01:03:47 -> 01:03:48] Y de un nivel.
+[01:03:48 -> 01:03:49] No, la historia que viene.
+[01:03:49 -> 01:03:50] Ah, claro.
+[01:03:50 -> 01:03:53] Entonces, los consentimientos te van a hacer el pago.
+[01:03:53 -> 01:03:55] Sí, solo que hay que dar el otro formato de votos.
+[01:03:55 -> 01:03:57] Y obviamente tienes que dar el formato.
+[01:03:57 -> 01:03:58] O sea, tienes que ir armando todo eso.
+[01:03:58 -> 01:04:00] Ya.
+[01:04:00 -> 01:04:05] Para cada uno, para albanz, para ostanbolacer, para...
+[01:04:05 -> 01:04:07] Yo, jo, tabé.
+[01:04:07 -> 01:04:08] ¿Tienes?
+[01:04:08 -> 01:04:10] Y para voto clínico.
+[01:04:10 -> 01:04:15] Solo, a veces, lo arriba, pero le hizo el que va a hacer el mismo.
+[01:04:15 -> 01:04:20] Entonces, a ver, para la parte de votos, si hay que haber una cara
+[01:04:20 -> 01:04:22] y tiene que permitirte marcar.
+[01:04:22 -> 01:04:25] ¿Dónde está?
+[01:04:25 -> 01:04:26] Más en el principio.
+[01:04:26 -> 01:04:28] Claro, porque tienes que decir...
+[01:04:28 -> 01:04:32] ¿Qué cosa tú plasmas en la historia clínica?
+[01:04:32 -> 01:04:34] Lo que estás haciendo, lo que estás haciendo.
+[01:04:34 -> 01:04:36] ¿Tú la ahorita la empiezas en la inscripción de una cara de la...
+[01:04:36 -> 01:04:38] Tienes que sentarte con...
+[01:04:38 -> 01:04:39] Esa es la chamba.
+[01:04:39 -> 01:04:43] Tienes que sentarte con la doctora o con la hora.
+[01:04:43 -> 01:04:46] Y tienes que decir la doctora a la hora.
+[01:04:46 -> 01:04:48] O con la doctora, yo.
+[01:04:48 -> 01:04:49] O hasta luego la toca de vivirlo con...
+[01:04:49 -> 01:04:51] O con la dimir.
+[01:04:51 -> 01:04:56] A ver, ¿usted cuando escriben en la historia clínica que cosa es marca?
+[01:04:56 -> 01:04:58] ¿Cómo hace su historia?
+[01:04:58 -> 01:05:01] Ya he visto que usan los formatos de votos.
+[01:05:01 -> 01:05:03] Sí.
+[01:05:03 -> 01:05:04] Ya hay pinta acá.
+[01:05:04 -> 01:05:06] Una unidad de sincuridad y estrés unidad ahí son...
+[01:05:06 -> 01:05:09] Eso debería ir igualito allá.
+[01:05:09 -> 01:05:11] ¿Tienes?
+[01:05:11 -> 01:05:14] Sí, le ya es ponen en la cara, marcan las zonas.
+[01:05:14 -> 01:05:18] Solo marcan, marcan y al final ponen en total unidad que la han puesto en creer.
+[01:05:18 -> 01:05:19] Algo así.
+[01:05:19 -> 01:05:21] Mira, eso es una cara.
+[01:05:21 -> 01:05:25] No tendría que dar porque es un poco complejo poner una cara.
+[01:05:25 -> 01:05:27] No puede poner una cara.
+[01:05:27 -> 01:05:29] O sea, puede ser algo más...
+[01:05:29 -> 01:05:31] La cara de esta mujer.
+[01:05:31 -> 01:05:32] La de este...
+[01:05:32 -> 01:05:35] Parece una donde normalmente se ponen votos y acá es creado.
+[01:05:35 -> 01:05:37] Y una vez se finaliza.
+[01:05:37 -> 01:05:42] Una vez se finaliza.
+[01:05:42 -> 01:05:45] La repente para hacerlo más...
+[01:05:45 -> 01:05:50] Mira, para hacerlo más, puede poner una cara de una mujer y si es hombre,
+[01:05:50 -> 01:05:52] una cara que no me ha querido.
+[01:05:52 -> 01:05:53] Y para que selecciona.
+[01:05:53 -> 01:05:56] Y para que se le llama a la mujer y que sea hombre a mi lado.
+[01:05:56 -> 01:05:58] Porque los hombros también se ponen votos.
+[01:05:58 -> 01:05:59] Así, sí.
+[01:05:59 -> 01:06:02] Y es más, que ponen más unidades.
+[01:06:02 -> 01:06:05] Porque es más resistentes, que es más grueso.
+[01:06:05 -> 01:06:06] Y es más...
+[01:06:06 -> 01:06:11] Es más, debería jalar tu propacada.
+[01:06:11 -> 01:06:12] ¿Por qué?
+[01:06:12 -> 01:06:13] Porque tú tienes...
+[01:06:13 -> 01:06:14] Pero tú...
+[01:06:14 -> 01:06:15] ¿Por qué?
+[01:06:15 -> 01:06:19] Porque tú tienes que tener una cara inicial y ver los cambios.
+[01:06:19 -> 01:06:24] O sea, en las historias tú deberías agarrar y tener las fotos de cada paciente.
+[01:06:24 -> 01:06:28] Linquiado a su esterecrimico.
+[01:06:28 -> 01:06:31] Entonces, cuando él entra en el esterecrimico, no va a estar buscando...
+[01:06:31 -> 01:06:36] Oiga, la foto del deprimpíteo de los patrotes de 1970.
+[01:06:36 -> 01:06:40] ¿Cómo buscas en la...
+[01:06:40 -> 01:06:42] en la... en la... en la... en la...
+[01:06:42 -> 01:06:43] en la foto que tiene duro?
+[01:06:43 -> 01:06:47] Lo que quiere decir es que... o sea, las chicas deberían tener...
+[01:06:47 -> 01:06:50] esa aplicación, esto... esto insustable.
+[01:06:50 -> 01:06:51] El rato que toma la foto.
+[01:06:51 -> 01:06:54] Que ella toma la foto y selecciona y sube en ese momento.
+[01:06:54 -> 01:06:55] Porque, ver que eso no va a ser el sistema.
+[01:06:55 -> 01:06:56] Lo va a subir la foto.
+[01:06:56 -> 01:06:59] La que toma la foto en ese momento es antes...
+[01:06:59 -> 01:07:00] A la historia.
+[01:07:00 -> 01:07:02] A la historia digital.
+[01:07:02 -> 01:07:05] Y cuando ya se puso el botox y a lo marcaron,
+[01:07:05 -> 01:07:08] de acá 15 días que viene a su control, le toma la foto y debería ver...
+[01:07:08 -> 01:07:09] pues nunca.
+[01:07:09 -> 01:07:14] Y tienes que poder tener la opción de ser un comparativo.
+[01:07:14 -> 01:07:17] Ya, marcas comparativo y te sale la foto basal.
+[01:07:17 -> 01:07:18] No es.
+[01:07:18 -> 01:07:21] La foto de acuerdo a la fecha que tú quieres comparar, ¿no?
+[01:07:21 -> 01:07:24] Como una rellita que se puede ver así desplegar...
+[01:07:24 -> 01:07:25] No.
+[01:07:25 -> 01:07:26] Pón comparativo.
+[01:07:26 -> 01:07:29] Claro, porque siempre tienes que ver una antiguilla después.
+[01:07:29 -> 01:07:31] Por eso siempre todo paciente pasa con una foto.
+[01:07:31 -> 01:07:32] Ahora.
+[01:07:32 -> 01:07:35] Y eso lo haces por carpeto, o sea, te díamos.
+[01:07:35 -> 01:07:38] 17, viene el 17 de enero del 2026.
+[01:07:38 -> 01:07:41] Eso va a estar una carpeta, porque no le toma una foto.
+[01:07:41 -> 01:07:43] Oye, no te toma más de fe de de todo.
+[01:07:43 -> 01:07:46] Si de a mi, la foto está apada, pues de todo lado.
+[01:07:46 -> 01:07:47] Y...
+[01:07:47 -> 01:07:50] Está quiero comparar la foto del...
+[01:07:50 -> 01:07:52] 17 de 12 del 2025.
+[01:07:53 -> 01:07:59] Tienes que entrar a la carpeta, a abres y hay escoger las que tú quieres comparar, papá.
+[01:07:59 -> 01:08:01] Y te permitas ir un comparativo.
+[01:08:01 -> 01:08:06] Y eso es justo lo que las chicas me comentaron ahorita.
+[01:08:06 -> 01:08:08] El semana pasada si del viernes, creo el jueves.
+[01:08:08 -> 01:08:13] Las mismas doctoras me dijeron, ¿por qué no se hacen las fotos en carpetas?
+[01:08:13 -> 01:08:16] Porque todo lo tienen por fecha, todo lo que tuvimos.
+[01:08:16 -> 01:08:18] Y tú te into buscando un montón.
+[01:08:18 -> 01:08:20] Si ves un paciente, pues puede buscar.
+[01:08:20 -> 01:08:23] Pero la gente siempre siente salida.
+[01:08:23 -> 01:08:25] Ponte de buscar todas las fotos.
+[01:08:25 -> 01:08:27] No, y son 100 pacientes.
+[01:08:27 -> 01:08:28] Al mundo, 50 pacientes.
+[01:08:28 -> 01:08:30] Esa 50 pacientes, multiplicado por 10.
+[01:08:30 -> 01:08:32] Porque acá no le te mangas tal.
+[01:08:32 -> 01:08:33] 20 fotos, 50.
+[01:08:33 -> 01:08:37] Me ha pasado porque cuando la doctora me ha mandado a buscar para imprimir el viernes
+[01:08:37 -> 01:08:40] y a los pacientes sus fotos, que es el puntual.
+[01:08:40 -> 01:08:43] La otra señora tenía 100 fotos de ese viernes.
+[01:08:43 -> 01:08:46] Porque obviamente sí socar, corporal.
+[01:08:46 -> 01:08:51] Entonces mira, le dijeron esto, que no puedes hacer este comparativo.
+[01:08:51 -> 01:08:52] ¿Ves?
+[01:08:52 -> 01:08:54] Tú tienes una foto antes o después.
+[01:08:54 -> 01:08:57] Tú ya le vas diciendo, a mira, pero mira, si era tu cara,
+[01:08:57 -> 01:09:00] porque después vienen después de un año doctor,
+[01:09:00 -> 01:09:03] pero estoy igualita o estoy peor.
+[01:09:03 -> 01:09:06] Esa es el que el botón no es que es duro en un año, ¿verdad?
+[01:09:06 -> 01:09:08] El botón dura dependiendo 3, 4, 5 meses.
+[01:09:08 -> 01:09:09] Entonces, obviamente...
+[01:09:09 -> 01:09:12] Es para todo, o sea, eso te va a hacer un imparal y aludón,
+[01:09:12 -> 01:09:17] único para glúteos, para todo, porque corporales, para todo.
+[01:09:17 -> 01:09:22] Entonces, ahí en historia clínica, por ejemplo, si el paciente,
+[01:09:22 -> 01:09:25] a la parte de ese vino, si son botos, ya obtienes la carita.
+[01:09:25 -> 01:09:29] Si son corporales, le van a poner encima, tienes que tener un cuerpo,
+[01:09:29 -> 01:09:34] y ahí tienes que poner en que lugares las puestos las encima.
+[01:09:34 -> 01:09:41] Si digamos, si se va a hacer glúteos, la enluma, tienes que tener unas nargas
+[01:09:41 -> 01:09:44] de ver donde le han puesto involumen.
+[01:09:44 -> 01:09:48] Sí, por ejemplo, adicionalmente se está siendo...
+[01:09:48 -> 01:09:50] no sé, este...
+[01:09:50 -> 01:09:55] buen llero, tienes que tener lo que está botándolo del peso.
+[01:09:55 -> 01:09:57] No, no todo el cuerpo, sino...
+[01:09:57 -> 01:09:58] El peso inicial.
+[01:09:58 -> 01:10:04] Lo que está botando el body, poder entrar a toda la historia del body,
+[01:10:04 -> 01:10:07] vede la historia clínica.
+[01:10:07 -> 01:10:09] Claro, porque venden una vez a la semana.
+[01:10:10 -> 01:10:14] Entonces, todo tienes que enquearlo a la historia clínica de la persona.
+[01:10:14 -> 01:10:17] O sea, su dene y el dene y alimentar la historia clínica.
+[01:10:17 -> 01:10:18] Pa, pa, pa.
+[01:10:18 -> 01:10:21] Claro, eso es lo que se quiere lograrlo.
+[01:10:21 -> 01:10:23] Un historia clínica que en vez de que sea física.
+[01:10:23 -> 01:10:24] Totalmente clínica.
+[01:10:24 -> 01:10:25] Claro, todo lo que...
+[01:10:25 -> 01:10:27] Es bien que hay una historia clínica.
+[01:10:27 -> 01:10:28] ¿Qué va a decir a la historia clínica?
+[01:10:28 -> 01:10:32] Su dato, los productos que se le venden, los vivos, claro.
+[01:10:32 -> 01:10:33] Todo eso tienes que preguntarme.
+[01:10:33 -> 01:10:39] Sí, tienes que ver de qué manera va a sincronizar todo ese información ahí.
+[01:10:40 -> 01:10:43] ¿Quieres ver con sentimientos informados para el paciente?
+[01:10:43 -> 01:10:47] No, te acerra con sentimientos y buscar en todos los concendidos.
+[01:10:47 -> 01:10:48] Es eso.
+[01:10:48 -> 01:10:54] Entonces, todo tiene que estar linkado a la historia clínica de ese paciente.
+[01:10:54 -> 01:10:57] Todos los informaciones de pacientes que están ahí.
+[01:10:57 -> 01:10:58] Es como que...
+[01:10:58 -> 01:11:00] A este cuenta que lo tienes una historia física.
+[01:11:00 -> 01:11:02] Pa, estará en mi historia de José Pérez.
+[01:11:02 -> 01:11:04] Te trae una historia física.
+[01:11:04 -> 01:11:08] Ahí tienes exámenes, imágenes, revoluciones, pássaros.
+[01:11:08 -> 01:11:13] Todo, solamente que en lugar de tenerlo en papel,
+[01:11:13 -> 01:11:16] tenemos que tener en virtual.
+[01:11:16 -> 01:11:20] Ahí tienes que tener acceso a todo.
+[01:11:20 -> 01:11:24] En mi caso, tiene tomografías.
+[01:11:24 -> 01:11:27] Tenemos que ir equipo por equipo y ver cómo,
+[01:11:27 -> 01:11:31] adamos automáticamente, pueda subir todo a la historia.
+[01:11:31 -> 01:11:35] Entonces, yo desde abriendo uno,
+[01:11:35 -> 01:11:37] una historia pueda ser...
+[01:11:37 -> 01:11:40] Al quiero ver su tomografía para amelagrar.
+[01:11:40 -> 01:11:42] Quiero ver tal cosa, su angiografía,
+[01:11:42 -> 01:11:46] quiero ver este co-graphía, su campo visual.
+[01:11:46 -> 01:11:51] Y por otro lado, también, había hecho...
+[01:11:51 -> 01:11:57] Para dar una sombra, ¿cómo diariamente rellenas una sofá de música?
+[01:11:57 -> 01:12:01] Igualito. Igualito es una historia clínica.
+[01:12:01 -> 01:12:03] O sea, dentro de la historia clínica,
+[01:12:03 -> 01:12:05] tiene revoluciones del médico.
+[01:12:05 -> 01:12:07] Pero también tienes revoluciones de la enfermera.
+[01:12:07 -> 01:12:11] También tienes revoluciones de la técnica, de la cosmía.
+[01:12:11 -> 01:12:13] Esto ya no diría ser como una historia de la cosmía.
+[01:12:13 -> 01:12:15] Por ejemplo, si la enfermera viene,
+[01:12:15 -> 01:12:19] pero es a la historia clínica del paciente.
+[01:12:19 -> 01:12:23] Si le dicen, ya, la enfermera pone vitaminas C.
+[01:12:23 -> 01:12:26] Ya, pues la enfermera tiene que poner...
+[01:12:26 -> 01:12:28] ¿Qué es eso?
+[01:12:28 -> 01:12:31] 16 de septiembre, el 2016.
+[01:12:31 -> 01:12:32] Se le coló...
+[01:12:32 -> 01:12:34] Ahora, diez de la mañana.
+[01:12:34 -> 01:12:36] Se le coló capitan vitaminas C.
+[01:12:36 -> 01:12:39] Pero creo que sería un poco más engorroso,
+[01:12:39 -> 01:12:42] porque tendrían que estar visitando cada cosa que colócomo.
+[01:12:42 -> 01:12:44] Es que sí, es que es el misterio de la comida.
+[01:12:44 -> 01:12:45] ¿Qué pasa?
+[01:12:45 -> 01:12:48] Cuando tú vas a una persona que te atiende,
+[01:12:48 -> 01:12:52] ya sea tópico, pasa y ellos te digitalizan,
+[01:12:52 -> 01:12:54] ¿qué te estás haciendo si te están?
+[01:12:54 -> 01:12:56] Y llevando un producto que te estás haciendo.
+[01:12:56 -> 01:12:59] ¿Cuál es el documento de la imagen de un problema legal?
+[01:12:59 -> 01:13:01] ¿No? ¿Qué se defiende?
+[01:13:01 -> 01:13:02] ¿Cual es el documento?
+[01:13:02 -> 01:13:04] No. La historia clínica.
+[01:13:04 -> 01:13:06] A clar todo lo que lleva en la deléctrica.
+[01:13:06 -> 01:13:08] La historia clínica es tu documento legal.
+[01:13:08 -> 01:13:11] Es una cosa de tu palabra, lo que es mi palabra,
+[01:13:11 -> 01:13:15] y otra cosa es lo que está escrito o frahuado en inglés clínica.
+[01:13:15 -> 01:13:19] Es una cosa que es tu documento.
+[01:13:19 -> 01:13:21] Yo entiendo que en tal clínica,
+[01:13:21 -> 01:13:24] he ido en un operado y he salido mal.
+[01:13:24 -> 01:13:27] No sé.
+[01:13:27 -> 01:13:29] Lo primero que tengo que tener que ver es con sentimientos informados,
+[01:13:29 -> 01:13:32] exámenes, sociales, imágenes.
+[01:13:32 -> 01:13:36] Es la paciente que vino,
+[01:13:36 -> 01:13:38] que le había hecho plama,
+[01:13:38 -> 01:13:40] y dijo que, al haber hecho eso,
+[01:13:40 -> 01:13:42] le habían fracturado la nariz.
+[01:13:42 -> 01:13:45] La paciente que desmoció hoy.
+[01:13:45 -> 01:13:47] ¿La vía a su salud?
+[01:13:47 -> 01:13:50] Acá.
+[01:13:50 -> 01:13:52] ¿En todo ese?
+[01:13:52 -> 01:13:53] No, no solo.
+[01:13:53 -> 01:13:55] O sea, hace años, sólo que he estado afuado.
+[01:13:55 -> 01:14:00] Y entonces, señora, traé a mes su tomografía anterior,
+[01:14:00 -> 01:14:04] posterior de la factura.
+[01:14:04 -> 01:14:07] Se dice que le han fracturado y que tienen el imagen.
+[01:14:07 -> 01:14:10] Eso es donde sale del historián clínica.
+[01:14:10 -> 01:14:15] Entonces, el fonte que se enfermera a la garra
+[01:14:15 -> 01:14:17] y le pone la vitaminía,
+[01:14:17 -> 01:14:19] ya sé, ya sé, una reacción alerquica.
+[01:14:19 -> 01:14:25] ¿Cómo sabes que se le puso?
+[01:14:25 -> 01:14:28] ¿Qué día se le puso?
+[01:14:28 -> 01:14:31] Al que ahora se le puso.
+[01:14:31 -> 01:14:34] Eso es el historián clínica.
+[01:14:34 -> 01:14:36] Es más, si por ejemplo,
+[01:14:36 -> 01:14:38] la paciente levanta la voz o hay un altercado,
+[01:14:38 -> 01:14:40] eso se manteliza el clínica.
+[01:14:40 -> 01:14:42] Así como que por antes,
+[01:14:42 -> 01:14:44] como calificando su...
+[01:14:44 -> 01:14:46] ¿Y qué se dice?
+[01:14:46 -> 01:14:48] ¿Ons 16 de ese time, el 96?
+[01:14:48 -> 01:14:50] ¿Inmediate a sentar pacientes con su hija?
+[01:14:50 -> 01:14:52] ¿Y ese produce está altercado?
+[01:14:52 -> 01:14:55] Esa es la función del historián clínica.
+[01:14:55 -> 01:14:57] Ahí, anotas todo.
+[01:14:57 -> 01:15:00] ¿Y en la esperanote una de las personas?
+[01:15:00 -> 01:15:02] ¿Es la persona que atiende?
+[01:15:02 -> 01:15:05] Es todas las personas que incluyen su atención.
+[01:15:05 -> 01:15:07] Es la boleta que está...
+[01:15:07 -> 01:15:10] Todas deberían poder anotar lo que estaban haciendo.
+[01:15:10 -> 01:15:12] Tienen que anotar en el historián.
+[01:15:12 -> 01:15:14] Y cada uno debe tener un usuario.
+[01:15:14 -> 01:15:19] Y cada usuario tiene que tener los permisos que tenga que tener.
+[01:15:19 -> 01:15:24] Por ejemplo, la doctora puede tener el permiso de todo lo que es el médico.
+[01:15:24 -> 01:15:27] Por ejemplo, recepciona para tener un usuario.
+[01:15:27 -> 01:15:30] Pero no para poner médicos, no para visualizar
+[01:15:30 -> 01:15:32] qué cosa mando la doctora que se hizo.
+[01:15:32 -> 01:15:34] Dentro del usuario,
+[01:15:34 -> 01:15:38] tiene que ser una parte de lo que es, supuestamente,
+[01:15:38 -> 01:15:41] está haciendo y hacer esa motivación.
+[01:15:41 -> 01:15:44] ¿Cuánte han tenido que introduciendo el otro día que vivía esa paciente
+[01:15:44 -> 01:15:49] de ha estado o si su administración podría notar eso dentro de este del equipo?
+[01:15:49 -> 01:15:52] Esa, porque está notado en la historia manual.
+[01:15:52 -> 01:15:55] Pero eso debería ser estar también ahí para pasar.
+[01:15:55 -> 01:15:57] Pasete complicada, el que se pasó atrás.
+[01:15:57 -> 01:15:59] Entonces, yo con tu mis cas.
+[01:15:59 -> 01:16:02] Y yo en mis suya tengo y nunca más carcita.
+[01:16:02 -> 01:16:03] No, pero...
+[01:16:03 -> 01:16:06] No vas a poner nunca más de la cita, pero digamos, ya sabes que...
+[01:16:06 -> 01:16:08] Esa, pero ya sabes qué pasó,
+[01:16:08 -> 01:16:11] que en situación tuvimos con la paciente, que es una loc,
+[01:16:11 -> 01:16:14] como hay así muchas, ¿no?
+[01:16:14 -> 01:16:17] Y que tienes que tener la luz de repente en la parte de que la distracción
+[01:16:17 -> 01:16:20] es a parte, le salió una llerta o ir.
+[01:16:20 -> 01:16:23] Una ventanita ni ira, un ventanita de rojo,
+[01:16:23 -> 01:16:25] ¿cuál es una llorita de alerta?
+[01:16:25 -> 01:16:26] ¿Por qué es mano?
+[01:16:26 -> 01:16:28] Nosotros le ponemos como que un...
+[01:16:28 -> 01:16:31] Como dice el otro, para las casas, así son negras.
+[01:16:31 -> 01:16:32] Para las que deben, le ponemos...
+[01:16:32 -> 01:16:34] Tengo el ego de apagar, le ponemos vero.
+[01:16:34 -> 01:16:37] Para las que hacen plato, le ponemos rosado.
+[01:16:37 -> 01:16:41] Pero las que soñan súper, lo que lo caes, le ponemos negras.
+[01:16:41 -> 01:16:46] Entonces cuando las chicas vienen la historia y tienes como ese papelito negros que sobresable.
+[01:16:46 -> 01:16:49] Ya sabemos que es una loc, y que hay que tener mucho...
+[01:16:49 -> 01:16:53] Con 50 personas, te vas a acordar de que personas cada persona,
+[01:16:53 -> 01:16:56] hay algunos casos que son tan evidentes ya...
+[01:16:56 -> 01:16:58] Y nunca, se van a ser olvidados como esta...
+[01:16:58 -> 01:17:02] Pero digamos, hay gente que viene y digamos, ya sabes...
+[01:17:02 -> 01:17:05] No sé, cualquier comentario o acercío,
+[01:17:05 -> 01:17:09] o hay algún encercado, o sea que me pasó un billete falso,
+[01:17:09 -> 01:17:12] entre un billete falso...
+[01:17:12 -> 01:17:14] O como el anví, o no me quise empagar.
+[01:17:14 -> 01:17:19] O no quiere firmar, o cualquier cosa, te toas notas ahí.
+[01:17:19 -> 01:17:22] Pero en rato que entras, lo hago de saber,
+[01:17:22 -> 01:17:24] ah, hay a tal personas así, a tal, a tal.
+[01:17:24 -> 01:17:27] Doctora, por ser caso, venía tal que pasó de esto,
+[01:17:27 -> 01:17:29] se acordó lo otra vez, ya.
+[01:17:29 -> 01:17:32] ¿Tú de parezos si lo he visto en el libro?
+[01:17:32 -> 01:17:36] En general, se te va a dar toda la información de ese paciente.
+[01:17:38 -> 01:17:41] No solamente es facturación, es la parte de facturación.
+[01:17:41 -> 01:17:43] Por la parte de este era el único...
+[01:17:43 -> 01:17:45] O sea, es como una suerte de evitar acuerdos.
+[01:17:45 -> 01:17:46] Es una evitar acuerdos.
+[01:17:46 -> 01:17:49] Y esa evitar acuerdos puedes aprovechar el modelo de cárbito.
+[01:17:49 -> 01:17:52] Porque el cardex, yo el cardex, cuando yo sale algo,
+[01:17:52 -> 01:17:53] o tengo que salir la hora.
+[01:17:53 -> 01:17:55] Ahora, minutos, segundo, a la hora que se piensa.
+[01:17:55 -> 01:17:56] Claro, entonces...
+[01:17:56 -> 01:17:57] Puedes poner una lista de...
+[01:17:57 -> 01:17:59] ¿Entú usted puede ser para la productividad?
+[01:17:59 -> 01:18:01] ¿Tú tienes una llegue una paciente?
+[01:18:01 -> 01:18:04] La chica, la encargada con su usuario, inicio de vitamina C.
+[01:18:05 -> 01:18:06] Es cierto.
+[01:18:06 -> 01:18:08] Es que eso vas a facilitar que tanto...
+[01:18:08 -> 01:18:12] Es el que hay que escriban, man escribir, detallar en la tierra.
+[01:18:12 -> 01:18:14] Es pasé clic, no más clic, clic, clic, clic.
+[01:18:14 -> 01:18:17] Y le puedes dejar un acápito de nota, si es que tiene que ser...
+[01:18:17 -> 01:18:19] Comentable, en la información.
+[01:18:19 -> 01:18:24] Ponte que la paciente le da una lipotemia cuando se desmaya
+[01:18:24 -> 01:18:26] cuando les pudieron poner la vitamina C.
+[01:18:26 -> 01:18:27] ¿Dónde lo nota?
+[01:18:27 -> 01:18:29] Si solamente tenía paciencia.
+[01:18:29 -> 01:18:34] Hay una nota, paciente, su proelipotemia, tal hora, tan día.
+[01:18:34 -> 01:18:37] Además, supuestamente, cada vez que ahora va a estar...
+[01:18:37 -> 01:18:39] ...a una hora y última.
+[01:18:39 -> 01:18:40] ¿Cómo tienes que tener transabiidad?
+[01:18:40 -> 01:18:42] Y eso no va a ayudar para la productividad,
+[01:18:42 -> 01:18:44] porque vas a filtrar al método, compiada, a traer licenciada,
+[01:18:44 -> 01:18:47] y te vas a salir todo lo que hizo en ese mes.
+[01:18:47 -> 01:18:48] Y esto.
+[01:18:48 -> 01:18:49] Entonces, ya ni siquiera, ¿cómo?
+[01:18:49 -> 01:18:52] O sea, en vez que escriban amando su productividad
+[01:18:52 -> 01:18:54] para digitalizar en la tabla.
+[01:18:55 -> 01:18:56] Que ya está la foto...
+[01:18:56 -> 01:18:58] Las horas que toma de fotos diferentes cosas y...
+[01:18:58 -> 01:18:59] ¿Por qué no?
+[01:18:59 -> 01:19:00] ¿Por qué no?
+[01:19:00 -> 01:19:03] Cuando tú tomas la foto, la cámara
+[01:19:03 -> 01:19:06] te va a votar un de frente feche y foto o feche y hora.
+[01:19:06 -> 01:19:07] ¿Also viene de más?
+[01:19:07 -> 01:19:09] ¿Also trae input que se tiene con el...
+[01:19:09 -> 01:19:10] No.
+[01:19:10 -> 01:19:13] Tú cuando tomas cualquier cámara con cualquier cámara...
+[01:19:13 -> 01:19:14] Por ejemplo...
+[01:19:14 -> 01:19:18] Por ejemplo, ahorita en el lodo, cuando alguien crea o hace una boleta
+[01:19:18 -> 01:19:20] ahí sale la hora en que creaste la boleta.
+[01:19:20 -> 01:19:22] Sale quién lo hizo, ¿qué usuario?
+[01:19:22 -> 01:19:24] Fela a la administración o ya ya hay hora.
+[01:19:24 -> 01:19:25] ¿Y si hagas automático?
+[01:19:25 -> 01:19:27] ¿Casiás lo tú tienes que estar aquí?
+[01:19:27 -> 01:19:31] Ahora se supone que el sistema o la historia digital
+[01:19:31 -> 01:19:35] tiene contabilizada las horas y en momentos que tú das guardar,
+[01:19:35 -> 01:19:38] se guarda con esa feche y con esa hora de ese momento.
+[01:19:38 -> 01:19:39] ¿Dónde es que tú vas a poner la hora?
+[01:19:39 -> 01:19:41] No sé cómo funciona porque supongo que es algo de sistema,
+[01:19:41 -> 01:19:42] así, todas esas cosas.
+[01:19:42 -> 01:19:45] Pero te queda grabado la hora
+[01:19:45 -> 01:19:49] y obviamente que tiene que dar un check a la hora que termina el procedimiento,
+[01:19:49 -> 01:19:52] que también al dar grabado, que termino o que cumplió,
+[01:19:52 -> 01:19:55] va a quedar grabada la hora que está dándole, ¿ok?
+[01:19:55 -> 01:19:56] que se supone que termino.
+[01:19:56 -> 01:19:58] Si a quién es la hora de iniquitina, la hora de fin
+[01:19:58 -> 01:20:00] es la productividad que se saca.
+[01:20:00 -> 01:20:03] Entonces de esa manera funciona, no sé cómo se puede hacer aquí
+[01:20:03 -> 01:20:06] porque en esta mesa de sistemas yo no sé.
+[01:20:06 -> 01:20:09] Pero si existe eso, normalmente en todas las clínicas
+[01:20:09 -> 01:20:12] recarropalmas del yo que hi saludo en ese doctor,
+[01:20:12 -> 01:20:14] ellos trabajan como un sistema.
+[01:20:14 -> 01:20:17] Ahora tendríamos que revisar con la ir
+[01:20:17 -> 01:20:19] ahora que todo prácticamente es facilita,
+[01:20:19 -> 01:20:21] verde qué formas se pueda realizar esa.
+[01:20:22 -> 01:20:25] Porque yo es lo que le dije a ya, justamente tuve un tema
+[01:20:25 -> 01:20:28] porque el doctor pidió hora de inicio
+[01:20:28 -> 01:20:30] y hora de fin por procedimiento.
+[01:20:30 -> 01:20:33] Y ellas estaban poniendo como que detallando todos los procedimientos
+[01:20:33 -> 01:20:35] yo no era de inicio y no era de fin total.
+[01:20:35 -> 01:20:36] ¿De acuerdo?
+[01:20:36 -> 01:20:40] Entonces entre esas horas yo no puedo definir cuánto se demoró
+[01:20:40 -> 01:20:44] en el enzcul, en la radio en frecuencia,
+[01:20:44 -> 01:20:47] no lo sé porque ya me pude un tiempo total por todas esas máquinas.
+[01:20:48 -> 01:20:52] Entonces su discusión de ellas, ¿cómo te van a apuntar cada hora
+[01:20:52 -> 01:20:55] que inicia y termina y con una máquina?
+[01:20:55 -> 01:20:58] Y el otra máquina le digo es que al final va a ser así, le digo,
+[01:20:58 -> 01:21:00] porque ustedes ahorita están haciendo un hoja a mano,
+[01:21:00 -> 01:21:04] pero ustedes van a tener un sistema donde van a poner al paciente,
+[01:21:04 -> 01:21:06] seleccionar al paciente qué procedimiento
+[01:21:06 -> 01:21:09] y ahí va a salir el tiempo de inicio y final.
+[01:21:09 -> 01:21:11] Entonces simplemente incluso tienen que ir a costumpar.
+[01:21:11 -> 01:21:15] Primera, encima cuando tienes que tener llamado,
+[01:21:15 -> 01:21:17] hay que ser el sistema llamado.
+[01:21:17 -> 01:21:21] Paciente tada tada, que pase cada hora.
+[01:21:21 -> 01:21:24] Aún, para que se estén dando tada, pases un claro.
+[01:21:24 -> 01:21:26] ¿Cómo el se llama?
+[01:21:26 -> 01:21:27] Sí, sí.
+[01:21:27 -> 01:21:29] ¿Qué es como cuando vas con la clínica y te sale?
+[01:21:29 -> 01:21:31] Cuando puse para que llame, para que llame,
+[01:21:31 -> 01:21:34] todo el sistema vas a llamar todo el sistema al paciente
+[01:21:34 -> 01:21:39] y el paciente ahí va a dar que ahora lo está llamando.
+[01:21:39 -> 01:21:41] Y es más bien.
+[01:21:41 -> 01:21:45] Y ahora, ¿qué lo han citado y ahora lo están atalando?
+[01:21:45 -> 01:21:48] Y ahora todas las cabines están identificadas.
+[01:21:48 -> 01:21:50] ¿Te pasas el camino?
+[01:21:50 -> 01:21:51] ¿Qué haces? ¿Qué haces?
+[01:21:51 -> 01:21:56] Cuando yo llevo mi hijita sale paciente mori, consultorio 1.
+[01:21:56 -> 01:22:01] No sé, 8a, consultorio 206.
+[01:22:01 -> 01:22:04] Y el médico te llama desde su sitio,
+[01:22:04 -> 01:22:06] obviamente que está conectado el sistema.
+[01:22:06 -> 01:22:09] Cuando tú entras, el médico da la atención en el sistema,
+[01:22:09 -> 01:22:11] porque yo veo la computadora del médico.
+[01:22:11 -> 01:22:13] Y me imagino que así como me da el cheque,
+[01:22:13 -> 01:22:15] ya estoy en atención también de un cheque,
+[01:22:15 -> 01:22:17] que ya terminó su atención.
+[01:22:17 -> 01:22:22] Entonces, las cosas, ver el sistema como se acopla
+[01:22:22 -> 01:22:26] en lo que usted está llamando y el paciente termine tu
+[01:22:26 -> 01:22:29] de lo que grababa y cuando se erracía ahí,
+[01:22:29 -> 01:22:33] se se activa, porque tiene que grabar la información.
+[01:22:33 -> 01:22:38] Y aumento el que negraba la información se cierra.
+[01:22:38 -> 01:22:39] La sesión.
+[01:22:39 -> 01:22:40] Se cierra la atención.
+[01:22:40 -> 01:22:42] La sesión y se supone que hay que culminar tu atención.
+[01:22:42 -> 01:22:44] Entonces, no es que el doctor pone una hora tampoco,
+[01:22:44 -> 01:22:47] el doctor da grabar y el sistema ya le quiere grabar
+[01:22:47 -> 01:22:49] la hora interna que más le hace el sistema.
+[01:22:49 -> 01:22:50] El solito más en el sistema.
+[01:22:50 -> 01:22:52] Es un sistema automático.
+[01:22:52 -> 01:22:54] Simplemente lo que estamos haciendo ahorita con las...
+[01:22:54 -> 01:22:57] ¿Cómo hacen las auditorías en las computadoras?
+[01:22:57 -> 01:22:59] ¿Entras? ¿Entras son una computadora? ¿Sabes?
+[01:22:59 -> 01:23:02] ¿Qué era brilero? ¿Qué era el terror metal?
+[01:23:02 -> 01:23:04] ¿Estás programada? ¿Qué era matar a un email?
+[01:23:04 -> 01:23:06] ¿Qué era el equipo? ¿Azá todo?
+[01:23:06 -> 01:23:08] ¿Uns? ¿Unsan el reloj de la computadora?
+[01:23:08 -> 01:23:09] ¿Exacto?
+[01:23:09 -> 01:23:13] ¿Y el calendario? ¿No todo está atrasado?
+[01:23:13 -> 01:23:17] ¿Qué cada registro en dos tenga que estar en el asado a la hora? ¿A la hora actual?
+[01:23:17 -> 01:23:19] ¿Todo? ¿Todo? ¿Todo? ¿Todo? ¿Todo?
+[01:23:19 -> 01:23:22] ¿Todo? ¿Todo? ¿Todo? ¿Todo? ¿Todo?
+[01:23:22 -> 01:23:23] ¿De acuerdo?
+[01:23:23 -> 01:23:27] Sí. ¿Sí? ¿Sí? ¿Sí? ¿Sí? ¿Sí? ¿Sí? ¿Sí? ¿Sí?
+[01:23:27 -> 01:23:29] ¿Sí? ¿Sí? ¿Sí? ¿Sí? ¿Sí?
+[01:23:29 -> 01:23:33] ¿Entra? De todas maneras hay en el yo que ya estamos usando
+[01:23:33 -> 01:23:36] distale digital y van y qué o conformación?
+[01:23:36 -> 01:23:41] Por ejemplo yo entró y hago mi receta. Es el lo otro ¿no?
+[01:23:41 -> 01:23:42] Ya la farmacéle llega.
+[01:23:42 -> 01:23:47] Y la farmacéle llega. Es más la receta y llega al correo del paciente.
+[01:23:47 -> 01:23:51] Es analogía de lo que hace el mismo odio.
+[01:23:51 -> 01:23:52] ¿Es?
+[01:23:52 -> 01:23:53] El mismo odio envía el correo.
+[01:23:53 -> 01:23:55] ¿Por qué? ¿Por qué? ¿A todo el mí te ha sido?
+[01:23:55 -> 01:23:58] Ahora, el mismo odio sale solito por mí y el día.
+[01:23:58 -> 01:24:00] Y se envía el correo y se envía una desigualdad.
+[01:24:00 -> 01:24:01] O sea, no hay que ir a eso, no hay que ir a eso.
+[01:24:01 -> 01:24:05] Luego de la refracción, lleno los datos, le doy grabas.
+[01:24:05 -> 01:24:09] ¿Qué? Estoy bien y me da también el sistema de tiende mandada
+[01:24:09 -> 01:24:13] que ha dado a su refracción al paciente.
+[01:24:13 -> 01:24:17] Si yo le recete, no sé, la grisén.
+[01:24:17 -> 01:24:23] Una caja, una bata cada cuatro horas y está atento el sistema.
+[01:24:23 -> 01:24:27] Y tú lo te cobro para click, click, click, click, click, click.
+[01:24:27 -> 01:24:28] ¿Visto?
+[01:24:28 -> 01:24:31] Hay un ojo derecho ojo izquierdo, ambos ojos.
+[01:24:32 -> 01:24:35] Termino llenar la receta para va.
+[01:24:35 -> 01:24:39] Es información va a farmacia.
+[01:24:39 -> 01:24:43] El paciente me dice mi receta y hasta en farmacia.
+[01:24:43 -> 01:24:46] Le voy a llegar a su correo, usted se lo vaya a farmacia.
+[01:24:46 -> 01:24:48] Este va a farmacia con su DNI.
+[01:24:48 -> 01:24:53] En este caso va al masen, va a ir a farmacia sube y ellos ya tienen información.
+[01:24:53 -> 01:24:56] Y entonces ellos ya son como cuando...
+[01:24:56 -> 01:25:02] Hoy un pollo con papas, un salchipapa, dos chorizos
+[01:25:02 -> 01:25:06] y salen, salen a las horremes y en cocina ya tienen.
+[01:25:06 -> 01:25:14] Carlos, sus amuches al chorizo,
+[01:25:14 -> 01:25:17] acá se te interesa el recaja, el tren de despacho,
+[01:25:17 -> 01:25:22] pero ha pasado por cocina.
+[01:25:22 -> 01:25:27] Como el de despacho sabe que tres cargos y que tenías que comer un chorizo.
+[01:25:27 -> 01:25:29] Porque todo es todo el receta.
+[01:25:29 -> 01:25:34] Es claramente que en este caso este cargos su receta,
+[01:25:34 -> 01:25:41] a hacer farmacán, su receta, acá son medicamentos.
+[01:25:41 -> 01:25:43] Con su identificación, con su...
+[01:25:43 -> 01:25:45] Solo va a con el DNI en cualquier si.
+[01:25:45 -> 01:25:49] Incluso en misión te llamo con adnición cuando tu pasas por el médico.
+[01:25:49 -> 01:25:51] Y el médico te manda.
+[01:25:51 -> 01:25:53] Vaya en misión porque va a ir a saber que pagarás.
+[01:25:53 -> 01:25:56] Vas a en misión te llamo con tu nombre,
+[01:25:56 -> 01:25:59] tú te acerras con tu DNI, te dan tu pago.
+[01:25:59 -> 01:26:01] Si tienes que pagar algo pago.
+[01:26:01 -> 01:26:03] Y para que le entrega, tienes que pasar por casa.
+[01:26:03 -> 01:26:04] ¿Qué pasa?
+[01:26:04 -> 01:26:06] Se iba a pagar con un DNI.
+[01:26:06 -> 01:26:07] No, hay a pagar a un principado.
+[01:26:07 -> 01:26:09] En las clínicas se pagan en principado.
+[01:26:09 -> 01:26:10] Se pagan en el que te ven.
+[01:26:10 -> 01:26:12] Pero todo va a salgar el producto.
+[01:26:12 -> 01:26:15] Y vas con tu orden que te pone cancelado de ellos.
+[01:26:15 -> 01:26:18] Vas a farmacia, pero en farmacia ya tiene.
+[01:26:18 -> 01:26:21] Tú dices, señorita, este paciente total.
+[01:26:21 -> 01:26:23] Ya suene y te pide, ni siquiera te pide el pago.
+[01:26:23 -> 01:26:26] Suene y cuando te da el producto, ahí te muestras el agua.
+[01:26:26 -> 01:26:29] Porque ellos te dicen, vayan con esto a farmacia.
+[01:26:29 -> 01:26:30] Y ahí está el cancelado.
+[01:26:30 -> 01:26:32] Y simplemente te da el pese.
+[01:26:32 -> 01:26:34] Exacto, he recibido.
+[01:26:34 -> 01:26:37] Entonces todo se conecta a un sistema que debe estar por áreas.
+[01:26:37 -> 01:26:39] ¿Cómo usuario?
+[01:26:39 -> 01:26:41] El usuario contra ese.
+[01:26:41 -> 01:26:43] Usuario para el del maceng, usuario para el tersección,
+[01:26:43 -> 01:26:46] usuario para el médico, usuario para el conmiatra,
+[01:26:46 -> 01:26:48] usuario para administración.
+[01:26:48 -> 01:26:52] Pero todo está en un mismo sistema que tiene áreas separadas.
+[01:26:52 -> 01:26:55] ¿Qué era como antes era el derma del venezolano?
+[01:26:55 -> 01:26:59] No, nada más que ese sistema era súper engorroso.
+[01:26:59 -> 01:27:01] Era tan amigable.
+[01:27:01 -> 01:27:04] Pero todo está ahí y todo está muy apartado.
+[01:27:04 -> 01:27:07] No necesitas un documento necesariamente,
+[01:27:07 -> 01:27:10] porque ellos también llaman si pasa el orden a ellos,
+[01:27:10 -> 01:27:12] es porque ya está pagado.
+[01:27:12 -> 01:27:14] No, que todo se se encarra a tipo a misión y cada área.
+[01:27:14 -> 01:27:17] No, porque el que te va a generar es el médico.
+[01:27:17 -> 01:27:19] O digamos, la cosmiata.
+[01:27:19 -> 01:27:25] Pero ahora tienes que usarlo en la cremita de falta con 1.000 de arriesga.
+[01:27:25 -> 01:27:30] La receta de eso, tú le vas a vender esa arriba.
+[01:27:30 -> 01:27:35] Esa orden tiene que llegar arriba, pero todavía no ha pagado.
+[01:27:35 -> 01:27:41] Tienes que ir primero a caja, pagar y con esa orden después va a ir arriba.
+[01:27:41 -> 01:27:43] Que no está ya va a haber una.
+[01:27:43 -> 01:27:46] Pero el de arriba ya sabe que por eso vamos a poner un arriba.
+[01:27:46 -> 01:27:51] Claro, por eso la chica una de recepción va a estar
+[01:27:51 -> 01:27:54] a donde estamos ustedes, consulato para que ahí como rego.
+[01:27:54 -> 01:27:57] Ustedes se enteran el producto, pala y entra en todo.
+[01:27:57 -> 01:28:04] Para compitar el flujo.
+[01:28:04 -> 01:28:07] Pero todo eso empieza desde el historial clínin.
+[01:28:07 -> 01:28:08] ¿Este es?
+[01:28:08 -> 01:28:09] Sí.
+[01:28:09 -> 01:28:11] Por eso es importante hacerle historia clínin.
+[01:28:11 -> 01:28:13] De iba a hacer todo, va a salir a la receta.
+[01:28:13 -> 01:28:16] Y a la doctora no tiene que estar escribiendo a mano encima.
+[01:28:16 -> 01:28:20] El tema de hacer una receta a mano es si el sistema es entender.
+[01:28:20 -> 01:28:21] Es otro tema.
+[01:28:22 -> 01:28:23] Y eso pasa en recepción.
+[01:28:23 -> 01:28:24] ¿Qué dice acá?
+[01:28:24 -> 01:28:28] Tenemos que subir con la receta, ande la doctora o una de las asasión.
+[01:28:28 -> 01:28:30] ¿Qué dice acá? No se entiende.
+[01:28:30 -> 01:28:32] Porque la chica es de vez no sabe cómo pedir.
+[01:28:32 -> 01:28:34] En cambio, si es ya con el sistema, pago de la disilla.
+[01:28:34 -> 01:28:36] Ya todo está definido, sesión.
+[01:28:36 -> 01:28:39] Es un tema de adaptación, porque incluso la doctora le va a costar.
+[01:28:39 -> 01:28:42] Pero ya he dicho que bueno, lo que le cueste lo va a hacer.
+[01:28:42 -> 01:28:45] Si la doctora se puede poner a hacerlo, porque las demás no.
+[01:28:45 -> 01:28:50] Es que además es un tema de facilitar.
+[01:28:50 -> 01:28:55] Para todas las áreas, ya no es que nada más se perjudica una y una para una es más fácil.
+[01:28:55 -> 01:28:58] Es para todas las áreas, porque ya todos van a tener lo que hay en el sistema.
+[01:28:58 -> 01:29:00] Pero todo empieza en la historia clínica.
+[01:29:00 -> 01:29:05] Pues si no, no tiene la historia clínica, no.
+[01:29:05 -> 01:29:09] Sí, y ahorita nos vamos a poner a priorizar aparte de lo que vamos y vamos a hacer con el más importante.
+[01:29:09 -> 01:29:11] Hay que priorizar a la historia clínica.
+[01:29:11 -> 01:29:14] Les dije a ustedes, hay que priorizar las cosas.
+[01:29:14 -> 01:29:16] Que cosas son más importantes.
+[01:29:16 -> 01:29:19] Que cosas necesarianes, como es el tema.
+[01:29:19 -> 01:29:21] Que se va a armarlo del masé.
+[01:29:21 -> 01:29:27] Lo del masé es lo que usted está esquiriendo por ejemplo de los kits, igual sale de ahí.
+[01:29:27 -> 01:29:32] Cuando la doctora agarrice, se le va a poner el urónico.
+[01:29:32 -> 01:29:36] Va, el urónico en cara.
+[01:29:36 -> 01:29:40] Se lleva a notar y de ahí te puede pedir...
+[01:29:40 -> 01:29:45] Ya, si me quiera arriba, recoger.
+[01:29:45 -> 01:29:50] ¿Cómo se sabe si cerrado está el paciente quiere hacer algo o se va a hacer algo?
+[01:29:50 -> 01:29:57] Claro, porque a veces hay pacientes que vienen para una evaluación y se andojan en ese momento a hacerlo.
+[01:29:57 -> 01:30:01] Entonces eso no va a estar porque en tuése le está como evaluación en tu agente.
+[01:30:01 -> 01:30:03] Que tú quieres conectar la agenda.
+[01:30:03 -> 01:30:05] Que si te va a ayudar para lo que ya tienes durante el día programado.
+[01:30:05 -> 01:30:10] Pero hay muchos que están como consultas y evaluación porque ya acabaron o son nuevos pacientes.
+[01:30:10 -> 01:30:14] Y en el momento el adulto le va a hacer un plan de trabajo y se llave ahorita me hago y muchos hay así en ese caso.
+[01:30:14 -> 01:30:15] Que dice ya.
+[01:30:15 -> 01:30:17] Entonces esos son adicionales que van a salir en el día.
+[01:30:17 -> 01:30:22] Que tienes que tener también como que quits preparados ya para que puedas dar...
+[01:30:22 -> 01:30:25] No, bueno, el rato que hace para ir a la enviada.
+[01:30:25 -> 01:30:27] Lo va a dar más.
+[01:30:27 -> 01:30:30] Pero desde el historia que tiene que...
+[01:30:30 -> 01:30:33] Desde el historia que tiene que hacer todo de las obras.
+[01:30:33 -> 01:30:37] Todo.
+[01:30:37 -> 01:30:41] ¿Poy tienes que hacer un historia que tiene que arreglar esta buena que esté enlazado todo?
+[01:30:41 -> 01:30:45] Sí.
+[01:30:45 -> 01:30:47] En realidad está todo.
+[01:30:47 -> 01:30:50] En el historia que viene que están todos los departamentos, todas las ideologísticas,
+[01:30:50 -> 01:30:53] respect, factoración, todo.
+[01:30:53 -> 01:30:56] Y en el que teníamos con un chico...
+[01:30:56 -> 01:30:58] Hasta parmacia tiene una habitácora.
+[01:30:58 -> 01:31:01] Recuerda que en cual eso te piden un consultorio en frente.
+[01:31:01 -> 01:31:08] Supuestamente si hay algún tema con el medicamento,
+[01:31:08 -> 01:31:10] ponte que le entradas el medicamento.
+[01:31:10 -> 01:31:12] ¿Qué es la farmacia clínica?
+[01:31:12 -> 01:31:13] No farmacia clínica.
+[01:31:13 -> 01:31:15] O sea, aparte de esas dos farmacias,
+[01:31:15 -> 01:31:17] el frente va a ver una farmacia clínica.
+[01:31:17 -> 01:31:18] No, el consultorio.
+[01:31:18 -> 01:31:19] El consultorio clínico.
+[01:31:19 -> 01:31:21] Por esas dos áreas.
+[01:31:21 -> 01:31:23] Ponte, eso te pide mi, o sea.
+[01:31:23 -> 01:31:24] Ponte que tú le entregas...
+[01:31:24 -> 01:31:26] No sé, es...
+[01:31:26 -> 01:31:30] Le entregas una crema.
+[01:31:30 -> 01:31:31] Y te dice,
+[01:31:31 -> 01:31:33] ¿Y esta crema está bombiada?
+[01:31:33 -> 01:31:35] ¿O esta crema tiene...
+[01:31:35 -> 01:31:38] Es todo, no está transparente como debería ser?
+[01:31:38 -> 01:31:40] ¿O el cello está roto?
+[01:31:40 -> 01:31:43] ¿O está vencido?
+[01:31:43 -> 01:31:45] ¿Dónde notas de cincides?
+[01:31:45 -> 01:31:50] Tendré el registro en el mismo sistema.
+[01:31:50 -> 01:31:52] Tienes que registrar.
+[01:31:52 -> 01:31:57] ¿Entiende?
+[01:31:57 -> 01:32:00] Entonces, farmacia tiene que tener dentro la historia técnica.
+[01:32:00 -> 01:32:03] Tienes que tener también su acceso.
+[01:32:03 -> 01:32:04] Y ahí a no.
+[01:32:04 -> 01:32:07] ¿Cos me atraspa?
+[01:32:07 -> 01:32:08] Y a no.
+[01:32:08 -> 01:32:14] Y el hermano tiene cada uno que va teniendo su parte donde tiene que ir a no.
+[01:32:14 -> 01:32:16] Toda la cincidencia.
+[01:32:16 -> 01:32:19] Entonces, iría a Ponte que llegó...
+[01:32:19 -> 01:32:22] Vido casos de eso.
+[01:32:22 -> 01:32:26] Cuando era empezar a un abambiar,
+[01:32:26 -> 01:32:30] los productos que se producen en ver un metín,
+[01:32:30 -> 01:32:35] los productos que se descubrieron,
+[01:32:35 -> 01:32:40] los productos en la Argentina.
+[01:32:40 -> 01:32:44] Y a veces los pacientes quieren traer sus cosas y quieren que traen.
+[01:32:44 -> 01:32:48] Pero Ponte que compre este es a un proveedor y el proveedor de hecho
+[01:32:48 -> 01:32:50] y te manda algo que no...
+[01:32:50 -> 01:32:55] Mira lo que ha pasado con el clororo que no es de una empresa chreca.
+[01:32:55 -> 01:32:59] Es una empresa, ¿me di forma? ¿Cuánto se muy bien?
+[01:32:59 -> 01:33:01] ¿Y cómo descubre...
+[01:33:01 -> 01:33:02] Esa es mi Ponte que...
+[01:33:02 -> 01:33:04] ¿Usted usas clororo?
+[01:33:04 -> 01:33:08] Imagínate que le metemos un clororo y se mueve.
+[01:33:08 -> 01:33:09] ¡Dien un clororo!
+[01:33:09 -> 01:33:12] Todo tiene que estar.
+[01:33:12 -> 01:33:15] Entonces ese rato va a venir la fiscalita, va a decir,
+[01:33:15 -> 01:33:19] a ver el señor que le pusieron.
+[01:33:19 -> 01:33:22] Ya, ya le puse clororo pero vamos a ver.
+[01:33:22 -> 01:33:23] Ya.
+[01:33:23 -> 01:33:28] Que lo te es, que medicamento es, que no me lo tiene.
+[01:33:28 -> 01:33:31] Que le has decir, ¿no? ¿No tengo?
+[01:33:31 -> 01:33:33] No, todo tiene que estar registrado.
+[01:33:33 -> 01:33:36] Claro, todos los datos para brindar.
+[01:33:36 -> 01:33:38] Todo tiene que estar registrado.
+[01:33:38 -> 01:33:41] Todo tiene que saber qué cosa le pusieron y de qué lo te vino.
+[01:33:41 -> 01:33:45] El producto, eso va a salir de almacén porque el almacén cuando tú saques
+[01:33:45 -> 01:33:48] va a salir el producto, va a salir de qué lo te vino.
+[01:33:48 -> 01:33:49] Lo te fecho.
+[01:33:49 -> 01:33:58] Lo pusimos este medicamento, este clororo de medir forma,
+[01:33:58 -> 01:34:01] que se comprueba el fecho de talote.
+[01:34:01 -> 01:34:07] Entonces, entrarán, ellos miran las pesquisas.
+[01:34:07 -> 01:34:11] Porque muchas veces le ponen y abuelotirás al tacho, todo.
+[01:34:11 -> 01:34:16] ¿Cómo hacen los análisis?
+[01:34:16 -> 01:34:19] Y le va a ver qué otros medicamentos tienes.
+[01:34:19 -> 01:34:24] Desde este lote tengo cinco clororo de almacén, desde el lote.
+[01:34:24 -> 01:34:27] Y así fue, y ahí vieron a mirar.
+[01:34:27 -> 01:34:31] Todos los productos están mal, mal en un factorado.
+[01:34:31 -> 01:34:33] Todos tienen mucho clororo de sol.
+[01:34:33 -> 01:34:36] En la que tenía mucha sal y medicamento.
+[01:34:36 -> 01:34:38] Los mataron así y los pasían.
+[01:34:38 -> 01:34:40] Se equivocaron en la concentración.
+[01:34:40 -> 01:34:42] Viste a las noticias o no?
+[01:34:42 -> 01:34:44] Se equivocaron en la fabricación, en la concentración,
+[01:34:44 -> 01:34:50] cuando programaron las máquinas, le metieron más sal de la creatividad.
+[01:34:50 -> 01:34:54] Al final descubrieron quién era y saclárlo.
+[01:34:54 -> 01:34:59] El objetivo tenía un función, pero todo el pato es lo que le entira al operar.
+[01:34:59 -> 01:35:01] ¿Croducción?
+[01:35:01 -> 01:35:02] Ah, el del...
+[01:35:02 -> 01:35:03] El del del, lo activo.
+[01:35:03 -> 01:35:04] No, así es siempre.
+[01:35:04 -> 01:35:08] Entonces, tú como tú, pero dónde empezó el problema?
+[01:35:08 -> 01:35:11] ¿Qué se empezaron en fabricación? En planta, ¿no?
+[01:35:11 -> 01:35:13] El problema fue la clínica en el usuario final.
+[01:35:13 -> 01:35:17] Y del usuario final han hecho todo el reforzo de toda la historia hasta allá.
+[01:35:17 -> 01:35:19] ¿Cómo llegas hasta esa historia?
+[01:35:19 -> 01:35:22] Porque todo lo que tiene es una trazabilidad.
+[01:35:22 -> 01:35:25] Porque si no sufagas el pato, ¿cómo?
+[01:35:25 -> 01:35:28] ¿Por qué no me pueden decirte que tú le pusiste eso?
+[01:35:28 -> 01:35:29] ¿Cómo yo?
+[01:35:29 -> 01:35:31] No, pero ahí quien se ha...
+[01:35:31 -> 01:35:33] ¿A quiénes les va a servir?
+[01:35:33 -> 01:35:34] ¿A la forma?
+[01:35:34 -> 01:35:35] El depénente general.
+[01:35:35 -> 01:35:36] ¿De qué?
+[01:35:36 -> 01:35:40] de medicano, de medicano, y la critican no se le perjudicaron.
+[01:35:40 -> 01:35:43] Porque les compraron un producto legal,
+[01:35:43 -> 01:35:47] que está autorizado, de un interés al legal.
+[01:35:47 -> 01:35:48] ¿Acaso tú?
+[01:35:48 -> 01:35:51] Y le impresan la pílica no pagó ni este,
+[01:35:51 -> 01:35:52] ¿como si llamas cuando pagas?
+[01:35:52 -> 01:35:54] No, no pagas.
+[01:35:54 -> 01:35:54] ¿Ininización?
+[01:35:54 -> 01:35:56] ¿Quién fue eso?
+[01:35:56 -> 01:35:56] El laboratorio.
+[01:35:56 -> 01:35:59] El laboratorio, ¿por qué?
+[01:35:59 -> 01:36:03] Porque todo su puesto ha caido con teidad.
+[01:36:03 -> 01:36:05] Conte la 1000 de beja que es comprado.
+[01:36:05 -> 01:36:12] Si compras en Franco, tú piensas que estás comprado también la beja.
+[01:36:12 -> 01:36:16] Conte que tenga arsenico de esa 1000 de beja.
+[01:36:16 -> 01:36:20] De una contaminación cruzada.
+[01:36:20 -> 01:36:22] ¿Quién se llama responsabilidad de?
+[01:36:22 -> 01:36:28] Sí, el compro un proveedor que es formal y que el bonito su registro.
+[01:36:28 -> 01:36:33] Acaso ellos hacen pruebas de cada uno de los dos que tienen en el super.
+[01:36:33 -> 01:36:34] Igual.
+[01:36:34 -> 01:36:37] ¿Todo los productos acaso los mando a testiar al de entusarlo?
+[01:36:37 -> 01:36:40] Yo creo lo que me está diciendo a la empresa.
+[01:36:40 -> 01:36:44] Pero pues, en final lo que usted hace en todo el proceso es lo correcto.
+[01:36:44 -> 01:36:47] Ya que el producto haya venido mal desde otro lugar.
+[01:36:47 -> 01:36:51] Y ahora sí.
+[01:36:51 -> 01:37:03] Aquí es que saber por eso que creo que hay que compro ni si es.
+[01:37:03 -> 01:37:06] Y ahí que es que con todo la silla de la 1000 de beja.
+[01:37:06 -> 01:37:10] Todo lo que pasa es todo lo que sea evolución clínica, tratamientos o insidencias.
+[01:37:10 -> 01:37:17] Pero no tengo nada que hacer con un misma atención médica,
+[01:37:17 -> 01:37:23] sino con una cenella o silla de la familia.
+[01:37:23 -> 01:37:26] Y eso de vieron no tal vez.
+[01:37:26 -> 01:37:32] Porque después que pasas silla, se ve y hace una luz que la ha con un salido.
+[01:37:32 -> 01:37:34] ¿Algo se ha dado?
+[01:37:34 -> 01:37:40] ¿Cómo ha dado?
+[01:37:40 -> 01:37:42] Ah, yo sé.
+[01:37:42 -> 01:37:46] ¿Estás en la quinilla?
+[01:37:46 -> 01:37:51] Aria, ¿ya estoy?
+[01:37:51 -> 01:37:53] Entonces, ¿váis en los pacientes que hagan la mano?
+[01:37:53 -> 01:37:54] Ya, vamos.
+[01:37:54 -> 01:37:58] Ya, la próxima semana, planeando en marketing, tenemos que ir avanzando.
+[01:37:58 -> 01:37:59] A la historia crínica.
+[01:37:59 -> 01:38:03] A ver, necesito verlo de almacén.
+[01:38:03 -> 01:38:05] Ya hay que empezar.
+[01:38:05 -> 01:38:10] Tienen que organizarse ya, del evitar bien todas las áreas.
+[01:38:10 -> 01:38:13] De tienen más asana que, de tienen más asas que tú.
+[01:38:13 -> 01:38:17] Y hay vista que también les han puesto los tableros.
+[01:38:17 -> 01:38:20] Se pueden usarlo debajo de los maules también.
+[01:38:20 -> 01:38:21] Ahí pueden usar.
+[01:38:21 -> 01:38:22] Ahí tienen cajones, ¿no?
+[01:38:22 -> 01:38:24] Sí.
+[01:38:24 -> 01:38:29] El juego y día le van a terminar por tener más maules, ¿no es cierto?
+[01:38:29 -> 01:38:31] ¿Tibana poner a los archivadores?
+[01:38:31 -> 01:38:33] Con los archivadores y arriba más que los otros.
+[01:38:33 -> 01:38:35] No hay hecho de poner más asas.
+[01:38:35 -> 01:38:37] Ah, y es, es el no.
+[01:38:37 -> 01:38:43] El consultor y debajo tienen que desosucrar.
+[01:38:43 -> 01:38:45] ¿Cuál es el donde tú estabas?
+[01:38:45 -> 01:38:46] ¿Ya estás?
+[01:38:46 -> 01:38:47] ¿Y está de su costa?
+[01:38:47 -> 01:38:49] Ah, y ahí nos picarán a los...
+[01:38:49 -> 01:38:50] ¿Y qué pasa?
+[01:38:50 -> 01:38:51] Ahí vamos a pasar de tomorra.
+[01:38:51 -> 01:38:53] Fue día que pongo el tablero.
+[01:38:53 -> 01:38:54] Creo que ya los puestos el tablero.
+[01:38:54 -> 01:38:55] Oye, que pongo el...
+[01:38:55 -> 01:38:55] Granita.
+[01:38:55 -> 01:38:56] ¿Pontarlo?
+[01:38:56 -> 01:38:57] Sí.
+[01:38:57 -> 01:39:01] Oye, que pongo el la mano sin el caño.
+[01:39:01 -> 01:39:02] Oye, ¿no?
+[01:39:02 -> 01:39:03] Ya, ¿no?
+[01:39:03 -> 01:39:05] Ya le dios que lo vayaron, ¿no?
+[01:39:05 -> 01:39:06] En la mamá no.
+[01:39:06 -> 01:39:07] Sí.
+[01:39:07 -> 01:39:10] Y ahí pongo que pasan el tomorra.
+[01:39:10 -> 01:39:12] Fue mañana a venir el técnico del tomorra.
+[01:39:12 -> 01:39:13] Para mi me lo reis.
+[01:39:13 -> 01:39:16] Porque teniendo el problema y la era emocional.
+[01:39:16 -> 01:39:17] Sí.
+[01:39:17 -> 01:39:18] Ya.
+[01:39:18 -> 01:39:20] Y necesito chuco.
+[01:39:20 -> 01:39:21] Sí, ahora mismo me voy a concordar.
+[01:39:21 -> 01:39:24] El atador.
+[01:39:24 -> 01:39:26] O sea, atadores, porque los equifos no están conectados.
+[01:39:26 -> 01:39:28] Necesito atadores para chuco.
+[01:39:28 -> 01:39:29] Sí.
+[01:39:29 -> 01:39:29] ¿Ya?
+[01:39:29 -> 01:39:30] De ese consultorio.
+[01:39:30 -> 01:39:31] De todo.
+[01:39:32 -> 01:39:32] Raiz Luán.
+[01:39:33 -> 01:39:34] De todo.
+[01:39:34 -> 01:39:35] ¿De todo, todos los equifos a dichedores?
+[01:39:35 -> 01:39:36] Me gusto.
+[01:39:36 -> 01:39:37] ¿De todo, todos los equifos a dichedores?.
+[01:39:37 -> 01:39:37] Eh!
+[01:39:40 -> 01:39:42] Podemos estar aquí ya, como éasis algo todo.
+[01:39:42 -> 01:39:43] Hay, ¿a dónde?
+[01:39:43 -> 01:39:43] ¿Este?
+[01:39:43 -> 01:39:44] ¿penda alonga?
+[01:39:44 -> 01:39:46] No soy tántmico tahu.
+[01:39:46 -> 01:39:47] ¡No soy t computador!
+[01:39:47 -> 01:39:48] Encasa unaнутa búsqueda.
+[01:39:48 -> 01:39:49] He entesa en la sala en muffled,
+[01:39:49 -> 01:39:50] molesta en la conseguenza.

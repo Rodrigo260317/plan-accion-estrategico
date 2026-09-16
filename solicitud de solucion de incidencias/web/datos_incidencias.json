@@ -1,0 +1,487 @@
+{
+  "metadata": {
+    "id_reunion": "REUNION-2026-09-16-JTB",
+    "titulo_reunion": "Reunión Quincenal de Operaciones, TI y Logística: Clínica Johana Bernedo & Botuclinic",
+    "fecha_reunion": "2026-09-16",
+    "periodo_sprint": "16 de Septiembre al 30 de Septiembre de 2026",
+    "proxima_reunion": "2026-09-30",
+    "dias_restantes_sprint": 14,
+    "resumen_ejecutivo": "Sesión quincenal de coordinación operativa presidida por la Dra. Johana Bernedo con Rodrigo (TI) y Administración. Se fijó la Historia Clínica Digital como prioridad número 1 del sistema médico con alertas críticas de alergias y validación RENIEC. En Logística, se aprobó el nuevo flujo de Kits de procedimientos (insumo principal con stock de contingencia en cabinas) y la custodia centralizada de Botox y geles de alta gama. En Administración, se emitió memorándum de tolerancia cero para llamadas desatendidas en counter, auditoría al proveedor de Odoo y adquisición de la nueva web y marca clinicajohanabernedo.com."
+  },
+  "requerimientos_resumidos": [
+    "Historia Clínica Digital Integral como eje central: recetas digitales automáticas a farmacia/correo y alerta obligatoria en ROJO para alergias graves.",
+    "Política de Kits quirúrgicos y estéticos: Logística entrega el insumo principal (Botox, ácido hialurónico, enzimas) y las cabinas cuentan con stock de respaldo de agujas, cánulas y guantes.",
+    "Custodia estricta y centralizada de biológicos: frascos de Botox y jeringas de Juvéderm custodiados exclusivamente por Logística con entrega 1 a 1.",
+    "Agendamiento online autónomo cada 15 min en la web con API RENIEC para descongestionar el canal de WhatsApp.",
+    "Control disciplinario en Counter: prohibición bajo memorándum de bajar volumen a los teléfonos y monitoreo con cámaras en consultorio de la Dra. Principal.",
+    "Auditoría contractual a proveedor de Odoo (Shandee) por horas adeudadas y elaboración de Plan B y Plan C."
+  ],
+  "mejoras_implementar": [
+    {
+      "id": "MEJ-01",
+      "titulo": "Flujo de Kits con Stock de Contingencia en Cabina",
+      "descripcion": "Despacho de kit con insumo principal por Logística y stock de respaldo de agujas (21G a 32G), cánulas y gasas en cabina para no frenar procedimientos si se contamina un insumo.",
+      "area_lider": "Logística",
+      "beneficio": "Cero interrupciones quirúrgicas y trazabilidad exacta de consumo en corte mensual."
+    },
+    {
+      "id": "MEJ-02",
+      "titulo": "Custodia y Cadena de Frío Centralizada de Botox y Juvéderm",
+      "descripcion": "Retiro de botox de refrigeradoras comunes; resguardo exclusivo en Logística en 4to piso. Frigobar médico en consultorio exclusivo para geles fríos.",
+      "area_lider": "Logística",
+      "beneficio": "Protección de inventario de alto costo y garantía de cadena de frío de 2°C a 8°C."
+    },
+    {
+      "id": "MEJ-03",
+      "titulo": "Protocolo de Atención Telefónica y Supervisión de Counter",
+      "descripcion": "Memorándum de cumplimiento obligatorio para contestar llamadas entrantes en fijos y celulares sin bajar el volumen. Monitoreo por cámaras en vivo.",
+      "area_lider": "Administración",
+      "beneficio": "Recuperación del 100% de citas perdidas por desatención telefónica en recepción."
+    },
+    {
+      "id": "MEJ-04",
+      "titulo": "Alerta Temprana en ROJO de Alergias en Historia Clínica",
+      "descripcion": "Al abrir cualquier ficha de paciente, el sistema despliega un banner y modal rojo prominente si el paciente registra alergias a medicamentos o anestesia.",
+      "area_lider": "Área de TI",
+      "beneficio": "Mitigación total de riesgo de shock anafiláctico y cumplimiento normativo MINSA / SuSalud."
+    }
+  ],
+  "nuevas_innovaciones": [
+    {
+      "id": "INN-01",
+      "titulo": "Mapeo Facial Interactivo de Toxina y Slider Fotográfico de Evolución",
+      "descripcion": "Esquema anatómico interactivo en tablet para marcar zonas de inyección y dosis de Botox, con almacenamiento de fotos en carpetas por fecha y slider comparativo Antes/Después.",
+      "impacto": "Estratégico",
+      "estado": "En Desarrollo (Sprint 1)"
+    },
+    {
+      "id": "INN-02",
+      "titulo": "Agendamiento Autónomo en Web con Validación DNI / RENIEC",
+      "descripcion": "Sistema de citas online en slots de 15 minutos en la web de Botuclinic/JTB que autocompleta datos con API RENIEC y envía confirmación sin intervención manual.",
+      "impacto": "Alto",
+      "estado": "En Pruebas"
+    },
+    {
+      "id": "INN-03",
+      "titulo": "Comanda Digital Médica Consulta ➔ Farmacia ➔ Caja",
+      "descripcion": "Al guardar la receta digital en consulta, la orden viaja instantáneamente a Farmacia/Almacén y caja; el paciente solo presenta su DNI para recoger su pedido listo.",
+      "impacto": "Alto",
+      "estado": "Propuesta Aprobada"
+    },
+    {
+      "id": "INN-04",
+      "titulo": "Medición Automática de Productividad con Timestamps en Cabina",
+      "descripcion": "Botones de inicio y fin en tablet que estampan fecha y hora real de cada tratamiento en cabina (HIFU, Emsculpt, faciales), reemplazando planillas manuales.",
+      "impacto": "Medio",
+      "estado": "En Desarrollo"
+    }
+  ],
+  "areas": [
+    {
+      "id": "logistica",
+      "nombre": "Logística",
+      "icono": "🚚",
+      "color": "#3b82f6",
+      "responsable": "Coordinación de Almacén, Farmacia e Insumos Médicos",
+      "tareas": [
+        {
+          "id": "LOG-01",
+          "titulo": "Implementar Kárdex Digital en la nube para entradas y salidas",
+          "descripcion": "Digitalizar el registro manual de papel para que todo insumo médico y material de escritorio quede registrado en la nube y vinculado con Odoo.",
+          "completada": false,
+          "prioridad": "Alta",
+          "proyeccion_tiempo": {
+            "estimacion_dias": 3,
+            "fecha_limite": "2026-09-19",
+            "etiqueta": "3 días hábiles (Semana 1)"
+          },
+          "posible_solucion": {
+            "diagnostico": "Se utilizaban hojas de papel manuscritas para salida de insumos, generando descontrol y falta de conciliación con el sistema central.",
+            "propuesta_accion": [
+              "Paso 1: Habilitar acceso directo al Kárdex digital en tablets y PCs de almacén y cabinas.",
+              "Paso 2: Registrar toda salida obligatoriamente con código de barras y firma digital de quien retira.",
+              "Paso 3: Realizar corte semanal de inventario para contrastar saldos físicos vs. teóricos."
+            ],
+            "herramientas_sugeridas": [
+              "Kárdex Web en la nube",
+              "Lector de código de barras USB/Bluetooth"
+            ],
+            "impacto_esperado": "Cero pérdida de insumos y conciliación de stock en tiempo real con Odoo."
+          }
+        },
+        {
+          "id": "LOG-02",
+          "titulo": "Estandarizar armado de Kits y cajas de contingencia en cabinas",
+          "descripcion": "Despachar únicamente el insumo principal en el kit y colocar cajas organizadoras con stock de contingencia de agujas (21G a 32G), cánulas y guantes en cada ambiente.",
+          "completada": false,
+          "prioridad": "Alta",
+          "proyeccion_tiempo": {
+            "estimacion_dias": 4,
+            "fecha_limite": "2026-09-20",
+            "etiqueta": "4 días hábiles"
+          },
+          "posible_solucion": {
+            "diagnostico": "Si se contamina una cánula o aguja durante una intervención, la doctora quedaba sin material o debía suspender la atención.",
+            "propuesta_accion": [
+              "Paso 1: Mapear la lista de materiales (BOM) exacta por procedimiento con la Dra. Johana y Laura.",
+              "Paso 2: Armar cajas acrílicas transparentes con separadores rotulados para agujas 21G, 23G, 25G, 30G, 31G y 32G.",
+              "Paso 3: Ajustar mermas y consumos adicionales al corte mensual en base al número de pacientes atendidos."
+            ],
+            "herramientas_sugeridas": [
+              "Odoo Módulo Kits (BOM)",
+              "Cajas organizadoras acrílicas con rotulado"
+            ],
+            "impacto_esperado": "Flujo de quirófano ininterrumpido y trazabilidad de materiales sin generar burocracia médica."
+          }
+        },
+        {
+          "id": "LOG-03",
+          "titulo": "Custodia centralizada de Botox y Juvéderm en Logística",
+          "descripcion": "Mudar la custodia de frascos de Botox (abiertos y cerrados) y jeringas de Juvéderm exclusivamente a Logística en 4to piso; ubicar frigobar en consultorio médico para geles.",
+          "completada": true,
+          "prioridad": "Alta",
+          "proyeccion_tiempo": {
+            "estimacion_dias": 2,
+            "fecha_limite": "2026-09-18",
+            "etiqueta": "2 días hábiles (Inmediato)"
+          },
+          "posible_solucion": {
+            "diagnostico": "Biológicos de alto costo se encontraban dispersos en refrigeradoras comunes sin control de unidades por paciente.",
+            "propuesta_accion": [
+              "Paso 1: Trasladar botox y conservadora al área segura de Logística.",
+              "Paso 2: Implementar registro estricto de entrega 1 a 1 de frascos/jeringas contra orden médica.",
+              "Paso 3: Instalar frigobar pequeño en consultorio médico 1 exclusivo para geles analgésicos fríos."
+            ],
+            "herramientas_sugeridas": [
+              "Termómetro digital de refrigeración",
+              "Libro de control de biológicos"
+            ],
+            "impacto_esperado": "Blindaje total de insumos valorizados en miles de dólares y garantía de cadena de frío."
+          }
+        },
+        {
+          "id": "LOG-04",
+          "titulo": "Rotulación y división física de cartuchos HIFU y recipientes",
+          "descripcion": "Organizar estanterías y bandejas de cabina con potes rotulados por calibre y letreros claros para evitar confusiones de personal nuevo.",
+          "completada": false,
+          "prioridad": "Normal",
+          "proyeccion_tiempo": {
+            "estimacion_dias": 3,
+            "fecha_limite": "2026-09-22",
+            "etiqueta": "3 días hábiles"
+          },
+          "posible_solucion": {
+            "diagnostico": "Cartuchos de diferentes profundidades y calibres de agujas mezclados en un mismo recipiente confunden al personal.",
+            "propuesta_accion": [
+              "Paso 1: Adquirir recipientes modulares transparentes.",
+              "Paso 2: Rotular con etiquetadora térmica el nombre técnico, calibre y profundidad de cada insumo.",
+              "Paso 3: Realizar inducción de 15 minutos a cosmiatras y enfermeras."
+            ],
+            "herramientas_sugeridas": [
+              "Etiquetadora térmica",
+              "Potes acrílicos divisores"
+            ],
+            "impacto_esperado": "Eliminación de errores en selección de cartuchos y reducción de tiempos de preparación."
+          }
+        }
+      ]
+    },
+    {
+      "id": "administracion",
+      "nombre": "Administración",
+      "icono": "🏢",
+      "color": "#10b981",
+      "responsable": "Gerencia Administrativa y Gestión de Personal",
+      "tareas": [
+        {
+          "id": "ADM-01",
+          "titulo": "Memorándum disciplinario por teléfonos desatendidos en Counter",
+          "descripcion": "Notificar formalmente a recepción la prohibición de bajar el volumen o silenciar teléfonos fijos/celulares bajo sanción laboral.",
+          "completada": false,
+          "prioridad": "Alta",
+          "proyeccion_tiempo": {
+            "estimacion_dias": 1,
+            "fecha_limite": "2026-09-17",
+            "etiqueta": "1 día hábil (Urgente)"
+          },
+          "posible_solucion": {
+            "diagnostico": "Recepción silenciaba los teléfonos corporativos y fijos, provocando pérdida de pacientes y falta de atención a llamadas de dirección.",
+            "propuesta_accion": [
+              "Paso 1: Redactar circular y memorándum de apercibimiento con firma de recepción.",
+              "Paso 2: Fijar volumen máximo y bloqueo de botones de volumen en terminales fijos.",
+              "Paso 3: Realizar llamadas de control sorpresa (mystery shopper) interdiarias."
+            ],
+            "herramientas_sugeridas": [
+              "Memorándum disciplinario",
+              "Registro de llamadas de conmutador"
+            ],
+            "impacto_esperado": "Tasa de atención telefónica inmediata superior al 95%."
+          }
+        },
+        {
+          "id": "ADM-02",
+          "titulo": "Emplazamiento a proveedor de Odoo por horas adeudadas y Plan B/C",
+          "descripcion": "Auditar horas pendientes con Shandee, condicionar el pago de la siguiente factura al cierre de requerimientos y cotizar 2 proveedores alternos de Odoo.",
+          "completada": false,
+          "prioridad": "Alta",
+          "proyeccion_tiempo": {
+            "estimacion_dias": 5,
+            "fecha_limite": "2026-09-23",
+            "etiqueta": "5 días hábiles"
+          },
+          "posible_solucion": {
+            "diagnostico": "El proveedor de Odoo no avanza al ritmo requerido por la clínica pese a contar con horas pagadas por adelantado.",
+            "propuesta_accion": [
+              "Paso 1: Consolidar backlog de tickets pendientes de Odoo (kits, etiquetado, enlaces de historia).",
+              "Paso 2: Reunión de emplazamiento con advertencia formal de corte de facturación.",
+              "Paso 3: Solicitar cotización y demos a dos consultoras oficiales de Odoo en Lima para tener Plan B y C."
+            ],
+            "herramientas_sugeridas": [
+              "Matriz de backlog de Odoo",
+              "Reunión de gerencia vía Zoom/Presencial"
+            ],
+            "impacto_esperado": "Desbloqueo de desarrollos pendientes o migración sin traumas a un proveedor más ágil."
+          }
+        },
+        {
+          "id": "ADM-03",
+          "titulo": "Adenda legal de consentimiento informado con cláusula de videovigilancia",
+          "descripcion": "Coordinar con la asesora legal la incorporación obligatoria de la cláusula de seguridad por cámaras en el consentimiento firmado por el paciente.",
+          "completada": false,
+          "prioridad": "Media",
+          "proyeccion_tiempo": {
+            "estimacion_dias": 4,
+            "fecha_limite": "2026-09-21",
+            "etiqueta": "4 días hábiles"
+          },
+          "posible_solucion": {
+            "diagnostico": "Riesgo de denuncias de pacientes ante SuSalud por grabaciones en áreas clínicas o quejas infundadas sin prueba audiovisual formalizada.",
+            "propuesta_accion": [
+              "Paso 1: Redactar texto legal estandarizado conforme a Ley de Protección de Datos Personales.",
+              "Paso 2: Cargar el nuevo formato digital en la tablet de recepción para firma biométrica/digital del paciente.",
+              "Paso 3: Archivar automáticamente el PDF firmado en el expediente digital del paciente."
+            ],
+            "herramientas_sugeridas": [
+              "Asesoría legal corporativa",
+              "Formato de consentimiento digital en tablet"
+            ],
+            "impacto_esperado": "Blindaje jurídico ante quejas de SuSalud y protección frente a denuncias falsas."
+          }
+        },
+        {
+          "id": "ADM-04",
+          "titulo": "Filtro obligatorio de publicaciones en Marketing y cese de bots",
+          "descripcion": "Eliminar bots extranjeros que afectan el engagement de la clínica y establecer un protocolo donde todo video/post pase por revisión médica previa antes de salir en redes.",
+          "completada": false,
+          "prioridad": "Media",
+          "proyeccion_tiempo": {
+            "estimacion_dias": 3,
+            "fecha_limite": "2026-09-20",
+            "etiqueta": "3 días hábiles"
+          },
+          "posible_solucion": {
+            "diagnostico": "Publicación de contenidos con memes/animales y compra de cuentas de la India que degradan el estatus profesional de la clínica médica.",
+            "propuesta_accion": [
+              "Paso 1: Reunión con Fabrizio y el equipo de redes para alinear la paleta de colores y tono sobrio médico.",
+              "Paso 2: Prohibir compras de cuentas bots sin interacción real.",
+              "Paso 3: Implementar tablero de aprobación quincenal previo con visto bueno de dirección."
+            ],
+            "herramientas_sugeridas": [
+              "Manual de Identidad de Marca JTB",
+              "Flujo de aprobación en WhatsApp/Trello"
+            ],
+            "impacto_esperado": "Posicionamiento de marca prestigiosa y captación de pacientes de alto valor."
+          }
+        }
+      ]
+    },
+    {
+      "id": "ti",
+      "nombre": "Área de TI",
+      "icono": "💻",
+      "color": "#8b5cf6",
+      "responsable": "Rodrigo - Desarrollo de Sistemas, Infraestructura y Soporte",
+      "tareas": [
+        {
+          "id": "TI-01",
+          "titulo": "Implementar Alerta de Alergias en ROJO y matriz de roles en Historia Clínica",
+          "descripcion": "Desarrollar alerta emergente visual obligatoria en rojo fluorescente al abrir pacientes alérgicos y configurar permisos de visualización diferenciados (Médicos, Enfermería, Counter).",
+          "completada": false,
+          "prioridad": "Alta",
+          "proyeccion_tiempo": {
+            "estimacion_dias": 2,
+            "fecha_limite": "2026-09-18",
+            "etiqueta": "2 días hábiles (Prioridad Inmediata)"
+          },
+          "posible_solucion": {
+            "diagnostico": "Las alergias a medicamentos o anestésicos estaban anotadas en campos secundarios, con riesgo crítico de reacción anafiláctica.",
+            "propuesta_accion": [
+              "Paso 1: Crear campo booleano 'tiene_alergias' y detalle de sustancias en base de datos.",
+              "Paso 2: Añadir modal y banner flotante rojo '⚠️ ALERTA MÉDICA: PACIENTE ALÉRGICO' imposible de obviar.",
+              "Paso 3: Restringir acceso: Counter solo ve filiación y pagos; personal de salud ve evolución médica."
+            ],
+            "herramientas_sugeridas": [
+              "JavaScript Reactivo",
+              "API REST de Historia Clínica",
+              "PostgreSQL / Odoo ACL"
+            ],
+            "impacto_esperado": "Cero incidentes de mala praxis por alergias y cumplimiento estricto de auditoría MINSA."
+          }
+        },
+        {
+          "id": "TI-02",
+          "titulo": "Módulo de Agendamiento Online Autónomo en Botuclinic cada 15 min",
+          "descripcion": "Lanzar en la web de Botuclinic el sistema de reserva directa con calendario y slots de 15 minutos conectado a validación automática de DNI con API RENIEC.",
+          "completada": false,
+          "prioridad": "Alta",
+          "proyeccion_tiempo": {
+            "estimacion_dias": 4,
+            "fecha_limite": "2026-09-21",
+            "etiqueta": "4 días hábiles"
+          },
+          "posible_solucion": {
+            "diagnostico": "Saturación del canal de WhatsApp con tiempos de espera de hasta 2 horas para coordinar una cita médica.",
+            "propuesta_accion": [
+              "Paso 1: Integrar componente de reserva con selector de día y horario en bloques de 15 min.",
+              "Paso 2: Conectar API de RENIEC para validar nombre real por DNI (costo mensual s/ 95).",
+              "Paso 3: Disparar confirmación inmediata al correo del paciente y sincronizar con la agenda médica."
+            ],
+            "herramientas_sugeridas": [
+              "API RENIEC",
+              "Widget de Citas Online",
+              "Integración Odoo Calendar"
+            ],
+            "impacto_esperado": "Disminución del 70% de carga operativa en counter y aumento de citas reservadas 24/7."
+          }
+        },
+        {
+          "id": "TI-03",
+          "titulo": "Mapeo Facial Interactivo de Toxina y Slider Comparativo de Fotos",
+          "descripcion": "Desarrollar herramienta en tablet para marcar puntos y dosis de Botox en rostro femenino/masculino, con subida directa de fotos a carpetas fechadas y slider interactivo de evolución.",
+          "completada": false,
+          "prioridad": "Alta",
+          "proyeccion_tiempo": {
+            "estimacion_dias": 6,
+            "fecha_limite": "2026-09-24",
+            "etiqueta": "6 días hábiles"
+          },
+          "posible_solucion": {
+            "diagnostico": "Fotos desordenadas en galerías personales y mapas faciales en papel que dificultan comparar resultados al control de los 15 días.",
+            "propuesta_accion": [
+              "Paso 1: Crear visor SVG con zonas anatómicas faciales para marcar puntos y calcular unidades totales.",
+              "Paso 2: Habilitar captura fotográfica desde la tablet sincronizada a la carpeta del paciente.",
+              "Paso 3: Diseñar barra deslizante (slider) para comparar foto basal del día 0 vs foto del día 15."
+            ],
+            "herramientas_sugeridas": [
+              "Canvas SVG Interactivo",
+              "Cloud Storage por DNI",
+              "Tablets de cabina"
+            ],
+            "impacto_esperado": "Evidencia gráfica contundente ante pacientes exigentes y experiencia de consulta premium."
+          }
+        },
+        {
+          "id": "TI-04",
+          "titulo": "Automatización de Productividad por Timestamps en Cabina",
+          "descripcion": "Reemplazar hojas manuscritas por botones de un solo clic 'Iniciar' y 'Finalizar' procedimiento en la tablet de cabina, grabando fecha y hora exacta del servidor.",
+          "completada": false,
+          "prioridad": "Media",
+          "proyeccion_tiempo": {
+            "estimacion_dias": 3,
+            "fecha_limite": "2026-09-22",
+            "etiqueta": "3 días hábiles"
+          },
+          "posible_solucion": {
+            "diagnostico": "El personal colocaba horarios globales manuales en hojas de papel, impidiendo calcular la rentabilidad real de máquinas (HIFU, Emsculpt, Láser).",
+            "propuesta_accion": [
+              "Paso 1: Diseñar pantalla simplificada con botón de inicio y fin por paciente.",
+              "Paso 2: Registrar timestamps UTC automáticos en la base de datos sin opción de manipulación manual.",
+              "Paso 3: Generar reporte mensual de productividad consolidado por profesional y máquina."
+            ],
+            "herramientas_sugeridas": [
+              "Interfaz Touch Web",
+              "Módulo de Tiempos Odoo / API REST"
+            ],
+            "impacto_esperado": "Métricas exactas de ocupación de equipos médicos y cálculo transparente de comisiones."
+          }
+        },
+        {
+          "id": "TI-05",
+          "titulo": "Circuito de visualización de cámaras para consultorio y móvil",
+          "descripcion": "Habilitar la transmisión en vivo de las cámaras de counter y pasillo en la pantalla del consultorio médico y en el celular de la Dra. Johana.",
+          "completada": false,
+          "prioridad": "Media",
+          "proyeccion_tiempo": {
+            "estimacion_dias": 2,
+            "fecha_limite": "2026-09-18",
+            "etiqueta": "2 días hábiles"
+          },
+          "posible_solucion": {
+            "diagnostico": "La dirección no cuenta con visibilidad en tiempo real sobre la afluencia y atención en counter.",
+            "propuesta_accion": [
+              "Paso 1: Configurar credenciales seguras en la app móvil DMSS / Hik-Connect de la doctora.",
+              "Paso 2: Conectar salida HDMI a la pantalla del consultorio 1.",
+              "Paso 3: Verificar visualización continua y ángulo óptimo hacia counter."
+            ],
+            "herramientas_sugeridas": [
+              "NVR / App de Cámaras de Seguridad",
+              "Cable HDMI / Splitter"
+            ],
+            "impacto_esperado": "Control y supervisión permanente de la calidad de servicio en recepción."
+          }
+        },
+        {
+          "id": "TI-06",
+          "titulo": "Adquisición de Dominio y Web para Clínica Johana Bernedo",
+          "descripcion": "Comprar dominio clinicajohanabernedo.com, configurar hosting y desplegar la web médica oficial con catálogo de servicios estéticos.",
+          "completada": false,
+          "prioridad": "Media",
+          "proyeccion_tiempo": {
+            "estimacion_dias": 5,
+            "fecha_limite": "2026-09-24",
+            "etiqueta": "5 días hábiles"
+          },
+          "posible_solucion": {
+            "diagnostico": "La clínica opera con nombres desactualizados (Advance Aesthetic / Oftalmoláser) y carece de página web representativa para la marca médica personal.",
+            "propuesta_accion": [
+              "Paso 1: Registrar dominio clinicajohanabernedo.com en registrador oficial.",
+              "Paso 2: Configurar hosting y certificados SSL de alta velocidad.",
+              "Paso 3: Publicar diseño moderno con tratamientos, fotos antes/después y botón de agendamiento."
+            ],
+            "herramientas_sugeridas": [
+              "Hosting cPanel / Vercel",
+              "WordPress / HTML5",
+              "Dominio .com / .pe"
+            ],
+            "impacto_esperado": "Identidad digital sólida y posicionamiento de la clínica en motores de búsqueda."
+          }
+        },
+        {
+          "id": "TI-07",
+          "titulo": "Revisión técnica de tomógrafo y adaptadores Schuko para equipos",
+          "descripcion": "Coordinar la visita del técnico especializado del tomógrafo por fallas en red y adquirir adaptadores Schuko para conexión eléctrica segura de equipos de consultorio.",
+          "completada": false,
+          "prioridad": "Normal",
+          "proyeccion_tiempo": {
+            "estimacion_dias": 2,
+            "fecha_limite": "2026-09-18",
+            "etiqueta": "2 días hábiles"
+          },
+          "posible_solucion": {
+            "diagnostico": "Equipos médicos desconectados o con problemas de enlace en red por falta de adaptadores de corriente Schuko y desconfiguración del tomógrafo.",
+            "propuesta_accion": [
+              "Paso 1: Comprar adaptadores Schuko certificados con toma a tierra.",
+              "Paso 2: Recibir al técnico del tomógrafo y verificar la conectividad a la red interna.",
+              "Paso 3: Probar exportación de imágenes diagnósticas al servidor local."
+            ],
+            "herramientas_sugeridas": [
+              "Adaptadores Schuko 16A",
+              "Revisión de cableado de red RJ45"
+            ],
+            "impacto_esperado": "Equipamiento médico 100% operativo y seguro contra sobrecargas eléctricas."
+          }
+        }
+      ]
+    }
+  ]
+}
