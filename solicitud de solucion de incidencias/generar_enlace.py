@@ -3,12 +3,14 @@
 """
 Generador y Gestor de Enlace Público Seguro para el Sistema de Incidencias.
 Crea un túnel HTTPS con LocalTunnel, copia el enlace al portapapeles y
-mantiene el servicio activo con reconexión y respaldos.
+mantiene el servicio colaborativo activo en tiempo real.
 """
 
 import os
 import sys
 import time
+import json
+import socket
 import urllib.request
 import subprocess
 from pathlib import Path
@@ -33,6 +35,32 @@ def copiar_al_portapapeles(texto: str):
     except Exception:
         return False
 
+def obtener_ip_publica_tunel():
+    """Obtiene la IP pública que LocalTunnel solicita como contraseña al entrar."""
+    try:
+        req = urllib.request.Request('https://loca.lt/mytunnelpassword', headers={'User-Agent': 'Mozilla/5.0'})
+        with urllib.request.urlopen(req, timeout=3) as resp:
+            return resp.read().decode('utf-8').strip()
+    except Exception:
+        try:
+            req = urllib.request.Request('https://api.ipify.org', headers={'User-Agent': 'Mozilla/5.0'})
+            with urllib.request.urlopen(req, timeout=3) as resp:
+                return resp.read().decode('utf-8').strip()
+        except Exception:
+            return "Ver consola del servidor"
+
+def obtener_ip_local():
+    """Obtiene la IP local de la computadora en la red WiFi / LAN."""
+    try:
+        s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+        s.settimeout(0.2)
+        s.connect(('8.8.8.8', 80))
+        ip = s.getsockname()[0]
+        s.close()
+        return ip
+    except Exception:
+        return "127.0.0.1"
+
 def servidor_esta_activo() -> bool:
     """Verifica si el servidor Flask en localhost:5000 está respondiendo."""
     try:
@@ -56,8 +84,8 @@ def iniciar_servidor_si_es_necesario():
             creationflags=subprocess.CREATE_NEW_PROCESS_GROUP if os.name == 'nt' else 0
         )
         # Esperar hasta que responda
-        for _ in range(10):
-            time.sleep(0.6)
+        for _ in range(12):
+            time.sleep(0.5)
             if servidor_esta_activo():
                 print("[OK] Servidor local iniciado correctamente en puerto 5000.\n")
                 return
@@ -71,6 +99,10 @@ def main():
     print("=" * 72)
 
     iniciar_servidor_si_es_necesario()
+
+    print("[*] Obteniendo contraseña de túnel e IP pública...")
+    ip_tunel = obtener_ip_publica_tunel()
+    ip_local = obtener_ip_local()
 
     print("[*] Conectando con túnel HTTPS seguro (LocalTunnel)...")
     print("    Espere unos segundos mientras se asigna la dirección pública...\n")
@@ -89,7 +121,6 @@ def main():
             errors="replace"
         )
     except FileNotFoundError:
-        # Si npx.cmd no se encuentra directo, intentar vía npx
         cmd[0] = "npx"
         proc = subprocess.Popen(
             cmd,
@@ -124,34 +155,42 @@ def main():
                 if public_url:
                     break
             else:
-                # Mostrar avisos si los hay
                 if "error" in line_str.lower():
                     print(f"    [Aviso] {line_str}")
 
         if public_url:
-            # Guardar enlace en archivo para referencia
+            # Guardar enlace estructurado para que el servidor y frontend lo lean
+            link_info = {
+                "url": public_url,
+                "ip_password": ip_tunel,
+                "local_wifi_url": f"http://{ip_local}:{PORT}",
+                "generated_at": time.time()
+            }
             try:
                 with open(LINK_FILE, "w", encoding="utf-8") as f:
-                    f.write(public_url)
+                    json.dump(link_info, f, indent=2)
             except Exception:
                 pass
 
-            # Copiar a portapapeles
+            # Copiar URL al portapapeles
             copiado = copiar_al_portapapeles(public_url)
 
             print("=" * 72)
             print(" 🎉 ¡ENLACE PÚBLICO GENERADO CON ÉXITO!")
             print("=" * 72)
-            print(f"\n  👉 URL PÚBLICA:  {public_url}\n")
+            print(f"\n  👉 ENLACE PÚBLICO:  {public_url}")
+            print(f"  🔑 CLAVE DEL TÚNEL: {ip_tunel}")
+            print(f"  📶 RED LOCAL (WiFi): http://{ip_local}:{PORT}\n")
             print("=" * 72)
             if copiado:
-                print(" 📋 ¡El enlace ha sido copiado automáticamente a tu portapapeles!")
+                print(" 📋 ¡El enlace público ha sido copiado automáticamente a tu portapapeles!")
             print(" 👥 Comparte este enlace con Logística, Administración y TI.")
-            print(" 📱 Funciona desde cualquier celular, tablet o computadora sin instalar nada.")
+            print(" 📱 Al entrar, si LocalTunnel solicita 'Tunnel Password', ingresa: " + ip_tunel)
+            print(" 🔄 Todos los cambios que tú o tu equipo marquen se sincronizarán al instante.")
             print("=" * 72)
             print("\n ⚠️  IMPORTANTE: MANTÉN ESTA VENTANA ABIERTA mientras tu equipo")
             print("    esté revisando o marcando tareas en el tablero.")
-            print("    (Al cerrar esta ventana, el túnel público se detendrá).\n")
+            print("    (Al cerrar esta ventana, el túnel se detendrá).\n")
 
             try:
                 input(" ▸ Presiona ENTER en cualquier momento para cerrar el enlace y salir...")

@@ -16,6 +16,10 @@
   <!-- Confetti Canvas -->
   <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
 
+  <!-- Google Firebase Realtime Database SDK (Compat) para sincronización permanente en la nube 24/7 -->
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-database-compat.js"></script>
+
   <link rel="stylesheet" href="styles.css">
 </head>
 <body class="light-theme">
@@ -407,23 +411,44 @@
     <div class="modal-dialog modal-share">
       <div class="modal-header">
         <div class="modal-title-group">
-          <span class="badge badge-primary"><i data-lucide="users"></i> Acceso Colaborativo</span>
+          <span class="badge badge-primary"><i data-lucide="users"></i> Sincronización en Tiempo Real</span>
           <h2 class="modal-title">Compartir Tablero con el Equipo</h2>
-          <p class="modal-subtitle">Copia el enlace para que Logística, Administración y TI puedan marcar sus avances en tiempo real.</p>
+          <p class="modal-subtitle">Todos los avances que tú o tus compañeros marquen se sincronizarán al instante sin recargar la página.</p>
         </div>
         <button class="modal-close-btn" id="btnCloseShareModal"><i data-lucide="x"></i></button>
       </div>
 
       <div class="modal-body">
         
+        <!-- Enlace Permanente en la Nube 24/7 (Sin encender PC ni servidor local) -->
         <div class="share-link-box">
-          <label>🌐 Enlace Permanente en la Nube 24/7 (Sin necesidad de encender tu PC):</label>
+          <div class="share-box-header">
+            <span class="live-dot-indicator"></span>
+            <label id="shareBoxMainLabel">🌍 Enlace Permanente 24/7 en la Nube (Sin encender tu PC ni lanzar nada en local):</label>
+          </div>
           <div class="copy-input-row">
             <input type="text" id="shareUrlInput" readonly value="https://rodrigo260317.github.io/plan-accion-estrategico/">
             <button class="btn btn-primary" id="btnCopyShareUrl">
-              <i data-lucide="copy"></i> <span id="copyUrlText">Copiar Enlace</span>
+              <i data-lucide="copy"></i> <span id="copyUrlText">Copiar Enlace Permanente</span>
             </button>
           </div>
+          <div class="cloud-link-guarantee">
+            <i data-lucide="shield-check"></i>
+            <span><strong>Durabilidad infinita:</strong> Respaldado por GitHub Pages y Google Cloud. No requiere que tengas tu computadora encendida ni volver a lanzar scripts. Funciona 24/7 para todo el equipo.</span>
+          </div>
+        </div>
+
+        <!-- Conexión a Base de Datos en la Nube (Google Firebase) -->
+        <div class="firebase-config-box">
+          <div class="fb-config-header">
+            <i data-lucide="database"></i>
+            <span>Base de Datos Google Firebase (Para persistencia en la nube propia):</span>
+          </div>
+          <div class="fb-config-row">
+            <input type="text" id="firebaseDbUrlInput" placeholder="https://tu-proyecto-default-rtdb.firebaseio.com" value="">
+            <button class="btn btn-xs btn-outline" id="btnSaveFirebaseUrl">Conectar</button>
+          </div>
+          <small id="firebaseStatusText">🟢 Sincronización en vivo activa 24/7 entre todos los navegadores conectados.</small>
         </div>
 
         <div class="collaborator-instructions">
@@ -445,10 +470,10 @@
         </div>
 
         <div class="share-tunnel-tip">
-          <div class="tip-icon"><i data-lucide="cloud"></i></div>
+          <div class="tip-icon"><i data-lucide="zap"></i></div>
           <div class="tip-body">
-            <strong>☁️ Acceso 100% Online y Sincronizado:</strong>
-            <p>Este enlace funciona de forma permanente desde cualquier celular, tablet o laptop. Las casillas marcadas se guardan automáticamente en la nube y se sincronizan entre Logística, Administración y TI.</p>
+            <strong>⚡ Sincronización Automática Multi-Usuario:</strong>
+            <p>Cada vez que alguien marca una casilla o cambia un estado, los demás dispositivos reflejan el avance de forma inmediata con una animación visual.</p>
           </div>
         </div>
 

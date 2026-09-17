@@ -1,1 +1,6 @@
-https://stale-kids-lick.loca.lt
+{
+  "url": "https://eleven-falcons-chew.loca.lt",
+  "ip_password": "161.132.198.34",
+  "local_wifi_url": "http://192.168.99.174:5000",
+  "generated_at": 1789656890.2803898
+}

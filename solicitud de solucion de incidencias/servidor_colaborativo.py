@@ -2,13 +2,15 @@
 # -*- coding: utf-8 -*-
 """
 Servidor Colaborativo en Vivo para el Sistema de Gestión de Incidencias
-Permite que Logística, Administración y TI trabajen en tiempo real con persistencia
-y procesamiento automático de audios de reuniones quincenales.
+Permite que Logística, Administración y TI trabajen en tiempo real con persistencia,
+sincronización multi-usuario instantánea y procesamiento automático de audios de reuniones.
 """
 
 import os
 import sys
 import json
+import time
+import socket
 import subprocess
 from pathlib import Path
 from flask import Flask, request, jsonify, send_from_directory
@@ -23,11 +25,48 @@ BASE_DIR = Path(__file__).resolve().parent
 WEB_DIR = BASE_DIR / "web"
 AUDIO_DIR = BASE_DIR / "audio"
 DATA_FILE = WEB_DIR / "datos_incidencias.json"
+LINK_FILE = WEB_DIR / "enlace_activo.txt"
 
 AUDIO_DIR.mkdir(parents=True, exist_ok=True)
 WEB_DIR.mkdir(parents=True, exist_ok=True)
 
 app = Flask(__name__, static_folder=str(WEB_DIR), static_url_path="")
+
+# Estado global en memoria para sincronización en tiempo real ultrarrápida
+SERVER_STATE = {
+    "version": int(time.time() * 1000),
+    "last_updated": time.time(),
+    "last_toggled": None
+}
+
+def get_local_ip():
+    """Obtiene la IP local en la red WiFi / LAN para acceso desde otros dispositivos."""
+    try:
+        s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+        s.settimeout(0.2)
+        # No envía paquetes reales, solo resuelve la interfaz primaria
+        s.connect(('8.8.8.8', 80))
+        ip = s.getsockname()[0]
+        s.close()
+        return ip
+    except Exception:
+        return "127.0.0.1"
+
+# --------------------------------------------------------------------------
+# CABECERAS CORS Y COMPATIBILIDAD CON TÚNELES (LOCALTUNNEL / CLOUDFLARE)
+# --------------------------------------------------------------------------
+@app.after_request
+def add_security_and_tunnel_headers(response):
+    response.headers["Access-Control-Allow-Origin"] = "*"
+    response.headers["Access-Control-Allow-Headers"] = "Content-Type, Authorization, Bypass-Tunnel-Reminder, X-Requested-With"
+    response.headers["Access-Control-Allow-Methods"] = "GET, POST, PUT, DELETE, OPTIONS"
+    # Cabecera para evitar la pantalla intermedia de recordatorio de LocalTunnel
+    response.headers["Bypass-Tunnel-Reminder"] = "1"
+    # Evitar cualquier almacenamiento en caché en navegadores o proxies intermediarios
+    if request.path.startswith("/api/"):
+        response.headers["Cache-Control"] = "no-store, no-cache, must-revalidate, max-age=0"
+        response.headers["Pragma"] = "no-cache"
+    return response
 
 # --------------------------------------------------------------------------
 # RUTAS ESTÁTICAS DE LA APLICACIÓN WEB
@@ -45,12 +84,72 @@ def static_proxy(path):
     return send_from_directory(str(WEB_DIR), "index.html")
 
 # --------------------------------------------------------------------------
-# API REST COLABORATIVA
+# API REST COLABORATIVA EN TIEMPO REAL
 # --------------------------------------------------------------------------
 
 @app.route("/api/health", methods=["GET"])
 def health():
-    return jsonify({"status": "ok", "service": "Incidencias Colaborativas Backend"})
+    return jsonify({
+        "status": "ok",
+        "service": "Incidencias Colaborativas Backend",
+        "version": SERVER_STATE["version"]
+    })
+
+@app.route("/api/tunnel/info", methods=["GET"])
+def tunnel_info():
+    """Devuelve la información de conexión (enlace público de túnel e IP de red local)."""
+    tunnel_url = None
+    if LINK_FILE.exists():
+        try:
+            content = LINK_FILE.read_text(encoding="utf-8").strip()
+            if content.startswith("http"):
+                tunnel_url = content
+            elif content.startswith("{"):
+                info = json.loads(content)
+                tunnel_url = info.get("url")
+        except Exception:
+            pass
+
+    local_ip = get_local_ip()
+    port = int(os.environ.get("PORT", 5000))
+
+    return jsonify({
+        "has_tunnel": bool(tunnel_url),
+        "tunnel_url": tunnel_url,
+        "local_network_url": f"http://{local_ip}:{port}",
+        "local_ip": local_ip,
+        "port": port
+    })
+
+@app.route("/api/sync/state", methods=["GET"])
+def get_sync_state():
+    """
+    Endpoint ultraligero de sondeo reactivo.
+    Devuelve la versión del estado y la lista de IDs de tareas completadas.
+    Permite a los navegadores detectar cambios en <1.5s sin descargar todo el archivo JSON.
+    """
+    if not DATA_FILE.exists():
+        return jsonify({"version": SERVER_STATE["version"], "completed_tasks": []})
+
+    try:
+        with open(DATA_FILE, "r", encoding="utf-8") as f:
+            data = json.load(f)
+
+        completed_tasks = []
+        for area in data.get("areas", []):
+            for task in area.get("tareas", []):
+                if task.get("completada", False):
+                    completed_tasks.append(task.get("id"))
+
+        return jsonify({
+            "version": SERVER_STATE["version"],
+            "last_updated": SERVER_STATE["last_updated"],
+            "last_toggled": SERVER_STATE["last_toggled"],
+            "completed_tasks": completed_tasks,
+            "total_completed": len(completed_tasks)
+        })
+    except Exception as e:
+        return jsonify({"error": f"Error leyendo estado: {str(e)}"}), 500
 
 @app.route("/api/data", methods=["GET"])
 def get_data():
@@ -73,13 +172,22 @@ def update_data():
         with open(DATA_FILE, "w", encoding="utf-8") as f:
             json.dump(payload, f, ensure_ascii=False, indent=2)
         
-        return jsonify({"success": True, "message": "Datos guardados correctamente"})
+        # Incrementar versión de sincronización
+        SERVER_STATE["version"] = int(time.time() * 1000)
+        SERVER_STATE["last_updated"] = time.time()
+        SERVER_STATE["last_toggled"] = None
+
+        return jsonify({
+            "success": True,
+            "version": SERVER_STATE["version"],
+            "message": "Datos guardados correctamente"
+        })
     except Exception as e:
         return jsonify({"error": f"Error guardando datos: {str(e)}"}), 500
 
 @app.route("/api/task/toggle", methods=["POST"])
 def toggle_task():
-    """Actualiza el estado completado de una tarea atómicamente."""
+    """Actualiza el estado completado de una tarea atómicamente y notifica la nueva versión."""
     try:
         req = request.get_json()
         area_id = req.get("area_id")
@@ -112,8 +220,19 @@ def toggle_task():
         with open(DATA_FILE, "w", encoding="utf-8") as f:
             json.dump(data, f, ensure_ascii=False, indent=2)
 
+        # Actualizar versión de sincronización
+        new_version = int(time.time() * 1000)
+        SERVER_STATE["version"] = new_version
+        SERVER_STATE["last_updated"] = time.time()
+        SERVER_STATE["last_toggled"] = {
+            "area_id": area_id,
+            "task_id": task_id,
+            "completed": bool(completed)
+        }
+
         return jsonify({
             "success": True,
+            "version": new_version,
             "area_id": area_id,
             "task_id": task_id,
             "completada": completed
@@ -158,6 +277,7 @@ def process_audio():
         if DATA_FILE.exists():
             with open(DATA_FILE, "r", encoding="utf-8") as f:
                 updated_data = json.load(f)
+            SERVER_STATE["version"] = int(time.time() * 1000)
             return jsonify(updated_data)
         else:
             return jsonify({"error": "No se generó el archivo de datos"}), 500
@@ -170,13 +290,16 @@ def process_audio():
 # --------------------------------------------------------------------------
 def main():
     port = int(os.environ.get("PORT", 5000))
-    print("=" * 65)
+    local_ip = get_local_ip()
+    print("=" * 70)
     print(" 🚀 SISTEMA DE SOLUCIÓN DE INCIDENCIAS - SERVIDOR EN VIVO")
-    print("=" * 65)
-    print(f" ▸ Acceso local en navegador: http://localhost:{port}")
-    print(f" ▸ Directorio Web:            {WEB_DIR}")
-    print(f" ▸ Base de Datos JSON:        {DATA_FILE}")
-    print("=" * 65)
+    print("=" * 70)
+    print(f" ▸ Acceso local en PC anfitriona:  http://localhost:{port}")
+    print(f" ▸ Acceso en Red Local (WiFi/LAN): http://{local_ip}:{port}")
+    print(f" ▸ Directorio Web:                 {WEB_DIR}")
+    print(f" ▸ Base de Datos JSON:             {DATA_FILE}")
+    print("=" * 70)
+    print(" ▸ Sincronización colaborativa activa en tiempo real (Sondeo < 1.5s)")
     print(" ▸ Presiona Ctrl+C para detener el servidor.\n")
     app.run(host="0.0.0.0", port=port, debug=False)
 

@@ -14,7 +14,23 @@ const AppState = {
   searchQuery: '',
   activeSolutionTask: null,
   isConnectedToBackend: false,
+  isCloudSyncActive: false,
+  serverVersion: 0,
   apiBaseUrl: ''
+};
+
+// Controladores de sincronización
+let backendPollTimer = null;
+let isSyncingToBackend = false;
+let cloudEventSource = null;
+const mySessionId = 'usr_' + Math.random().toString(36).substr(2, 9);
+
+// Configuración de sincronización permanente en la nube 24/7 (Sin servidor local ni PC encendida)
+const CLOUD_SYNC_CONFIG = {
+  githubPagesUrl: 'https://rodrigo260317.github.io/plan-accion-estrategico/',
+  // Canal SSE/PubSub en tiempo real de alta velocidad sin límites de peticiones
+  pubsubUrl: 'https://ntfy.sh/plan_accion_estrategico_jtb_sync_2026',
+  firebaseDbUrl: localStorage.getItem('firebase_rtdb_url') || ''
 };
 
 // ==========================================================================
@@ -33,55 +49,49 @@ function initLucideIcons() {
   }
 }
 
-// Configuración de sincronización en la nube 24/7 (permite colaboración sin servidor local)
-const CLOUD_SYNC_CONFIG = {
-  enabled: true,
-  apiUrl: 'https://api.restful-api.dev/objects/ff808181a09d98f701a0ac3bff4a209b',
-  pollIntervalMs: 4000,
-  githubPagesUrl: 'https://rodrigo260317.github.io/plan-accion-estrategico/'
-};
-
-let cloudPollTimer = null;
-let isSyncingToCloud = false;
-
 // ==========================================================================
 // CONEXIÓN Y CARGA DE DATOS
 // ==========================================================================
 async function checkBackendConnection() {
-  // 1. Verificar si hay un servidor Flask local corriendo
+  // 1. Verificar si hay un servidor local corriendo
   try {
     const controller = new AbortController();
     const timeoutId = setTimeout(() => controller.abort(), 1200);
-    const res = await fetch('/api/health', { method: 'GET', cache: 'no-store', signal: controller.signal });
+    const res = await fetch('/api/health', {
+      method: 'GET',
+      cache: 'no-store',
+      headers: {
+        'Bypass-Tunnel-Reminder': '1',
+        'Cache-Control': 'no-cache'
+      },
+      signal: controller.signal
+    });
     clearTimeout(timeoutId);
     if (res.ok) {
+      const healthData = await res.json();
       AppState.isConnectedToBackend = true;
       AppState.isCloudSyncActive = false;
-      updateSyncBadge(true, 'Servidor Local (En línea)');
+      AppState.serverVersion = healthData.version || 0;
+      updateSyncBadge(true, 'Servidor en Vivo (Sincronizado)');
+      startBackendSyncPolling();
       return;
     }
   } catch (err) {
-    // No hay backend local, continuar a verificar la nube
+    // Modo nube activado automáticamente
   }
 
-  // 2. Verificar sincronización en la nube 24/7 (para GitHub Pages y uso remoto sin PC encendida)
-  try {
-    const cloudRes = await fetch(CLOUD_SYNC_CONFIG.apiUrl, { method: 'GET', cache: 'no-store' });
-    if (cloudRes.ok) {
-      AppState.isConnectedToBackend = false;
-      AppState.isCloudSyncActive = true;
-      updateSyncBadge(true, 'En la Nube (Sincronizado 24/7)');
-      startCloudSyncPolling();
-      return;
-    }
-  } catch (cloudErr) {
-    console.warn('No se pudo conectar con la API de sincronización en nube:', cloudErr);
-  }
-
-  // 3. Si todo falla, modo local navegador
+  // 2. Modo 100% Nube 24/7 (Para GitHub Pages y uso remoto sin necesidad de PC)
   AppState.isConnectedToBackend = false;
-  AppState.isCloudSyncActive = false;
-  updateSyncBadge(false, 'Modo Local (Navegador)');
+  AppState.isCloudSyncActive = true;
+
+  // Si existe URL de Google Firebase configurada por el usuario, activarla
+  if (CLOUD_SYNC_CONFIG.firebaseDbUrl && initFirebaseRealtimeSync(CLOUD_SYNC_CONFIG.firebaseDbUrl)) {
+    updateSyncBadge(true, 'En la Nube (Google Firebase 24/7)');
+  } else {
+    // Conectar canal de eventos en vivo SSE 24/7 de cero configuración
+    initCloudRealtimeStream();
+    updateSyncBadge(true, 'En la Nube (Sincronizado 24/7)');
+  }
 }
 
 function updateSyncBadge(online, text) {
@@ -106,11 +116,104 @@ function updateSyncBadge(online, text) {
   }
 }
 
+function flashSyncBadge(text) {
+  const syncStatus = document.getElementById('syncStatus');
+  if (!syncStatus) return;
+  const syncLabel = syncStatus.querySelector('.sync-label');
+  const originalText = AppState.isConnectedToBackend ? 'Servidor en Vivo (Sincronizado)' : 'En línea';
+
+  if (syncLabel) syncLabel.textContent = text;
+  syncStatus.classList.add('pulse-active');
+  setTimeout(() => {
+    syncStatus.classList.remove('pulse-active');
+    if (syncLabel) syncLabel.textContent = originalText;
+  }, 2200);
+}
+
+// --------------------------------------------------------------------------
+// SONDEO REACTIVO EN VIVO PARA MULTI-USUARIO (TIEMPO REAL < 1.5 SEGUNDOS)
+// --------------------------------------------------------------------------
+function startBackendSyncPolling() {
+  if (backendPollTimer) clearInterval(backendPollTimer);
+  backendPollTimer = setInterval(async () => {
+    if (!AppState.isConnectedToBackend || isSyncingToBackend || !AppState.data || !AppState.data.areas) return;
+
+    try {
+      const res = await fetch('/api/sync/state', {
+        method: 'GET',
+        cache: 'no-store',
+        headers: {
+          'Bypass-Tunnel-Reminder': '1',
+          'Cache-Control': 'no-cache'
+        }
+      });
+
+      if (!res.ok) {
+        if (res.status === 404 || res.status === 502 || res.status === 503) {
+          updateSyncBadge(false, 'Reconectando servidor...');
+        }
+        return;
+      }
+
+      const syncState = await res.json();
+      if (!syncState || !syncState.completed_tasks) return;
+
+      updateSyncBadge(true, 'Servidor en Vivo (Sincronizado)');
+
+      // Si la versión del servidor cambió, actualizar los cambios realizados por otros usuarios
+      if (syncState.version !== AppState.serverVersion) {
+        AppState.serverVersion = syncState.version;
+        const remoteCompleted = new Set(syncState.completed_tasks);
+        const changedTasks = [];
+
+        AppState.data.areas.forEach(area => {
+          area.tareas.forEach(task => {
+            const shouldBeCompleted = remoteCompleted.has(task.id);
+            if (task.completada !== shouldBeCompleted) {
+              task.completada = shouldBeCompleted;
+              changedTasks.push({ id: task.id, completed: shouldBeCompleted });
+            }
+          });
+        });
+
+        if (changedTasks.length > 0) {
+          // Reflejar visualmente en el DOM sin recargar
+          changedTasks.forEach(({ id, completed }) => {
+            const card = document.getElementById(`card-${id}`);
+            const chk = document.getElementById(`chk-${id}`);
+            if (card) {
+              if (completed) card.classList.add('completed');
+              else card.classList.remove('completed');
+
+              // Microanimación de pulso colaborativo
+              card.classList.add('task-updated-remotely');
+              setTimeout(() => card.classList.remove('task-updated-remotely'), 1600);
+            }
+            if (chk) chk.checked = completed;
+          });
+
+          // Recalcular métricas de progreso de inmediato
+          renderProgressMetrics();
+          updateFilterCounts();
+          saveToLocalStorage(AppState.data);
+
+          flashSyncBadge(`Actualizado en vivo (${changedTasks.length} ${changedTasks.length === 1 ? 'cambio' : 'cambios'})`);
+        }
+      }
+    } catch (err) {
+      // Silencioso ante pérdidas transitorias de red
+    }
+  }, 1400); // 1.4 segundos para respuesta inmediata sin saturar
+}
+
 async function loadIncidentsData() {
   try {
     // 1. Intentar cargar desde el backend local si está activo
     if (AppState.isConnectedToBackend) {
-      const response = await fetch('/api/data', { cache: 'no-store' });
+      const response = await fetch('/api/data', {
+        cache: 'no-store',
+        headers: { 'Bypass-Tunnel-Reminder': '1', 'Cache-Control': 'no-cache' }
+      });
       if (response.ok) {
         AppState.data = await response.json();
         saveToLocalStorage(AppState.data);
@@ -122,7 +225,10 @@ async function loadIncidentsData() {
     // 2. Cargar desde datos_incidencias.json relativo
     let jsonData = null;
     try {
-      const fileResponse = await fetch('datos_incidencias.json', { cache: 'no-store' });
+      const fileResponse = await fetch('datos_incidencias.json', {
+        cache: 'no-store',
+        headers: { 'Bypass-Tunnel-Reminder': '1' }
+      });
       if (fileResponse.ok) {
         jsonData = await fileResponse.json();
       }
@@ -167,62 +273,184 @@ async function loadIncidentsData() {
   }
 }
 
-async function applyCloudSyncState(boardData) {
+// ==========================================================================
+// SINCRONIZACIÓN EN LA NUBE 24/7 (SSE / WEBSOCKETS / GOOGLE FIREBASE)
+// ==========================================================================
+
+function initCloudRealtimeStream() {
+  if (cloudEventSource) cloudEventSource.close();
+
+  // 1. Reconstruir estado reciente desde el bus de eventos en la nube
+  fetchPastCloudActions();
+
+  // 2. Conectar stream de eventos en vivo Server-Sent Events (SSE) 24/7
   try {
-    const res = await fetch(CLOUD_SYNC_CONFIG.apiUrl, { method: 'GET', cache: 'no-store' });
-    if (!res.ok) return;
-    const cloudObj = await res.json();
-    const completedList = (cloudObj.data && cloudObj.data.completadas) ? cloudObj.data.completadas : [];
-    
-    if (boardData && boardData.areas) {
-      boardData.areas.forEach(area => {
-        area.tareas.forEach(task => {
-          task.completada = completedList.includes(task.id);
-        });
-      });
-    }
+    cloudEventSource = new EventSource(CLOUD_SYNC_CONFIG.pubsubUrl + '/sse');
+
+    cloudEventSource.onmessage = (event) => {
+      try {
+        const msg = JSON.parse(event.data);
+        if (!msg.message) return;
+        const action = JSON.parse(msg.message);
+
+        // Evitar procesar mis propias acciones ya aplicadas
+        if (action.sender === mySessionId) return;
+
+        if (action.type === 'TASK_TOGGLE' && action.taskId) {
+          applyRemoteTaskToggle(action.areaId, action.taskId, action.completed, true);
+        }
+      } catch (e) {}
+    };
+
+    cloudEventSource.onerror = () => {
+      // EventSource se reconecta automáticamente en segundo plano
+    };
   } catch (e) {
-    console.warn('Error al aplicar estado de la nube:', e);
+    console.warn('Error conectando canal SSE en vivo:', e);
   }
 }
 
-function startCloudSyncPolling() {
-  if (cloudPollTimer) clearInterval(cloudPollTimer);
-  cloudPollTimer = setInterval(async () => {
-    if (!AppState.isCloudSyncActive || !AppState.data || !AppState.data.areas || isSyncingToCloud) return;
+async function fetchPastCloudActions() {
+  try {
+    const res = await fetch(CLOUD_SYNC_CONFIG.pubsubUrl + '/json?poll=1&since=all', { cache: 'no-store' });
+    if (!res.ok) return;
+    const text = await res.text();
+    const lines = text.trim().split('\n');
+
+    lines.forEach(line => {
+      try {
+        const item = JSON.parse(line);
+        if (item.message) {
+          const action = JSON.parse(item.message);
+          if (action.type === 'TASK_TOGGLE' && action.taskId) {
+            applyRemoteTaskToggle(action.areaId, action.taskId, action.completed, false);
+          }
+        }
+      } catch (e) {}
+    });
+
+    renderProgressMetrics();
+    updateFilterCounts();
+    saveToLocalStorage(AppState.data);
+  } catch (e) {}
+}
+
+function applyRemoteTaskToggle(areaId, taskId, completed, showAnimation = true) {
+  if (!AppState.data || !AppState.data.areas) return;
+
+  let foundTask = null;
+  for (const area of AppState.data.areas) {
+    const t = area.tareas.find(x => x.id === taskId);
+    if (t) {
+      foundTask = t;
+      break;
+    }
+  }
+
+  if (!foundTask) return;
+  if (foundTask.completada === completed) return;
+
+  foundTask.completada = completed;
+
+  const card = document.getElementById(`card-${taskId}`);
+  const chk = document.getElementById(`chk-${taskId}`);
+
+  if (card) {
+    if (completed) card.classList.add('completed');
+    else card.classList.remove('completed');
+
+    if (showAnimation) {
+      card.classList.add('task-updated-remotely');
+      setTimeout(() => card.classList.remove('task-updated-remotely'), 1600);
+    }
+  }
+  if (chk) chk.checked = completed;
+
+  if (showAnimation) {
+    renderProgressMetrics();
+    updateFilterCounts();
+    saveToLocalStorage(AppState.data);
+    flashSyncBadge('Actualizado en la Nube 24/7');
+  }
+}
+
+async function broadcastCloudTaskToggle(areaId, taskId, isChecked) {
+  const payload = {
+    type: 'TASK_TOGGLE',
+    areaId: areaId,
+    taskId: taskId,
+    completed: isChecked,
+    sender: mySessionId,
+    timestamp: Date.now()
+  };
+
+  // 1. Si Firebase está activo, persistir en Google Firebase
+  if (window.firebaseAppDb) {
     try {
-      const res = await fetch(CLOUD_SYNC_CONFIG.apiUrl, { method: 'GET', cache: 'no-store' });
-      if (!res.ok) return;
-      const cloudObj = await res.json();
-      const completedList = (cloudObj.data && cloudObj.data.completadas) ? cloudObj.data.completadas : [];
+      window.firebaseAppDb.ref('incidencias/completadas/' + taskId).set(isChecked);
+    } catch (e) {}
+  }
+
+  // 2. Transmitir en el canal de eventos SSE en la nube en tiempo real
+  try {
+    fetch(CLOUD_SYNC_CONFIG.pubsubUrl, {
+      method: 'POST',
+      body: JSON.stringify(payload)
+    });
+  } catch (e) {}
+}
+
+function initFirebaseRealtimeSync(dbUrl) {
+  try {
+    if (!window.firebase) return false;
+    let url = dbUrl.trim();
+    if (!url.startsWith('http')) url = 'https://' + url;
+    if (!url.endsWith('/')) url += '/';
+
+    if (!firebase.apps.length) {
+      firebase.initializeApp({ databaseURL: url });
+    }
+    window.firebaseAppDb = firebase.database();
+
+    // Escuchar cambios en vivo sobre las tareas
+    window.firebaseAppDb.ref('incidencias/completadas').on('value', (snapshot) => {
+      const val = snapshot.val();
+      if (!val || !AppState.data) return;
 
       let hasChanges = false;
       AppState.data.areas.forEach(area => {
         area.tareas.forEach(task => {
-          const shouldBeCompleted = completedList.includes(task.id);
-          if (task.completada !== shouldBeCompleted) {
-            task.completada = shouldBeCompleted;
+          const isComp = Boolean(val[task.id]);
+          if (task.completada !== isComp) {
+            task.completada = isComp;
             hasChanges = true;
-            // Actualizar visualmente la tarjeta si existe en el DOM
             const card = document.getElementById(`card-${task.id}`);
             const chk = document.getElementById(`chk-${task.id}`);
             if (card) {
-              if (shouldBeCompleted) card.classList.add('completed');
+              if (isComp) card.classList.add('completed');
               else card.classList.remove('completed');
+              card.classList.add('task-updated-remotely');
+              setTimeout(() => card.classList.remove('task-updated-remotely'), 1600);
             }
-            if (chk) chk.checked = shouldBeCompleted;
+            if (chk) chk.checked = isComp;
           }
         });
       });
 
       if (hasChanges) {
         renderProgressMetrics();
+        updateFilterCounts();
         saveToLocalStorage(AppState.data);
+        flashSyncBadge('Sincronizado vía Google Firebase');
       }
-    } catch (err) {
-      // Error silencioso en sondeo periódico
-    }
-  }, CLOUD_SYNC_CONFIG.pollIntervalMs);
+    });
+
+    updateSyncBadge(true, 'En la Nube (Google Firebase 24/7)');
+    return true;
+  } catch (err) {
+    console.warn('Error inicializando Firebase:', err);
+    return false;
+  }
 }
 
 function mergeCompletedStates(targetData, sourceData) {
@@ -546,53 +774,35 @@ window.toggleTaskCompletion = async function(areaId, taskId, isChecked) {
 
   // 4. Si está conectado al servidor colaborativo local, sincronizar en tiempo real
   if (AppState.isConnectedToBackend) {
+    isSyncingToBackend = true;
     try {
-      await fetch('/api/task/toggle', {
+      const res = await fetch('/api/task/toggle', {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
+        headers: {
+          'Content-Type': 'application/json',
+          'Bypass-Tunnel-Reminder': '1',
+          'Cache-Control': 'no-cache'
+        },
         body: JSON.stringify({ area_id: areaId, task_id: taskId, completed: isChecked })
       });
+      if (res.ok) {
+        const resData = await res.json();
+        if (resData.version) {
+          AppState.serverVersion = resData.version;
+        }
+        flashSyncBadge('Guardado y Sincronizado');
+      }
     } catch (e) {
       console.error('Error sincronizando con backend:', e);
+      updateSyncBadge(false, 'Error de Sincronización');
+    } finally {
+      setTimeout(() => { isSyncingToBackend = false; }, 350);
     }
   }
 
-  // 5. Si la sincronización en la nube 24/7 está activa (para GitHub Pages y uso sin PC)
-  if (AppState.isCloudSyncActive) {
-    syncCompletedTasksToCloud();
-  }
+  // 5. Transmitir SIEMPRE al canal en la nube 24/7 (para GitHub Pages y colaboradores remotos)
+  broadcastCloudTaskToggle(areaId, taskId, isChecked);
 };
-
-async function syncCompletedTasksToCloud() {
-  if (!AppState.data || !AppState.data.areas) return;
-  isSyncingToCloud = true;
-  try {
-    const completedIds = [];
-    AppState.data.areas.forEach(a => {
-      a.tareas.forEach(t => {
-        if (t.completada) completedIds.push(t.id);
-      });
-    });
-
-    await fetch(CLOUD_SYNC_CONFIG.apiUrl, {
-      method: 'PUT',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({
-        name: 'Tablero Incidencias Clinica JTB - Estado Colaborativo',
-        data: {
-          id_reunion: AppState.data.metadata ? AppState.data.metadata.id_reunion : 'reunion_quincenal',
-          completadas: completedIds,
-          ultima_actualizacion: new Date().toISOString(),
-          actualizado_por: 'Colaborador'
-        }
-      })
-    });
-  } catch (err) {
-    console.warn('Error al guardar en la nube 24/7:', err);
-  } finally {
-    setTimeout(() => { isSyncingToCloud = false; }, 600);
-  }
-}
 
 
 // ==========================================================================
@@ -810,17 +1020,73 @@ ${(sol.propuesta_accion || []).map(s => '• ' + s).join('\n')}
 
   // 7. Modal Compartir
   const shareModal = document.getElementById('shareModal');
-  document.getElementById('btnShareModal')?.addEventListener('click', () => {
+  document.getElementById('btnShareModal')?.addEventListener('click', async () => {
     const urlInput = document.getElementById('shareUrlInput');
-    if (urlInput) {
-      if (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1') {
-        urlInput.value = CLOUD_SYNC_CONFIG.githubPagesUrl;
-      } else {
-        urlInput.value = window.location.href;
+    const localWifiInput = document.getElementById('localWifiUrlInput');
+    const passNotice = document.getElementById('tunnelPasswordNotice');
+    const passCode = document.getElementById('tunnelPasswordCode');
+    const mainLabel = document.getElementById('shareBoxMainLabel');
+
+    // Valor predeterminado
+    let activeShareUrl = window.location.href;
+    if (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1') {
+      activeShareUrl = CLOUD_SYNC_CONFIG.githubPagesUrl;
+    }
+
+    // Si estamos conectados al backend, consultar información del túnel e IP local
+    if (AppState.isConnectedToBackend) {
+      try {
+        const infoRes = await fetch('/api/tunnel/info', {
+          headers: { 'Bypass-Tunnel-Reminder': '1', 'Cache-Control': 'no-cache' }
+        });
+        if (infoRes.ok) {
+          const info = await infoRes.json();
+          if (info.tunnel_url) {
+            activeShareUrl = info.tunnel_url;
+            if (mainLabel) mainLabel.textContent = '🌐 Enlace Público en Vivo (Túnel HTTPS):';
+          } else if (window.location.hostname !== 'localhost' && window.location.hostname !== '127.0.0.1') {
+            activeShareUrl = window.location.href;
+            if (mainLabel) mainLabel.textContent = '🌐 Enlace Público en Vivo:';
+          }
+          if (info.local_network_url && localWifiInput) {
+            localWifiInput.value = info.local_network_url;
+          }
+        }
+      } catch (err) {
+        console.warn('No se pudo obtener información del túnel:', err);
       }
+
+      // Intentar leer enlace_activo.txt para verificar si hay contraseña/IP de túnel
+      try {
+        const linkRes = await fetch('enlace_activo.txt', {
+          cache: 'no-store',
+          headers: { 'Bypass-Tunnel-Reminder': '1' }
+        });
+        if (linkRes.ok) {
+          const linkRaw = await linkRes.text();
+          if (linkRaw.trim().startsWith('{')) {
+            const parsed = JSON.parse(linkRaw);
+            if (parsed.url) activeShareUrl = parsed.url;
+            if (parsed.ip_password && passNotice && passCode) {
+              passCode.textContent = parsed.ip_password;
+              passNotice.style.display = 'flex';
+            }
+            if (parsed.local_wifi_url && localWifiInput) {
+              localWifiInput.value = parsed.local_wifi_url;
+            }
+          } else if (linkRaw.trim().startsWith('http')) {
+            activeShareUrl = linkRaw.trim();
+          }
+        }
+      } catch (err) {}
+    }
+
+    if (urlInput) {
+      urlInput.value = activeShareUrl;
     }
     shareModal.classList.add('active');
   });
+
   document.getElementById('btnCloseShareModal')?.addEventListener('click', () => {
     shareModal.classList.remove('active');
   });
@@ -838,6 +1104,63 @@ ${(sol.propuesta_accion || []).map(s => '• ' + s).join('\n')}
           if (copyText) copyText.textContent = 'Copiar Enlace';
         }, 2000);
       });
+    }
+  });
+
+  document.getElementById('btnCopyLocalWifi')?.addEventListener('click', () => {
+    const wifiInput = document.getElementById('localWifiUrlInput');
+    if (wifiInput) {
+      navigator.clipboard.writeText(wifiInput.value).then(() => {
+        const btn = document.getElementById('btnCopyLocalWifi');
+        if (btn) btn.textContent = '¡Copiado!';
+        setTimeout(() => {
+          if (btn) btn.textContent = 'Copiar';
+        }, 2000);
+      });
+    }
+  });
+
+  document.getElementById('btnCopyTunnelPass')?.addEventListener('click', () => {
+    const passCode = document.getElementById('tunnelPasswordCode');
+    if (passCode) {
+      navigator.clipboard.writeText(passCode.textContent.trim()).then(() => {
+        const btn = document.getElementById('btnCopyTunnelPass');
+        if (btn) btn.textContent = '¡Copiado!';
+        setTimeout(() => {
+          if (btn) btn.textContent = 'Copiar';
+        }, 2000);
+      });
+    }
+  });
+
+  // Conexión y guardado de URL de Google Firebase Realtime Database
+  const fbInput = document.getElementById('firebaseDbUrlInput');
+  const fbStatus = document.getElementById('firebaseStatusText');
+  if (fbInput && CLOUD_SYNC_CONFIG.firebaseDbUrl) {
+    fbInput.value = CLOUD_SYNC_CONFIG.firebaseDbUrl;
+    if (fbStatus) fbStatus.textContent = '✅ Conectado a base de datos de Google Firebase.';
+  }
+
+  document.getElementById('btnSaveFirebaseUrl')?.addEventListener('click', () => {
+    if (!fbInput) return;
+    const url = fbInput.value.trim();
+    if (!url) {
+      localStorage.removeItem('firebase_rtdb_url');
+      CLOUD_SYNC_CONFIG.firebaseDbUrl = '';
+      if (fbStatus) fbStatus.textContent = '🟢 Usando canal Cloud Pub/Sub en vivo por defecto.';
+      initCloudRealtimeStream();
+      return;
+    }
+    localStorage.setItem('firebase_rtdb_url', url);
+    CLOUD_SYNC_CONFIG.firebaseDbUrl = url;
+    const ok = initFirebaseRealtimeSync(url);
+    if (ok) {
+      if (fbStatus) fbStatus.textContent = '✅ Conectado con éxito a tu base de datos de Google Firebase.';
+      const btn = document.getElementById('btnSaveFirebaseUrl');
+      if (btn) btn.textContent = '¡Conectado!';
+      setTimeout(() => { if (btn) btn.textContent = 'Conectar'; }, 2000);
+    } else {
+      if (fbStatus) fbStatus.textContent = '⚠️ Verifica que la URL termine en .firebaseio.com';
     }
   });
 

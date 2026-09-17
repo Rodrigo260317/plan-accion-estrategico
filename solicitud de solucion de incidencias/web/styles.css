@@ -1202,6 +1202,136 @@ body {
   color: #94a3b8;
 }
 
+/* Animaciones de Sincronización Colaborativa */
+@keyframes highlightPulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.7);
+    border-color: #10b981;
+    transform: scale(1.01);
+  }
+  50% {
+    box-shadow: 0 0 0 8px rgba(16, 185, 129, 0);
+    border-color: #10b981;
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(16, 185, 129, 0);
+    transform: scale(1);
+  }
+}
+.task-card.task-updated-remotely {
+  animation: highlightPulse 1.4s ease-out;
+}
+
+@keyframes syncPulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.06); background: rgba(16, 185, 129, 0.2); }
+  100% { transform: scale(1); }
+}
+.sync-status.pulse-active {
+  animation: syncPulse 0.6s ease;
+}
+
+.share-box-header {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 6px;
+}
+.live-dot-indicator {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #10b981;
+  box-shadow: 0 0 6px #10b981;
+  display: inline-block;
+}
+.tunnel-pass-notice {
+  margin-top: 8px;
+  padding: 6px 10px;
+  background: #fef3c7;
+  border: 1px solid #fde68a;
+  border-radius: var(--radius-xs);
+  font-size: 11.5px;
+  color: #92400e;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+.tunnel-pass-notice code {
+  font-family: var(--font-mono);
+  font-weight: 700;
+  font-size: 12px;
+  background: #fff;
+  padding: 2px 6px;
+  border-radius: 3px;
+  border: 1px solid #fcd34d;
+  color: #78350f;
+}
+.cloud-link-guarantee {
+  margin-top: 8px;
+  display: flex;
+  align-items: flex-start;
+  gap: 6px;
+  padding: 8px 10px;
+  background: #f0fdf4;
+  border: 1px solid #bbf7d0;
+  border-radius: var(--radius-xs);
+  font-size: 11px;
+  color: #166534;
+  line-height: 1.35;
+}
+.cloud-link-guarantee svg {
+  width: 16px;
+  height: 16px;
+  color: #16a34a;
+  flex-shrink: 0;
+  margin-top: 1px;
+}
+
+.firebase-config-box {
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: var(--radius-sm);
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.fb-config-header {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 11.5px;
+  font-weight: 600;
+  color: #334155;
+}
+.fb-config-header svg {
+  width: 14px;
+  height: 14px;
+  color: #0284c7;
+}
+.fb-config-row {
+  display: flex;
+  gap: 6px;
+}
+.fb-config-row input {
+  flex: 1;
+  height: 28px;
+  padding: 0 8px;
+  font-size: 11px;
+  font-family: var(--font-mono);
+  background: #fff;
+  border: 1px solid #cbd5e1;
+  border-radius: var(--radius-xs);
+  color: #334155;
+}
+.firebase-config-box small {
+  font-size: 10.5px;
+  color: #15803d;
+  font-weight: 500;
+}
+
 /* Responsive */
 @media (max-width: 900px) {
   .board-columns-grid {
@@ -1214,3 +1344,4 @@ body {
     grid-template-columns: 1fr;
   }
 }
+
